@@ -138,6 +138,7 @@ pygments: true
 safe: true
 auto: true
 markdown: kramdown
+#markdown: maruku
 #markdown: redcarpet
 #redcarpet:
 #    extensions: ["no_intra_enphasis"]

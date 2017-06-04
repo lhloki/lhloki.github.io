@@ -157,9 +157,12 @@
 <ol>
   <li>投资者的效用为均值方差型：</li>
 </ol>
-
-<p><script type="math/tex">E[U(r_p)]=E(r_p)-\frac{A}{2}Var(r_p)</script>
-其中$r_p$为投资组合的回报率，其与各产品回报率的关系为
+<div>
+$$
+E[U(r_p)]=E(r_p)-\frac{A}{2}Var(r_p)
+$$
+</div>
+<p>其中<span>$r_p$</span>为投资组合的回报率，其与各产品回报率的关系为
 <script type="math/tex">r_p=\sum_{i=1}^n w_i r_i</script>
 其中需要注意的是<code>$w_i$</code>为资金权重；<code>$r_i$</code>为产品<code>$i$</code>的投资回报率。<code>$A$</code>刻画了投资者对于风险或者说不确定性的厌恶程度，其值越大，投资者越厌恶风险。</p>
 <ol>
@@ -287,11 +290,11 @@ $iact
   
      
     	<li><a href="/categories.html#投资学课程-ref">
-    		投资学课程 <span>1</span>
+    		投资学课程 <span>2</span>
     	</a></li>
      
     	<li><a href="/categories.html#资产配置-ref">
-    		资产配置 <span>1</span>
+    		资产配置 <span>2</span>
     	</a></li>
     
   
@@ -309,7 +312,7 @@ $iact
     
       <li><a href="/archive.html">Archive</a></li>
     
-      <li class="next"><a href="/jekyll/update/2017/06/04/welcome-to-jekyll" title="Welcome to Jekyll!">Next &raquo;</a></li>
+      <li class="next"><a href="/%E6%8A%95%E8%B5%84%E5%AD%A6%E8%AF%BE%E7%A8%8B/%E8%B5%84%E4%BA%A7%E9%85%8D%E7%BD%AE/2017/04/26/math" title="math">Next &raquo;</a></li>
     
     </ul>
     <hr>
@@ -355,7 +358,20 @@ $iact
   </body>
 </html>
 
-<script type="text/javascript"
- src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'], ['\(', '\)'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true,
+    }
+  });
 </script>
-
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?">
+</script>

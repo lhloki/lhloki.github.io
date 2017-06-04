@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Jun 2017 18:33:09 +0800</pubDate>
-    <lastBuildDate>Sun, 04 Jun 2017 18:33:09 +0800</lastBuildDate>
+    <pubDate>Sun, 04 Jun 2017 20:16:50 +0800</pubDate>
+    <lastBuildDate>Sun, 04 Jun 2017 20:16:50 +0800</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -38,6 +38,70 @@
       </item>
     
       <item>
+        <title>math</title>
+        <description>&lt;p&gt;Let’s test some inline math $x$, $y$, $x_1$, $y_1$.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Now a inline math with special character: $&lt;/td&gt;
+      &lt;td&gt;\psi\rangle$, $x’$, $x^*$.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Test a display math:
+&lt;script type=&quot;math/tex&quot;&gt;|\psi_1\rangle = a|0\rangle + b|1\rangle&lt;/script&gt;
+Is it O.K.?&lt;/p&gt;
+
+&lt;p&gt;Test a display math with equation number:
+\begin{equation}
+   |\psi_1\rangle = a|0\rangle + b|1\rangle
+\end{equation}
+Is it O.K.?&lt;/p&gt;
+
+&lt;p&gt;Test a display math with equation number:
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{align}
+    |\psi_1\rangle &amp;= a|0\rangle + b|1\rangle \\\\
+    |\psi_2\rangle &amp;= c|0\rangle + d|1\rangle
+  \end{align} %]]&gt;&lt;/script&gt;
+Is it O.K.?&lt;/p&gt;
+
+&lt;p&gt;And test a display math without equaltion number:
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{align\*}
+    |\psi_1\rangle &amp;= a|0\rangle + b|1\rangle \\\\
+    |\psi_2\rangle &amp;= c|0\rangle + d|1\rangle
+  \end{align\*} %]]&gt;&lt;/script&gt;
+Is it O.K.?&lt;/p&gt;
+
+&lt;p&gt;Test a display math with equation number:
+\begin{align}
+    |\psi_1\rangle &amp;amp;= a|0\rangle + b|1\rangle \&lt;br /&gt;
+    |\psi_2\rangle &amp;amp;= c|0\rangle + d|1\rangle
+\end{align}
+Is it O.K.?&lt;/p&gt;
+
+&lt;p&gt;And test a display math without equaltion number:
+\begin{align*}
+    |\psi_1\rangle &amp;amp;= a|0\rangle + b|1\rangle \&lt;br /&gt;
+    |\psi_2\rangle &amp;amp;= c|0\rangle + d|1\rangle
+\end{align*}
+Is it O.K.?&lt;/p&gt;
+</description>
+        <pubDate>Wed, 26 Apr 2017 11:25:38 +0800</pubDate>
+        <link>http://localhost:4000/%E6%8A%95%E8%B5%84%E5%AD%A6%E8%AF%BE%E7%A8%8B/%E8%B5%84%E4%BA%A7%E9%85%8D%E7%BD%AE/2017/04/26/math</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%8A%95%E8%B5%84%E5%AD%A6%E8%AF%BE%E7%A8%8B/%E8%B5%84%E4%BA%A7%E9%85%8D%E7%BD%AE/2017/04/26/math</guid>
+        
+        
+        <category>投资学课程</category>
+        
+        <category>资产配置</category>
+        
+      </item>
+    
+      <item>
         <title>资产配置问题的R语言示范</title>
         <description>&lt;h1 id=&quot;资产配置问题&quot;&gt;资产配置问题&lt;/h1&gt;
 
@@ -45,9 +109,12 @@
 &lt;ol&gt;
   &lt;li&gt;投资者的效用为均值方差型：&lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;E[U(r_p)]=E(r_p)-\frac{A}{2}Var(r_p)&lt;/script&gt;
-其中$r_p$为投资组合的回报率，其与各产品回报率的关系为
+&lt;div&gt;
+$$
+E[U(r_p)]=E(r_p)-\frac{A}{2}Var(r_p)
+$$
+&lt;/div&gt;
+&lt;p&gt;其中&lt;span&gt;$r_p$&lt;/span&gt;为投资组合的回报率，其与各产品回报率的关系为
 &lt;script type=&quot;math/tex&quot;&gt;r_p=\sum_{i=1}^n w_i r_i&lt;/script&gt;
 其中需要注意的是&lt;code&gt;$w_i$&lt;/code&gt;为资金权重；&lt;code&gt;$r_i$&lt;/code&gt;为产品&lt;code&gt;$i$&lt;/code&gt;的投资回报率。&lt;code&gt;$A$&lt;/code&gt;刻画了投资者对于风险或者说不确定性的厌恶程度，其值越大，投资者越厌恶风险。&lt;/p&gt;
 &lt;ol&gt;
