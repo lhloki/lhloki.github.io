@@ -1,15 +1,34 @@
 ---
 layout: page
-title: About
+title: Who Am I?
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+# 兴趣
++ 金融类
+	- 金融工程
+		+ 产品定价
+		+ 风险度量
+		+ 投资策略
+	- 投资科学
+		+ 资产配置方法
+		+ 产品分析方法
+		+ 基金研究
++ 仿真类
+	- 离散事件仿真
+	- 仿真在金融中的应用
++ 计算类
+	- 高性能计算
+	- 人工智能与高性能计算在金融中的应用
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+# 课程
++ 商业中的仿真学
++ 运筹学
++ 投资学
++ 金融工程
++ 动态资产定价
++ 在中国投资
+ 
+# 联系方式 Contact Infomation
++ email: lh_loki "at" 163.com
++ weChat: 13127900572 
