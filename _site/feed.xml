@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Jun 2017 20:16:50 +0800</pubDate>
-    <lastBuildDate>Sun, 04 Jun 2017 20:16:50 +0800</lastBuildDate>
+    <pubDate>Sun, 04 Jun 2017 22:43:08 +0800</pubDate>
+    <lastBuildDate>Sun, 04 Jun 2017 22:43:08 +0800</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -116,19 +116,18 @@ $$
 &lt;/div&gt;
 &lt;p&gt;其中&lt;span&gt;$r_p$&lt;/span&gt;为投资组合的回报率，其与各产品回报率的关系为
 &lt;script type=&quot;math/tex&quot;&gt;r_p=\sum_{i=1}^n w_i r_i&lt;/script&gt;
-其中需要注意的是&lt;code&gt;$w_i$&lt;/code&gt;为资金权重；&lt;code&gt;$r_i$&lt;/code&gt;为产品&lt;code&gt;$i$&lt;/code&gt;的投资回报率。&lt;code&gt;$A$&lt;/code&gt;刻画了投资者对于风险或者说不确定性的厌恶程度，其值越大，投资者越厌恶风险。&lt;/p&gt;
+其中需要注意的是$w_i$为资金权重；$r_i$为产品$i$的投资回报率。$A$刻画了投资者对于风险或者说不确定性的厌恶程度，其值越大，投资者越厌恶风险。&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;投资者对于各产品期望收益有明确的判断。即&lt;code&gt;$E(r_i)$&lt;/code&gt;已给出。&lt;/li&gt;
+  &lt;li&gt;投资者对于各产品期望收益有明确的判断。即$E(r_i)$已给出。&lt;/li&gt;
   &lt;li&gt;投资者对于产品的风险——以方差描述有充分的认识并且能够识别相互之间的相关性。即
-    &lt;pre&gt;&lt;code class=&quot;language-math&quot;&gt;\Sigma = \begin{pmatrix} 
-\sigma^2_1&amp;amp;cov(r_1,r_2)&amp;amp;\cdots&amp;amp;cov(r_1,r_n) \\
-cov(r_2,r_1)&amp;amp;\sigma^2_2&amp;amp;\cdots&amp;amp;cov(r_2,r_n)\\
-\vdots&amp;amp; \vdots&amp;amp; \ddots&amp;amp;\vdots \\
-cov(r_n,r_1)&amp;amp;cov(r_n,r_2)&amp;amp;\cdots&amp;amp;\sigma^2_n
-\end{pmatrix} 
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;p&gt;已给出。&lt;/p&gt;
-  &lt;/li&gt;
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\Sigma = \begin{pmatrix} 
+\sigma^2_1&amp;cov(r_1,r_2)&amp;\cdots&amp;cov(r_1,r_n) \\
+cov(r_2,r_1)&amp;\sigma^2_2&amp;\cdots&amp;cov(r_2,r_n)\\
+\vdots&amp; \vdots&amp; \ddots&amp;\vdots \\
+cov(r_n,r_1)&amp;cov(r_n,r_2)&amp;\cdots&amp;\sigma^2_n
+\end{pmatrix} %]]&gt;&lt;/script&gt;
+已给出。&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;当然我们完全可以对于这些给出的参数是如何估计的，以及它们的估计误差带来的计算结果的不确定进行讨论。实际上这些讨论是必要并且有趣的，在实际应用中也有非常重要的结果。但是目前，我们先接受这些给出的已知，来看看基于此会得到什么样的结果。然后，我们在后续的讨论中再回过头来分析这些参数的估计问题。&lt;/p&gt;
@@ -164,18 +163,20 @@ cov(r_n,r_1)&amp;amp;cov(r_n,r_2)&amp;amp;\cdots&amp;amp;\sigma^2_n
 
 &lt;p&gt;受限于监管，无做空方法。同时为准备流动性，要求不低于10%的资产投资于银行存款等高流动性，基本无风险的产品，其收益率为3%左右。&lt;/p&gt;
 &lt;h2 id=&quot;数学描述&quot;&gt;数学描述&lt;/h2&gt;
-&lt;p&gt;我们预判投资者的风险偏好系数&lt;code&gt;$A=3$&lt;/code&gt;。我们面对的问题是在有约束条件的情况下获得投资者的效用最大化。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-math&quot;&gt;\max E[U(r_p)]=E(r_p)-\frac{3}{2}Var(r_p)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;我们预判投资者的风险偏好系数$A=3$。我们面对的问题是在有约束条件的情况下获得投资者的效用最大化。&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\max E[U(r_p)]=E(r_p)-\frac{3}{2}Var(r_p)&lt;/script&gt;
+
 &lt;p&gt;约束于&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-math&quot;&gt;w_A+w_B \leq 0.9 
-
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+w_A+w_B \leq 0.9 \\\\
 w_A,w_B \geq 0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;其中&lt;code&gt;$w_A,w_B$&lt;/code&gt;分别是投资于基金A和B的资金权重；总投资组合回报&lt;code&gt;$r_p$&lt;/code&gt;满足&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-math&quot;&gt;r_p=(1-w_A-w_B) 3\%+w_A 15\%+w_B 12\%
-&lt;/code&gt;&lt;/pre&gt;
+\end{align*}&lt;/script&gt;
+
+&lt;p&gt;其中$w_A,w_B$分别是投资于基金A和B的资金权重；总投资组合回报$r_p$满足&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;r_p=(1-w_A-w_B) 3\%+w_A 15\%+w_B 12\%&lt;/script&gt;
 
 &lt;h2 id=&quot;r实现&quot;&gt;R实现&lt;/h2&gt;
 &lt;p&gt;R是一个交互式的统计计算交互式环境与编程语言，它是学界的挚爱也是工业界的新宠。在 www.r-project.org 网站可以免费获取。R已经包括了很多的金融计算模块用来解决资产配置的问题。此处我们使用一个相对基础一点模块来解决我们的问题，为的是把更多的细节展现出来。
@@ -185,13 +186,13 @@ w_A,w_B \geq 0
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt;目标&lt;/th&gt;
-      &lt;th&gt;&lt;code&gt;$\min -d^t x + \frac{1}{2}x^t D x$&lt;/code&gt;&lt;/th&gt;
+      &lt;th&gt;$\min -d^t x + \frac{1}{2}x^t D x$&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;td&gt;约束&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;$A^tx\geq x_0$&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;$A^tx\geq x_0$&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -231,448 +232,682 @@ $iact
 &lt;p&gt;即：总资产的55.1%投向基金A，34.9%投向基金B，而剩下的10%投向银行存款或类似的货币产品。而同时计算结果也给出了在无约束情况下的资产配置的情况作为对比。在无约束的情况下，最大的投融资活动是借款——投资者偏好使用越1:1.5的杠杆；而最大的资金投向是基金B，这与约束情况下超过50%的资金投向基金A是不一致的。&lt;/p&gt;
 </description>
         <pubDate>Tue, 25 Apr 2017 11:25:38 +0800</pubDate>
-        <link>http://localhost:4000/%E6%8A%95%E8%B5%84%E5%AD%A6%E8%AF%BE%E7%A8%8B/%E8%B5%84%E4%BA%A7%E9%85%8D%E7%BD%AE/2017/04/25/%E4%BD%BF%E7%94%A8R%E8%A7%A3%E5%86%B3%E8%B5%84%E4%BA%A7%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98</link>
-        <guid isPermaLink="true">http://localhost:4000/%E6%8A%95%E8%B5%84%E5%AD%A6%E8%AF%BE%E7%A8%8B/%E8%B5%84%E4%BA%A7%E9%85%8D%E7%BD%AE/2017/04/25/%E4%BD%BF%E7%94%A8R%E8%A7%A3%E5%86%B3%E8%B5%84%E4%BA%A7%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98</guid>
+        <link>http://localhost:4000/investment/2017/04/25/%E4%BD%BF%E7%94%A8R%E8%A7%A3%E5%86%B3%E8%B5%84%E4%BA%A7%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98</link>
+        <guid isPermaLink="true">http://localhost:4000/investment/2017/04/25/%E4%BD%BF%E7%94%A8R%E8%A7%A3%E5%86%B3%E8%B5%84%E4%BA%A7%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98</guid>
         
-        
-        <category>投资学课程</category>
+        <category>投资</category>
         
         <category>资产配置</category>
+        
+        <category>R</category>
+        
+        
+        <category>investment</category>
         
       </item>
     
       <item>
-        <title>Jekyll Introduction</title>
-        <description>
-&lt;p&gt;This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
-Directly following the intro we’ll learn exactly &lt;em&gt;how&lt;/em&gt; Jekyll does what it does.&lt;/p&gt;
+        <title>How to symbolic link a directory to Tomcat's webapp</title>
+        <description>&lt;p&gt;I found that using the command sudo mount –bind olddir newdir gets me out of
+trouble. If you don’t have root access then this won’t work for you. See
+&lt;code&gt;mount --help&lt;/code&gt; or &lt;code&gt;man mount&lt;/code&gt; for some more info on binding but it basically
+mounts one directory on top of another so it has the same affect as a symlink
+but it gets around tomcat’s limitation with symlinks.&lt;/p&gt;
 
-&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;More precisely, executes the following command:&lt;/p&gt;
 
-&lt;h3 id=&quot;what-is-jekyll&quot;&gt;What is Jekyll?&lt;/h3&gt;
-
-&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
-dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as “a simple, blog aware, static site generator”.&lt;/p&gt;
-
-&lt;h3 id=&quot;examples&quot;&gt;Examples&lt;/h3&gt;
-
-&lt;p&gt;This website is created with Jekyll. &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Sites&quot;&gt;Other Jekyll websites&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-does-jekyll-do&quot;&gt;What does Jekyll Do?&lt;/h3&gt;
-
-&lt;p&gt;Jekyll is a ruby gem you install on your local system.
-Once there you can call &lt;code&gt;jekyll --server&lt;/code&gt; on a directory and provided that directory
-is setup in a way jekyll expects, it will do magic stuff like parse markdown/textile files,
-compute categories, tags, permalinks, and construct your pages from layout templates and partials.&lt;/p&gt;
-
-&lt;p&gt;Once parsed, Jekyll stores the result in a self-contained static &lt;code&gt;_site&lt;/code&gt; folder.
-The intention here is that you can serve all contents in this folder statically from a plain static web-server.&lt;/p&gt;
-
-&lt;p&gt;You can think of Jekyll as a normalish dynamic blog but rather than parsing content, templates, and tags
-on each request, Jekyll does this once &lt;em&gt;beforehand&lt;/em&gt; and caches the &lt;em&gt;entire website&lt;/em&gt; in a folder for serving statically.&lt;/p&gt;
-
-&lt;h3 id=&quot;jekyll-is-not-blogging-software&quot;&gt;Jekyll is Not Blogging Software&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Jekyll is a parsing engine.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Jekyll does not come with any content nor does it have any templates or design elements.
-This is a common source of confusion when getting started.
-Jekyll does not come with anything you actually use or see on your website - you have to make it.&lt;/p&gt;
-
-&lt;h3 id=&quot;why-should-i-care&quot;&gt;Why Should I Care?&lt;/h3&gt;
-
-&lt;p&gt;Jekyll is very minimalistic and very efficient.
-The most important thing to realize about Jekyll is that it creates a static representation of your website requiring only a static web-server.
-Traditional dynamic blogs like Wordpress require a database and server-side code.
-Heavily trafficked dynamic blogs must employ a caching layer that ultimately performs the same job Jekyll sets out to do; serve static content.&lt;/p&gt;
-
-&lt;p&gt;Therefore if you like to keep things simple and you prefer the command-line over an admin panel UI then give Jekyll a try.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Developers like Jekyll because we can write content like we write code:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Ability to write content in markdown or textile in your favorite text-editor.&lt;/li&gt;
-  &lt;li&gt;Ability to write and preview your content via localhost.&lt;/li&gt;
-  &lt;li&gt;No internet connection required.&lt;/li&gt;
-  &lt;li&gt;Ability to publish via git.&lt;/li&gt;
-  &lt;li&gt;Ability to host your blog on a static web-server.&lt;/li&gt;
-  &lt;li&gt;Ability to host freely on GitHub Pages.&lt;/li&gt;
-  &lt;li&gt;No database required.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;how-jekyll-works&quot;&gt;How Jekyll Works&lt;/h1&gt;
-
-&lt;p&gt;The following is a complete but concise outline of exactly how Jekyll works.&lt;/p&gt;
-
-&lt;p&gt;Be aware that core concepts are introduced in rapid succession without code examples.
-This information is not intended to specifically teach you how to do anything, rather it
-is intended to give you the &lt;em&gt;full picture&lt;/em&gt; relative to what is going on in Jekyll-world.&lt;/p&gt;
-
-&lt;p&gt;Learning these core concepts should help you avoid common frustrations and ultimately
-help you better understand the code examples contained throughout Jekyll-Bootstrap.&lt;/p&gt;
-
-&lt;h2 id=&quot;initial-setup&quot;&gt;Initial Setup&lt;/h2&gt;
-
-&lt;p&gt;After &lt;a href=&quot;/index.html#start-now&quot;&gt;installing jekyll&lt;/a&gt; you’ll need to format your website directory in a way jekyll expects.
-Jekyll-bootstrap conveniently provides the base directory format.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-jekyll-application-base-format&quot;&gt;The Jekyll Application Base Format&lt;/h3&gt;
-
-&lt;p&gt;Jekyll expects your website directory to be laid out like so:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;.
-|-- _config.yml
-|-- _includes
-|-- _layouts
-|   |-- default.html
-|   |-- post.html
-|-- _posts
-|   |-- 2011-10-25-open-source-is-good.markdown
-|   |-- 2011-04-26-hello-world.markdown
-|-- _site
-|-- index.html
-|-- assets
-    |-- css
-        |-- style.css
-    |-- javascripts
+&lt;pre&gt;&lt;code&gt;sudo mount --bind /path/to/your/app /var/lib/tomcat7/webapps/myapp
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;_config.yml&lt;/strong&gt;
-  Stores configuration data.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;_includes&lt;/strong&gt;
-  This folder is for partial views.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;_layouts&lt;/strong&gt;
-  This folder is for the main templates your content will be inserted into.
-  You can have different layouts for different pages or page sections.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;_posts&lt;/strong&gt;
-  This folder contains your dynamic content/posts.
-  the naming format is required to be &lt;code&gt;@YEAR-MONTH-DATE-title.MARKUP@&lt;/code&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;_site&lt;/strong&gt;
-  This is where the generated site will be placed once Jekyll is done transforming it.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;assets&lt;/strong&gt;
-  This folder is not part of the standard jekyll structure.
-  The assets folder represents &lt;em&gt;any generic&lt;/em&gt; folder you happen to create in your root directory.
-  Directories and files not properly formatted for jekyll will be left untouched for you to serve normally.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;(read more: &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Usage&quot;&gt;https://github.com/mojombo/jekyll/wiki/Usage&lt;/a&gt;)&lt;/p&gt;
-
-&lt;h3 id=&quot;jekyll-configuration&quot;&gt;Jekyll Configuration&lt;/h3&gt;
-
-&lt;p&gt;Jekyll supports various configuration options that are fully outlined here:
-(&lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Configuration&quot;&gt;https://github.com/mojombo/jekyll/wiki/Configuration&lt;/a&gt;)&lt;/p&gt;
-
-&lt;h2 id=&quot;content-in-jekyll&quot;&gt;Content in Jekyll&lt;/h2&gt;
-
-&lt;p&gt;Content in Jekyll is either a post or a page.
-These content “objects” get inserted into one or more templates to build the final output for its respective static-page.&lt;/p&gt;
-
-&lt;h3 id=&quot;posts-and-pages&quot;&gt;Posts and Pages&lt;/h3&gt;
-
-&lt;p&gt;Both posts and pages should be written in markdown, textile, or HTML and may also contain Liquid templating syntax.
-Both posts and pages can have meta-data assigned on a per-page basis such as title, url path, as well as arbitrary custom meta-data.&lt;/p&gt;
-
-&lt;h3 id=&quot;working-with-posts&quot;&gt;Working With Posts&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Creating a Post&lt;/strong&gt;
-Posts are created by properly formatting a file and placing it the &lt;code&gt;_posts&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;
-A post must have a valid filename in the form &lt;code&gt;YEAR-MONTH-DATE-title.MARKUP&lt;/code&gt; and be placed in the &lt;code&gt;_posts&lt;/code&gt; directory.
-If the data format is invalid Jekyll will not recognize the file as a post. The date and title are automatically parsed from the filename of the post file.
-Additionally, each file must have &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter&quot;&gt;YAML Front-Matter&lt;/a&gt; prepended to its content.
-YAML Front-Matter is a valid YAML syntax specifying meta-data for the given file.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Order&lt;/strong&gt;
-Ordering is an important part of Jekyll but it is hard to specify a custom ordering strategy.
-Only reverse chronological and chronological ordering is supported in Jekyll.&lt;/p&gt;
-
-&lt;p&gt;Since the date is hard-coded into the filename format, to change the order, you must change the dates in the filenames.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;
-Posts can have tags associated with them as part of their meta-data.
-Tags may be placed on posts by providing them in the post’s YAML front matter.
-You have access to the post-specific tags in the templates. These tags also get added to the sitewide collection.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Categories&lt;/strong&gt;
-Posts may be categorized by providing one or more categories in the YAML front matter.
-Categories offer more significance over tags in that they can be reflected in the URL path to the given post.
-Note categories in Jekyll work in a specific way.
-If you define more than one category you are defining a category hierarchy “set”.
-Example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-title :  Hello World
-categories : [lessons, beginner]
----
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This defines the category hierarchy “lessons/beginner”. Note this is &lt;em&gt;one category&lt;/em&gt; node in Jekyll.
-You won’t find “lessons” and “beginner” as two separate categories unless you define them elsewhere as singular categories.&lt;/p&gt;
-
-&lt;h3 id=&quot;working-with-pages&quot;&gt;Working With Pages&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Creating a Page&lt;/strong&gt;
-Pages are created by properly formatting a file and placing it anywhere in the root directory or subdirectories that do &lt;em&gt;not&lt;/em&gt; start with an underscore.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;
-In order to register as a Jekyll page the file must contain &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter&quot;&gt;YAML Front-Matter&lt;/a&gt;.
-Registering a page means 1) that Jekyll will process the page and 2) that the page object will be available in the &lt;code&gt;site.pages&lt;/code&gt; array for inclusion into your templates.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Categories and Tags&lt;/strong&gt;
-Pages do not compute categories nor tags so defining them will have no effect.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Sub-Directories&lt;/strong&gt;
-If pages are defined in sub-directories, the path to the page will be reflected in the url.
-Example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;.
-|-- people
-    |-- bob
-        |-- essay.html
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This page will be available at &lt;code&gt;http://yourdomain.com/people/bob/essay.html&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Recommended Pages&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;index.html&lt;/strong&gt;
-You will always want to define the root index.html page as this will display on your root URL.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;404.html&lt;/strong&gt;
-Create a root 404.html page and GitHub Pages will serve it as your 404 response.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;sitemap.html&lt;/strong&gt;
-Generating a sitemap is good practice for SEO.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;about.html&lt;/strong&gt;
-A nice about page is easy to do and gives the human perspective to your website.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;templates-in-jekyll&quot;&gt;Templates in Jekyll&lt;/h2&gt;
-
-&lt;p&gt;Templates are used to contain a page’s or post’s content.
-All templates have access to a global site object variable: &lt;code&gt;site&lt;/code&gt; as well as a page object variable: &lt;code&gt;page&lt;/code&gt;.
-The site variable holds all accessible content and metadata relative to the site.
-The page variable holds accessible data for the given page or post being rendered at that point.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Create a Template&lt;/strong&gt;
-Templates are created by properly formatting a file and placing it in the &lt;code&gt;_layouts&lt;/code&gt; directory.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;
-Templates should be coded in HTML and contain YAML Front Matter.
-All templates can contain Liquid code to work with your site’s data.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Rending Page/Post Content in a Template&lt;/strong&gt;
-There is a special variable in all templates named : &lt;code&gt;content&lt;/code&gt;.
-The &lt;code&gt;content&lt;/code&gt; variable holds the page/post content including any sub-template content previously defined.
-Render the content variable wherever you want your main content to be injected into your template:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;...
-&amp;lt;body&amp;gt;
-  &amp;lt;div id=&quot;sidebar&quot;&amp;gt; ... &amp;lt;/div&amp;gt;
-  &amp;lt;div id=&quot;main&quot;&amp;gt;
-    &amp;#123;{content}&amp;#125;
-  &amp;lt;/div&amp;gt;
-&amp;lt;/body&amp;gt;
-...&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;sub-templates&quot;&gt;Sub-Templates&lt;/h3&gt;
-
-&lt;p&gt;Sub-templates are exactly templates with the only difference being they
-define another “root” layout/template within their YAML Front Matter.
-This essentially means a template will render inside of another template.&lt;/p&gt;
-
-&lt;h3 id=&quot;includes&quot;&gt;Includes&lt;/h3&gt;
-&lt;p&gt;In Jekyll you can define include files by placing them in the &lt;code&gt;_includes&lt;/code&gt; folder.
-Includes are NOT templates, rather they are just code snippets that get included into templates.
-In this way, you can treat the code inside includes as if it was native to the parent template.&lt;/p&gt;
-
-&lt;p&gt;Any valid template code may be used in includes.&lt;/p&gt;
-
-&lt;h2 id=&quot;using-liquid-for-templating&quot;&gt;Using Liquid for Templating&lt;/h2&gt;
-
-&lt;p&gt;Templating is perhaps the most confusing and frustrating part of Jekyll.
-This is mainly due to the fact that Jekyll templates must use the Liquid Templating Language.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-is-liquid&quot;&gt;What is Liquid?&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/Shopify/liquid&quot;&gt;Liquid&lt;/a&gt; is a secure templating language developed by &lt;a href=&quot;http://shopify.com&quot;&gt;Shopify&lt;/a&gt;.
-Liquid is designed for end-users to be able to execute logic within template files
-without imposing any security risk on the hosting server.&lt;/p&gt;
-
-&lt;p&gt;Jekyll uses Liquid to generate the post content within the final page layout structure and as the primary interface for working with
-your site and post/page data.&lt;/p&gt;
-
-&lt;h3 id=&quot;why-do-we-have-to-use-liquid&quot;&gt;Why Do We Have to Use Liquid?&lt;/h3&gt;
-
-&lt;p&gt;GitHub uses Jekyll to power &lt;a href=&quot;http://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;.
-GitHub cannot afford to run arbitrary code on their servers so they lock developers down via Liquid.&lt;/p&gt;
-
-&lt;h3 id=&quot;liquid-is-not-programmer-friendly&quot;&gt;Liquid is Not Programmer-Friendly.&lt;/h3&gt;
-
-&lt;p&gt;The short story is liquid is not real code and its not intended to execute real code.
-The point being you can’t do jackshit in liquid that hasn’t been allowed explicitly by the implementation.
-What’s more you can only access data-structures that have been explicitly passed to the template.&lt;/p&gt;
-
-&lt;p&gt;In Jekyll’s case it is not possible to alter what is passed to Liquid without hacking the gem or running custom plugins.
-Both of which cannot be supported by GitHub Pages.&lt;/p&gt;
-
-&lt;p&gt;As a programmer - this is very frustrating.&lt;/p&gt;
-
-&lt;p&gt;But rather than look a gift horse in the mouth we are going to
-suck it up and view it as an opportunity to work around limitations and adopt client-side solutions when possible.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Aside&lt;/strong&gt;
-My personal stance is to not invest time trying to hack liquid. It’s really unnecessary
-&lt;em&gt;from a programmer’s&lt;/em&gt; perspective. That is to say if you have the ability to run custom plugins (i.e. run arbitrary ruby code)
-you are better off sticking with ruby. Toward that end I’ve built &lt;a href=&quot;http://github.com/plusjade/mustache-with-jekyll&quot;&gt;Mustache-with-Jekyll&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;static-assets&quot;&gt;Static Assets&lt;/h2&gt;
-
-&lt;p&gt;Static assets are any file in the root or non-underscored subfolders that are not pages.
-That is they have no valid YAML Front Matter and are thus not treated as Jekyll Pages.&lt;/p&gt;
-
-&lt;p&gt;Static assets should be used for images, css, and javascript files.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-jekyll-parses-files&quot;&gt;How Jekyll Parses Files&lt;/h2&gt;
-
-&lt;p&gt;Remember Jekyll is a processing engine. There are two main types of parsing in Jekyll.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Content parsing.&lt;/strong&gt;
-  This is done with textile or markdown.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Template parsing.&lt;/strong&gt;
-This is done with the liquid templating language.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And thus there are two main types of file formats needed for this parsing.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Post and Page files.&lt;/strong&gt;
-All content in Jekyll is either a post or a page so valid posts and pages are parsed with markdown or textile.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Template files.&lt;/strong&gt;
-  These files go in &lt;code&gt;_layouts&lt;/code&gt; folder and contain your blogs &lt;strong&gt;templates&lt;/strong&gt;. They should be made in HTML with the help of Liquid syntax.
-  Since include files are simply injected into templates they are essentially parsed as if they were native to the template.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Arbitrary files and folders.&lt;/strong&gt;
-Files that &lt;em&gt;are not&lt;/em&gt; valid pages are treated as static content and pass through
-Jekyll untouched and reside on your blog in the exact structure and format they originally existed in.&lt;/p&gt;
-
-&lt;h3 id=&quot;formatting-files-for-parsing&quot;&gt;Formatting Files for Parsing.&lt;/h3&gt;
-
-&lt;p&gt;We’ve outlined the need for valid formatting using &lt;strong&gt;YAML Front Matter&lt;/strong&gt;.
-Templates, posts, and pages all need to provide valid YAML Front Matter even if the Matter is empty.
-This is the only way Jekyll knows you want the file processed.&lt;/p&gt;
-
-&lt;p&gt;YAML Front Matter must be prepended to the top of template/post/page files:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-layout: post
-category : pages
-tags : [how-to, jekyll]
----
-
-... contents ...
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Three hyphens on a new line start the Front-Matter block and three hyphens on a new line end the block.
-The data inside the block must be valid YAML.&lt;/p&gt;
-
-&lt;p&gt;Configuration parameters for YAML Front-Matter is outlined here:
-&lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter&quot;&gt;A comprehensive explanation of YAML Front Matter&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;defining-layouts-for-posts-and-templates-parsing&quot;&gt;Defining Layouts for Posts and Templates Parsing.&lt;/h4&gt;
-
-&lt;p&gt;The &lt;code&gt;layout&lt;/code&gt; parameter in the YAML Front Matter defines the template file for which the given post or template should be injected into.
-If a template file specifies its own layout, it is effectively being used as a &lt;code&gt;sub-template.&lt;/code&gt;
-That is to say loading a post file into a template file that refers to another template file with work in the way you’d expect; as a nested sub-template.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-jekyll-generates-the-final-static-files&quot;&gt;How Jekyll Generates the Final Static Files.&lt;/h2&gt;
-
-&lt;p&gt;Ultimately, Jekyll’s job is to generate a static representation of your website.
-The following is an outline of how that’s done:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Jekyll collects data.&lt;/strong&gt;
-  Jekyll scans the posts directory and collects all posts files as post objects. It then scans the layout assets and collects those and finally scans other directories in search of pages.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Jekyll computes data.&lt;/strong&gt;
-  Jekyll takes these objects, computes metadata (permalinks, tags, categories, titles, dates) from them and constructs one
-  big &lt;code&gt;site&lt;/code&gt; object that holds all the posts, pages, layouts, and respective metadata.
-  At this stage your site is one big computed ruby object.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Jekyll liquifies posts and templates.&lt;/strong&gt;
-  Next jekyll loops through each post file and converts (through markdown or textile) and &lt;strong&gt;liquifies&lt;/strong&gt; the post inside of its respective layout(s).
-  Once the post is parsed and liquified inside the the proper layout structure, the layout itself is “liquified”.
- &lt;strong&gt;Liquification&lt;/strong&gt; is defined as follows: Jekyll initiates a Liquid template, and passes a simpler hash representation of the ruby site object as well as a simpler
-  hash representation of the ruby post object. These simplified data structures are what you have access to in the templates.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Jekyll generates output.&lt;/strong&gt;
- Finally the liquid templates are “rendered”, thereby processing any liquid syntax provided in the templates
- and saving the final, static representation of the file.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Notes.&lt;/strong&gt;
-Because Jekyll computes the entire site in one fell swoop, each template is given access to
-a global &lt;code&gt;site&lt;/code&gt; hash that contains useful data. It is this data that you’ll iterate through and format
-using the Liquid tags and filters in order to render it onto a given page.&lt;/p&gt;
-
-&lt;p&gt;Remember, in Jekyll you are an end-user. Your API has only two components:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;The manner in which you setup your directory.&lt;/li&gt;
-  &lt;li&gt;The liquid syntax and variables passed into the liquid templates.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;All the data objects available to you in the templates via Liquid are outlined in the &lt;strong&gt;API Section&lt;/strong&gt; of Jekyll-Bootstrap.
-You can also read the original documentation here: &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Template-Data&quot;&gt;https://github.com/mojombo/jekyll/wiki/Template-Data&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;I hope this paints a clearer picture of what Jekyll is doing and why it works the way it does.
-As noted, our main programming constraint is the fact that our API is limited to what is accessible via Liquid and Liquid only.&lt;/p&gt;
-
-&lt;p&gt;Jekyll-bootstrap is intended to provide helper methods and strategies aimed at making it more intuitive and easier to work with Jekyll =)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Thank you&lt;/strong&gt; for reading this far.&lt;/p&gt;
-
-&lt;h2 id=&quot;next-steps&quot;&gt;Next Steps&lt;/h2&gt;
-
-&lt;p&gt;Please take a look at &lt;a href=&quot;&quot;&gt;&lt;/a&gt;
-or jump right into &lt;a href=&quot;&quot;&gt;Usage&lt;/a&gt; if you’d like.&lt;/p&gt;
+&lt;p&gt;and then the &lt;code&gt;/var/lib/tomcat7/webapps/myapp&lt;/code&gt; will be linked to &lt;code&gt;/path/to/your/app&lt;/code&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 29 Dec 2011 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/lessons/2011/12/29/jekyll-introduction</link>
-        <guid isPermaLink="true">http://localhost:4000/lessons/2011/12/29/jekyll-introduction</guid>
+        <pubDate>Fri, 18 Dec 2015 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/programming/2015/12/18/how-to-symbolic-link-a-directory-to-tomcats-webapp</link>
+        <guid isPermaLink="true">http://localhost:4000/programming/2015/12/18/how-to-symbolic-link-a-directory-to-tomcats-webapp</guid>
         
-        <category>intro</category>
+        <category>web</category>
         
-        <category>beginner</category>
+        <category>tomcat</category>
         
-        <category>jekyll</category>
-        
-        <category>tutorial</category>
+        <category>debuging</category>
         
         
-        <category>lessons</category>
+        <category>programming</category>
+        
+      </item>
+    
+      <item>
+        <title>How to implements the 'drop user if exists' in MySQL</title>
+        <description>&lt;p&gt;MySQL has no &lt;code&gt;DROP USER IF EXISTS ...&lt;/code&gt; syntax.&lt;/p&gt;
+
+&lt;p&gt;The following code imexplicitly creates the user and then drop the user.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;GRANT USAGE ON *.* TO 'username'@'localhost' IDENTIFIED BY 'password';
+DROP USER 'username'@'localhost';
+&lt;/code&gt;&lt;/pre&gt;
+
+</description>
+        <pubDate>Wed, 16 Dec 2015 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/programming/2015/12/16/how-to-implements-the-drop-user-if-exists-in-mysql</link>
+        <guid isPermaLink="true">http://localhost:4000/programming/2015/12/16/how-to-implements-the-drop-user-if-exists-in-mysql</guid>
+        
+        <category>Database</category>
+        
+        <category>MySQL</category>
+        
+        <category>SQL</category>
+        
+        
+        <category>programming</category>
+        
+      </item>
+    
+      <item>
+        <title>辩证法与放屁</title>
+        <description>&lt;h4 id=&quot;第一堂课&quot;&gt;第一堂课&lt;/h4&gt;
+
+&lt;p&gt;在上课时，我放了一个屁——很普通的屁。既不很臭，当然也绝对不香。&lt;/p&gt;
+
+&lt;p&gt;可怕的是，教授正在讲辩证法。&lt;/p&gt;
+
+&lt;p&gt;“请你自己对这个屁作一下判断，”教授说，“它好还是不好？”&lt;/p&gt;
+
+&lt;p&gt;我只得说：“不好。”&lt;/p&gt;
+
+&lt;p&gt;“错了，”教授说，“任何事物都有矛盾组成，有它不好的一面，肯定有它好的一面。”&lt;/p&gt;
+
+&lt;p&gt;“那么说它好也不对了？”我问。&lt;/p&gt;
+
+&lt;p&gt;“当然。”教授说。&lt;/p&gt;
+
+&lt;p&gt;“它既好又不好。”&lt;/p&gt;
+
+&lt;p&gt;“错了。你只看到矛盾双方对立斗争的一面，没有看到他们统一的一面。”&lt;/p&gt;
+
+&lt;p&gt;我只好认真看待这个严肃的问题，仔细想了想说：“这个屁既好又不好，但不好的一面是主要的，处于主导地位。”&lt;/p&gt;
+
+&lt;p&gt;“错了。你是用静止的观点看问题。矛盾的双方会相互转换，今天处于主导地位一面，明天一定处于次要地位。”&lt;/p&gt;
+
+&lt;p&gt;“你是说明天全人类会为了我的这个屁欢呼雀跃吗？”&lt;/p&gt;
+
+&lt;p&gt;“不尽如此，但不能否认这种发展趋势。”&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;我愣了好大一会儿，只得硬着头皮说：“我的屁既好又不好，既不好又好。今天可能不好，明天一定会好。今天可能很好，明天也许会不好.”&lt;/p&gt;
+
+&lt;p&gt;教授听得直摇头，说：“这是彻底的怀疑论，不是辩证法的观点。”&lt;/p&gt;
+
+&lt;p&gt;就这样，仅仅因为放了一个屁，我就成了一个怀疑论者。&lt;/p&gt;
+
+&lt;p&gt;教授接着讲课：“辩证法的威力不仅在于能够轻而易举地驳斥任何观点，而且他能够轻易地为任何观点找到理论根据。”&lt;/p&gt;
+
+&lt;p&gt;“可是我的屁就没有任何根据。”我抗议道。&lt;/p&gt;
+
+&lt;p&gt;“那是因为你没有找到，其实很简单，它是你肚子里矛盾双方对立统一的必然结果。”&lt;/p&gt;
+
+&lt;p&gt;我哑口无言。&lt;/p&gt;
+
+&lt;p&gt;教授说：“下面我们不谈屁，谈一个更复杂的问题：一个西瓜，一粒芝麻，无论你怎样选择，都有理论基础。”&lt;/p&gt;
+
+&lt;p&gt;我赶紧说：“我要捡起西瓜，丢了芝麻。”&lt;/p&gt;
+
+&lt;p&gt;“很好。”教授说，“你抓住了主要矛盾，也就是说，你抓住了解决问题的关键。”&lt;/p&gt;
+
+&lt;p&gt;“那我就捡起芝麻，丢掉西瓜。”&lt;/p&gt;
+
+&lt;p&gt;“先有量变，才能达到质变。你解决问题的顺序十分正确。”&lt;/p&gt;
+
+&lt;p&gt;“我既要西瓜，又要芝麻。”&lt;/p&gt;
+
+&lt;p&gt;“即抓住主要矛盾，又不放过次要矛盾。你是用全面的眼光看问题”&lt;/p&gt;
+
+&lt;p&gt;“我既要砸烂西瓜，又要踩碎芝麻。”&lt;/p&gt;
+
+&lt;p&gt;“很好，你是用发展的眼光看问题。新事物就是对旧事物的否定。一切旧的事物必然灭亡。旧事物的灭亡是新事物产生的前提。”&lt;/p&gt;
+
+&lt;p&gt;“我既要吃掉西瓜，又要砸烂西瓜。既要捡起芝麻，又要踩碎芝麻。可是，只有一个西瓜，一粒芝麻，怎么办？”&lt;/p&gt;
+
+&lt;p&gt;“你这才算对辩证法入了门，重要的是：矛盾的双方不仅对立，而且有它统一的一面。你吃掉西瓜当然有它合理的一面，但你要砸烂西瓜，也并非不合理。只有将二者统一，才能进入更高层次的斗争。”&lt;/p&gt;
+
+&lt;p&gt;我张口结舌，目瞪口呆：“可是，你并没有解决我的问题。”&lt;/p&gt;
+
+&lt;p&gt;教授笑着说：“辩证法不解决任何问题，它的用途在于首先把人变成傻瓜——如果还有人不是傻瓜的话。”&lt;/p&gt;
+
+&lt;p&gt;“你是说‘首先’？”我问。&lt;/p&gt;
+
+&lt;p&gt;“是对，然后再从傻瓜飞跃到学者。”教授开始整理讲义，“关于辩证法为什么不解决问题，如何把人变成傻瓜，以及怎样实现从傻瓜到学者的飞跃，这是下一节课的内容。”&lt;/p&gt;
+
+&lt;p&gt;教授一蹦一跳，走出教室。&lt;/p&gt;
+
+&lt;h4 id=&quot;第二堂课&quot;&gt;第二堂课&lt;/h4&gt;
+
+&lt;p&gt;教授说：“下面我们讲一下辩证法的用途。我们要举一个更加复杂的例子：如何看待中国传统文化？”&lt;/p&gt;
+
+&lt;p&gt;我说：“那一定要用辩证的观点。”&lt;/p&gt;
+
+&lt;p&gt;“对。我们有许多大牌的辩证法学者，他们会充分利用辩证法的三大规律，理论联系实际，旁征博引，纵横捭阖。下笔万言，紧绕主体。最后给你得出一个结论：要取其精华，去其糟粕——你佩服不佩服？”&lt;/p&gt;
+
+&lt;p&gt;“是啊。辩证法不是很有用吗？”&lt;/p&gt;
+
+&lt;p&gt;“以前我也这样认为。直到我见到一只丧家的野狗——它改变了我的看法。”&lt;/p&gt;
+
+&lt;p&gt;“野狗？”我莫名其妙。&lt;/p&gt;
+
+&lt;p&gt;“是的。我家屋后有个垃圾堆，有一天来了一只丧家的野狗。它对其他东西看也不看，‘喀哧’一口，咬住一块骨头。”&lt;/p&gt;
+
+&lt;p&gt;“这毫不奇怪，所有的狗都会这样。”我说。&lt;/p&gt;
+
+&lt;p&gt;“不错。问题是对于狗来说，这块骨头就是‘精华’，垃圾堆里除了骨头以外，还有砖头，铁块，破水桶等等糟粕，他为什么只要骨头这个精华呢？他怎么知道取其精华，去其糟粕？难道它已经充分理解了大牌学者们的论述了吗？”&lt;/p&gt;
+
+&lt;p&gt;“好像不会。”&lt;/p&gt;
+
+&lt;p&gt;“肯定不会，所以说大牌学者们通过精确的论述，得到的精妙结论，其实是连一只丧家的野狗早就知道的东西。既然如此，我们为什么还要为他们喝彩，对他们崇拜呢？”&lt;/p&gt;
+
+&lt;p&gt;“是啊，为什么？”&lt;/p&gt;
+
+&lt;p&gt;“唯一的解释就是：辩证法已经成功地把你变成了一个傻瓜。”&lt;/p&gt;
+
+&lt;p&gt;“我明白了。”&lt;/p&gt;
+
+&lt;p&gt;“你明白以后一定要问：你说的没用。取其精华，去其糟粕谁都知道。问题是什么是精华，什么是糟粕。”&lt;/p&gt;
+
+&lt;p&gt;“对，看他怎么说。”&lt;/p&gt;
+
+&lt;p&gt;“你难不倒他，他又会充分利用辩证法的三大规律，理论联系实际，旁征博引，纵横捭阖。下笔万言，紧绕主体。最后给你得出一个结论：具体问题，具体分析。高明不高明？“&lt;/p&gt;
+
+&lt;p&gt;“是有道理。”&lt;/p&gt;
+
+&lt;p&gt;“可是我认为：这不仅是无聊，无用的问题，已经近于无赖了。”&lt;/p&gt;
+
+&lt;p&gt;“这怎么说？”&lt;/p&gt;
+
+&lt;p&gt;“难道世界上有人会‘具体问题，抽象分析’吗？那只丧家的野狗，来到垃圾堆前，难道会象亚里斯多德一样，先把各种东西分门别类，搞清其内涵和外延，再通过归纳演绎，最后确定它是吃砖头还是吃骨头吗？这可能吗？”&lt;/p&gt;
+
+&lt;p&gt;“不可能。那样的话，他连吃砖头都有可能。”&lt;/p&gt;
+
+&lt;p&gt;“对，孺子可教。没有人会‘具体问题，抽象分析’，‘具体问题，具体分析’这句话，等于没说。不过辩证法学者倒是喜欢用抽象的方法，分析具体问题。因为辩证法是放之四海而皆准的普遍真理。所以如果你看到一只吃砖头的狗，千万不能小视，它可能是一个著名学者。”&lt;/p&gt;
+
+&lt;p&gt;教授又收拾好讲义，说：“辩证法的根本在于使用‘全面的，发展的，联系的’观点看问题。象所有的谎言一样，这话听起来很显真理。下一节课讲辩证法的渊源，以及它和形而上学的关系。”&lt;/p&gt;
+
+&lt;h4 id=&quot;第三堂课&quot;&gt;第三堂课&lt;/h4&gt;
+
+&lt;p&gt;“迄今为止，人类用三种方法研究这个世界。”教授毫不客气，单刀直入，“第一种是‘屠夫式’，大部分科学家都是这种方式。他们把世界割裂成极小的部分进行分析研究。研究生物的并不研究全部生物，有的只研究动物；研究动物的也不研究全部动物，有的只研究哺乳动物；研究哺乳动物的，有的只研究猴子；研究猴子的有的只研究猴子的尾巴。他们眼中只见树木，不见森林，是极其片面的观点。”&lt;/p&gt;
+
+&lt;p&gt;“不是辩证法的观点。”我说。&lt;/p&gt;
+
+&lt;p&gt;“对，”教授接着说，“不仅如此，他们还尽量割裂研究对象与其他事物的联系，在尽量不受干扰的情况下，看看他到底是什么样子。科学家花费大量金钱建造实验室，而不在大街上做实验，主要原因就在于此。现在有些实验还要搞到太空里去做，连空气引力都要隔绝，可见，为了割裂事物之间的关系，这些科学家是不择手段的。”&lt;/p&gt;
+
+&lt;p&gt;我说：“与辩证法的观点相反。”&lt;/p&gt;
+
+&lt;p&gt;“有说对了，但仍然不止于此，他们还不管一只猴子过去怎样，将来如何，只管拿来一刀宰掉，看看它肚子里都是什么东西。他们用的是彻底的静止观点。”&lt;/p&gt;
+
+&lt;p&gt;“非常野蛮，而且十分笨拙。”&lt;/p&gt;
+
+&lt;p&gt;“所以我把它叫做‘屠夫式’。但这是我们一切科学知识的基础和来源。没有这些人，也就没有任何科学。他们应该得到应有的尊重——他们的人格，才智和他们使用的方法，都应该得到尊重。”&lt;/p&gt;
+
+&lt;p&gt;“有谁不尊重他们吗？”&lt;/p&gt;
+
+&lt;p&gt;“有很多，你可能就是一个。”&lt;/p&gt;
+
+&lt;p&gt;“此话怎讲？”&lt;/p&gt;
+
+&lt;p&gt;“他们用的是孤立，静止，片面的方法，这种方法有一个名称，你们中学老师教过你们吗？”&lt;/p&gt;
+
+&lt;p&gt;“叫形而上学，可那是个贬义词呀？”&lt;/p&gt;
+
+&lt;p&gt;“是的，就叫形而上学，这就是过去全部的科学家，现在大部分科学家使用的方法。”&lt;/p&gt;
+
+&lt;p&gt;“那为什么它是一个贬义词呢？”&lt;/p&gt;
+
+&lt;p&gt;“因为它和辩证法不相容，而且针锋相对。有些人不仅自以为是正确的，而且断定其他人都是错的。奇怪的是，辩证法整天讲什么对立统一，形而上学来和辩证法对立，他却不肯同一，而是对形而上学采取一棍子打死的态度。”&lt;/p&gt;
+
+&lt;p&gt;“我明白了。”&lt;/p&gt;
+
+&lt;p&gt;“使用第二种方法的也是科学家，我称之为‘强盗式’，这种科学家更重要。&lt;/p&gt;
+
+&lt;p&gt;他们什么也不干，坐等形而上学的科学家研究出比较确切的成果，在此基础上综合升华。千千万万的科学家研究了万万千千的动物，植物，微生物以后，达尔文拿来一综合，就提出了进化论。“&lt;/p&gt;
+
+&lt;p&gt;“这活倒很轻松。”&lt;/p&gt;
+
+&lt;p&gt;“一点也不轻松，而且需要更高的聪明才智和更加宽阔的视野。爱因斯坦是其中最出色的一位。他的视野非常开阔，甚至研究过辩证法。但是他说辩证法对他的研究没有任何帮助。”&lt;/p&gt;
+
+&lt;p&gt;“辩证法到底是干什么的呢？”&lt;/p&gt;
+
+&lt;p&gt;“研究世界的第三种方法就是辩证法的方法，我称之为‘上帝式’的方法。也就是我们下一节课的内容。“&lt;/p&gt;
+
+&lt;h4 id=&quot;最后一课&quot;&gt;最后一课&lt;/h4&gt;
+
+&lt;p&gt;“我被开除了，”教授说，“今天上最后一课。请先提问。”&lt;/p&gt;
+
+&lt;p&gt;我说：“有的同学说，你的观点有点偏激。”&lt;/p&gt;
+
+&lt;p&gt;“他说对了，我不仅偏激，而且有错误。上一节课我就故意设置了一个常识性的错误，但是你们并没有给我提出来。现在我不得不把最重要的东西教给你们：没有谁是全部正确的，最多只是正确了一部分。如果世界是那只大象，我们就是那一群摸象的瞎子。我们想知道大象的样子，但是我们谁也不可能把这只大象摸完。我所有的瞎子加在一起也不可能，如果你的一生只能摸完大象的尾巴，你一定要认真去摸。如果你确信自己完全了解了这支尾巴，你一定要坚持自己的观点。&lt;/p&gt;
+
+&lt;p&gt;不要听见别人说大象像柱子或者象扇子就轻易改变自己的观点。偏激并不可怕，可怕的是听风就是雨，毫无自己的主见。如果你坚持的错了，没什么大不了，一定有更聪明的瞎子给你指出错误。科学就是这样在成千上万的错误中提取一个真理的学问。但是如果你对了，却没有坚持，世界就失去了一次前进的机会。&lt;/p&gt;
+
+&lt;p&gt;“另外你要随时记住：无论你是对是错，你只是了解大象的一小部分。要听听别的瞎子怎么说。不能轻信，也不能不信。你别无选择，只有使用你的理性，它也许有许多不足，但却是你唯一可以信赖的东西。一个人的理性十分有限，许多人的理性却威力巨大。如果你不知道许多人的理性在那里，那么我告诉你——那就是科学。科学也有不足，以后一定要被突破。不过那需要许许多多比爱因斯坦更聪明的人，肯定不是你我。&lt;/p&gt;
+
+&lt;p&gt;“理性，批判和宽容，就是我所说的最重要的东西。”&lt;/p&gt;
+
+&lt;p&gt;这次我没有提问，也没有其他人提问。&lt;/p&gt;
+
+&lt;p&gt;“言归正传，继续谈辩证法。”教授只好自己接着说，“辩证法也是个瞎子，但是他不摸象。”&lt;/p&gt;
+
+&lt;p&gt;“他不想了解大象吗？”我问。&lt;/p&gt;
+
+&lt;p&gt;“他当然想了解大象，但是他认为摸象没有用，或者说作用不大。他认为大象在到处乱跑，还在不断地从小变大，而且与他周围的森林，地球，甚至太阳系，银河系有无限多的联系，用‘孤立，静止，片面’的形而上学观点徒劳无功，只有使用‘全面，发展，联系’的辩证法观点，才能搞清大象的样子。”&lt;/p&gt;
+
+&lt;p&gt;“可是他连象都不摸，怎么全面，发展，联系呢？”&lt;/p&gt;
+
+&lt;p&gt;“我不知道，鬼也不知道，只有上帝知道。所以我把它称为‘上帝式’的方法。辩证法最初在中国流行，伏羲八卦，阴阳五行，孔子的”过犹不及“，老子的”反者道之动“，《易经》”一阴一阳谓之道“，《黄帝内经》”内外调和，邪不能侵“统统都是辩证法。西方只有亚里斯多德提出过辩证法的雏形，既不全面，也不具体。恩格斯说他阐述了辩证法的基本原理，我不知道从何说起。不过这无关紧要，现代意义上的辩证法是从黑格尔开始的，这一点恩格斯和我，以及其他任何人，都不会有任何意见。”&lt;/p&gt;
+
+&lt;p&gt;“你只说恩格斯，怎么不提马克思？”&lt;/p&gt;
+
+&lt;p&gt;“马克思和辩证法关系不大。”&lt;/p&gt;
+
+&lt;p&gt;“辩证唯物主义不是不是马克思主义的灵魂吗？”&lt;/p&gt;
+
+&lt;p&gt;“我不同意这个观点，马克思早期写过一篇《神圣家族》，痛批黑格尔的”泛逻辑论“，泛逻辑论就包括辩证法。以后也没见他怎样说过辩证法。直到他最晚的哲学著作《资本论第二版跋》中，他才玩笑的说自己卖弄了辩证法。但是辩证法是什么，马克思终其一生，也没有回答过。”&lt;/p&gt;
+
+&lt;p&gt;“那么辩证法怎样进入马克思主义的呢？”&lt;/p&gt;
+
+&lt;p&gt;“完全是恩格斯的原因，从《反杜林论》到恩格斯致死不愿发表的《自然辩证法》，辩证法才成为马克思主义的所谓灵魂。这一点我和顾准的看法一样，马克思是不会同意‘辩证唯物主义’这个说法的。这完全是后人的需要。不过《反杜林论》是经过马克思同意的，这一点倒是事实。”&lt;/p&gt;
+
+&lt;p&gt;“辩证法有哪些内容？”&lt;/p&gt;
+
+&lt;p&gt;“首先是三大规律：第一，质量互变规律，来自黑格尔《逻辑学》第一部”存在论“。第二，矛盾统一规律，来自《逻辑学》第二部”本质论“。第三，否定之否定规律，来自《逻辑学》第三部”理念论“。这都是表面的东西，也就是马克思所说的”神秘外形“。它的根本在于用全面，发展，联系的观点看问题。它的实质是隐藏其后的两大主义：第一，真理一元论。反对真理的多元论和相对主义。这早已成为历史的垃圾。第二，真理不可分，局部事务的真理都是整体世界的一部分，孤立的研究发现不了这些真理。只有在森林中找树木，不能从树木开始研究森林。这不仅极其荒唐，而且毫不现实。”&lt;/p&gt;
+
+&lt;p&gt;“为什么不现实？”&lt;/p&gt;
+
+&lt;p&gt;“有个西方不败教授说得很好：事实充分证明，孤立的，静止的、片面地来研究事物的方法，在人类现有的认识情况下才是最好的方法论，才可能了解事物的本质。因为事物之间的联系千丝万缕，如果把所有的关联都考虑进去，就等于什么也干不成，就象我们老祖宗一样，只能抱着个”太极生两仪，两仪生四象，“这个思维懒怠症混日子。等到对事物的各种性状及规律有了较为详细的把握，再把它放到系统中进行非常谨慎的观察和研究。而中国人的传统思维是总想一口吃成个大胖子，一开始便从总体上提出本质的观点。这种带有原始思维特征的传统正与辩证法不谋而合，或者说辩证法只是中国古代思想方法的一种现代表述，中国人从来不缺少这种思维方式，需要补课的正是孤立的，静止的、片面地来研究事物的笨功夫。”&lt;/p&gt;
+
+&lt;p&gt;“辩证法到底是怎么来的呢？”&lt;/p&gt;
+
+&lt;p&gt;“你们中学教科书上是怎么讲的？”&lt;/p&gt;
+
+&lt;p&gt;“好像是对客观世界，人类社会以及思维规律的全面正确的总结。”&lt;/p&gt;
+
+&lt;p&gt;“这种说法极其荒唐，而且全然不顾任何事实。是彻底的误人子弟。第一，别说黑格尔活着的时候，就是在二十一世纪的今天，人类对客观世界仅仅了解一点，很小的一点。对人类社会只了解半点。对思维规律了解得半点也不到。一只大象我们只是了解了尾巴上的几个关节，腿上的几根毛，加上耳朵上一块皮而已，谈得上什么全面总结，正确总结？纯粹是说梦话。&lt;/p&gt;
+
+&lt;p&gt;“第二，你们可以看一看《马克思恩格斯选集》第三卷469页第十二行到第十四行：”黑格尔的著作中有一个广博的辩证法纲要，虽然它是从一个完全错误的出发点发展起来的。“恩格斯在不止二十个地方说过，这个错误的出发点就是唯心主义。谁都知道，恩格斯所谓的辩证法原版照抄的来自黑格尔的《逻辑学》，如他自己所说，只不过”打碎了黑格尔唯心主义的外壳，“取了他”辩证法的合理内核“。你相信吗？人类从许许多多正确的出发点出发，都要走上弯路。而一个叫黑格尔的帝国教授，却可以从一个错误的出发点出发，”全面地，正确地“总结出客观世界，人类社会以及思维的全部正确规律。这是人说的话吗？&lt;/p&gt;
+
+&lt;p&gt;“我绝不相信。就是再把我绑到新教徒的火刑柱上，把我烧死以前烤上两个小时，我仍然不相信！”&lt;/p&gt;
+
+&lt;p&gt;“我也不相信。”我小声说。&lt;/p&gt;
+
+&lt;p&gt;“可是相信的人相当多。自从打碎了基督教的枷锁，辩证法是科学发展道路上的最大障碍。他把现代科学斥责为不入流的形而上学，机械论。使科学在一些地方停滞不前。二十世纪二十年代，前苏联科学院的一个院长，就因为要搞农作物的杂交改良而丢了脑袋。”&lt;/p&gt;
+
+&lt;p&gt;“那为什么？”&lt;/p&gt;
+
+&lt;p&gt;“因为杂交改良依据的是孟德尔－摩尔根理论，与辩证法格格不入。”&lt;/p&gt;
+
+&lt;p&gt;“你很熟悉前苏联吗？”&lt;/p&gt;
+
+&lt;p&gt;“我最熟悉的是中国，我在这里住了几十年。可是打别人头上的苍蝇更轻松。”&lt;/p&gt;
+
+&lt;p&gt;我问：“对于辩证法的进攻，科学是怎么反击的呢？”&lt;/p&gt;
+
+&lt;p&gt;“西方哲学用实证主义，逻辑经验主义进行了反击。现代科学却默不做声。它只是不断地发展，生产出更多的粮食，钢铁，机器，以及人类除精神需要的一切。当这一切成为不可逆转的潮流的时候，辩证法才忽然发现，虽然它在骂别人，丢人的却是他自己。”&lt;/p&gt;
+
+&lt;p&gt;“辩证法没有任何可取之处吗？”&lt;/p&gt;
+
+&lt;p&gt;“有人说辩证法是一个早产的怪胎，虽然在人类认识的现阶段并不适用，但他整体的观点确实十分诱人。现代科学的整体论，有机论已经初具雏形。不过这不是对辩证法的回归，而是在科学自身的发展中，若隐若现地概括出的一些原则。真理一元论毕竟是难以接受的。科学从不放过任何一个发展的可能性，哪怕最微小的希望，也会有人付出百倍的努力。1984年，一大群名气很大的科学大师在美国成立了圣菲研究所（Santa Fe Institute），他们包括众多的诺贝尔奖获得者，是许多科学领域的顶尖人物，出钱的大老板也是赫赫有名——金融杀手索罗斯。它们的目标就是研究”一元化理论“的可能性。当然，他们谁也不会相信什么辩证法，那就不要研究“一元化”了。它们是用现代科学的方法探讨控制复杂的适应系统（CAS）的一般性原理。虽然我不相信他们会取得任何结果，但这是人类科学史上最大胆的尝试之一。我预祝他们成功——尽管那样会打破我的一切观念。”&lt;/p&gt;
+</description>
+        <pubDate>Sun, 22 Feb 2015 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/misc/2015/02/22/dialectics-and-fart</link>
+        <guid isPermaLink="true">http://localhost:4000/misc/2015/02/22/dialectics-and-fart</guid>
+        
+        <category>philosophy</category>
+        
+        <category>funny</category>
+        
+        
+        <category>misc</category>
+        
+      </item>
+    
+      <item>
+        <title>Maven over SOCKS proxy</title>
+        <description>&lt;p&gt;Setup a SSH tunnel to as SOCKS proxy:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ssh -D 8085 yourname@your.gateway.com
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now tell maven to use the proxy we just created:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mvn -U clean install -DsocksProxyHost=127.0.0.1 -DsocksProxyPort=8085
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Or export it to env for convenience.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export MAVEN_OPTS=&quot;-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=8085&quot;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>Fri, 20 Jun 2014 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/programming/2014/06/20/maven-over-socks-proxy</link>
+        <guid isPermaLink="true">http://localhost:4000/programming/2014/06/20/maven-over-socks-proxy</guid>
+        
+        <category>java</category>
+        
+        <category>maven</category>
+        
+        <category>proxy</category>
+        
+        
+        <category>programming</category>
+        
+      </item>
+    
+      <item>
+        <title>How to create a manifest file with Maven</title>
+        <description>&lt;p&gt;This tutorial will show you how to use the maven-jar-plugin to create a manifest file, and package / add it into the final jar file. The manifest file is normally used to define following tasks :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Define the entry point of the Application, make the Jar executable.&lt;/li&gt;
+  &lt;li&gt;Add project dependency classpath.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;When you run the command mvn package to package project into a Jar, the following &lt;code&gt;meta-inf/manifest.mf&lt;/code&gt; file will be generated and added into the final Jar file automatically.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Manifest-Version: 1.0
+Built-By: ${user.name}
+Build-Jdk: ${java.version}
+Created-By: Apache Maven
+Archiver-Version: Plexus Archiver
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;make-the-jar-executable&quot;&gt;Make the Jar executable&lt;/h2&gt;
+
+&lt;p&gt;Define &lt;code&gt;maven-jar-plugin&lt;/code&gt; in &lt;code&gt;pom.xml&lt;/code&gt;, and configure the manifest file via configuration tag.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;plugin&amp;gt;
+	&amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
+	&amp;lt;artifactId&amp;gt;maven-jar-plugin&amp;lt;/artifactId&amp;gt;
+	&amp;lt;version&amp;gt;2.4&amp;lt;/version&amp;gt;
+	&amp;lt;configuration&amp;gt;
+		&amp;lt;archive&amp;gt;
+			&amp;lt;manifest&amp;gt;
+				&amp;lt;mainClass&amp;gt;com.mkyong.core.App&amp;lt;/mainClass&amp;gt;
+			&amp;lt;/manifest&amp;gt;
+		&amp;lt;/archive&amp;gt;
+	&amp;lt;/configuration&amp;gt;
+&amp;lt;/plugin&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Following manifest file will be generated. If you run this Jar, it will execute the &lt;code&gt;com.mkyong.core.App&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;anifest-Version: 1.0
+Built-By: mkyong
+Build-Jdk: 1.6.0_35
+Created-By: Apache Maven
+Main-Class: com.mkyong.core.App
+Archiver-Version: Plexus Archiver
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;add-project-dependency-classpath&quot;&gt;Add project dependency classpath&lt;/h2&gt;
+
+&lt;p&gt;Most Java projects need dependency, and it can define in manifest file easily. Normally, you will use &lt;code&gt;maven-dependency-plugin&lt;/code&gt; to copy project dependencies to somewhere else.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  &amp;lt;plugin&amp;gt;
+	&amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
+	&amp;lt;artifactId&amp;gt;maven-jar-plugin&amp;lt;/artifactId&amp;gt;
+	&amp;lt;version&amp;gt;2.4&amp;lt;/version&amp;gt;
+	&amp;lt;configuration&amp;gt;
+	  &amp;lt;archive&amp;gt;
+	    &amp;lt;manifest&amp;gt;
+		&amp;lt;addClasspath&amp;gt;true&amp;lt;/addClasspath&amp;gt;
+		&amp;lt;mainClass&amp;gt;com.mkyong.core.App&amp;lt;/mainClass&amp;gt;
+		&amp;lt;classpathPrefix&amp;gt;dependency-jars/&amp;lt;/classpathPrefix&amp;gt;
+	    &amp;lt;/manifest&amp;gt;
+	  &amp;lt;/archive&amp;gt;
+	&amp;lt;/configuration&amp;gt;
+  &amp;lt;/plugin&amp;gt;
+  &amp;lt;plugin&amp;gt;
+	&amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
+	&amp;lt;artifactId&amp;gt;maven-dependency-plugin&amp;lt;/artifactId&amp;gt;
+	&amp;lt;version&amp;gt;2.5.1&amp;lt;/version&amp;gt;
+	&amp;lt;executions&amp;gt;
+	  &amp;lt;execution&amp;gt;
+		&amp;lt;id&amp;gt;copy-dependencies&amp;lt;/id&amp;gt;
+		&amp;lt;phase&amp;gt;package&amp;lt;/phase&amp;gt;
+		&amp;lt;goals&amp;gt;
+		    &amp;lt;goal&amp;gt;copy-dependencies&amp;lt;/goal&amp;gt;
+		&amp;lt;/goals&amp;gt;
+		&amp;lt;configuration&amp;gt;
+		    &amp;lt;outputDirectory&amp;gt;
+               ${project.build.directory}/dependency-jars/
+            &amp;lt;/outputDirectory&amp;gt;
+		&amp;lt;/configuration&amp;gt;
+	    &amp;lt;/execution&amp;gt;
+	&amp;lt;/executions&amp;gt;
+  &amp;lt;/plugin&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Following manifest file will be generated. The project dependencies will be copied to &lt;code&gt;{project}/target/dependency-jars/&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;manifest-Version: 1.0
+Built-By: mkyong
+Build-Jdk: 1.6.0_35
+Class-Path: dependency-jars/log4j-1.2.17.jar
+Created-By: Apache Maven
+Main-Class: com.mkyong.core.App
+Archiver-Version: Plexus Archiver
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;additional-notes&quot;&gt;Additional Notes&lt;/h2&gt;
+
+&lt;p&gt;When using the above &lt;code&gt;maven-dependency-plugin&lt;/code&gt;, Eclipse’s m2e plugin will report an error:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;maven-dependency-plugin (goals &quot;copy-dependencies&quot;, &quot;unpack&quot;) is not supported by m2e.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is a problem of M2E for &lt;a href=&quot;http://wiki.eclipse.org/M2E_plugin_execution_not_covered&quot;&gt;Eclipse M2E plugin execution not covered&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To solve this problem, all you got to do is to map the lifecycle it doesn’t recognize and instruct M2E to execute it.&lt;/p&gt;
+
+&lt;p&gt;You should add this after your &lt;code&gt;plugins&lt;/code&gt;, inside the &lt;code&gt;build&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;pluginManagement&amp;gt;
+  &amp;lt;plugins&amp;gt;
+    &amp;lt;plugin&amp;gt;
+      &amp;lt;groupId&amp;gt;org.eclipse.m2e&amp;lt;/groupId&amp;gt;
+      &amp;lt;artifactId&amp;gt;lifecycle-mapping&amp;lt;/artifactId&amp;gt;
+      &amp;lt;version&amp;gt;1.0.0&amp;lt;/version&amp;gt;
+      &amp;lt;configuration&amp;gt;
+        &amp;lt;lifecycleMappingMetadata&amp;gt;
+          &amp;lt;pluginExecutions&amp;gt;
+            &amp;lt;pluginExecution&amp;gt;
+              &amp;lt;pluginExecutionFilter&amp;gt;
+                &amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
+                &amp;lt;artifactId&amp;gt;maven-dependency-plugin&amp;lt;/artifactId&amp;gt;
+                &amp;lt;versionRange&amp;gt;[2.0,)&amp;lt;/versionRange&amp;gt;
+                &amp;lt;goals&amp;gt;
+                  &amp;lt;goal&amp;gt;copy-dependencies&amp;lt;/goal&amp;gt;
+                &amp;lt;/goals&amp;gt;
+              &amp;lt;/pluginExecutionFilter&amp;gt;
+              &amp;lt;action&amp;gt;
+                &amp;lt;execute /&amp;gt;
+              &amp;lt;/action&amp;gt;
+            &amp;lt;/pluginExecution&amp;gt;
+          &amp;lt;/pluginExecutions&amp;gt;
+        &amp;lt;/lifecycleMappingMetadata&amp;gt;
+      &amp;lt;/configuration&amp;gt;
+    &amp;lt;/plugin&amp;gt;
+  &amp;lt;/plugins&amp;gt;
+&amp;lt;/pluginManagement&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will remove the error and make M2E recognize the goal &lt;code&gt;copy-depencies&lt;/code&gt; of &lt;code&gt;maven-dependency-plugin&lt;/code&gt; and make the POM work as expected, copying dependencies to folder every time Eclipse build it. If you just want to ignore the error, then you change &lt;code&gt;&amp;lt;execute /&amp;gt;&lt;/code&gt; for &lt;code&gt;&amp;lt;ignore /&amp;gt;&lt;/code&gt;. No need for enclosing your &lt;code&gt;maven-dependency-plugin&lt;/code&gt; into &lt;code&gt;pluginManagement&lt;/code&gt;, as suggested before.&lt;/p&gt;
+
+&lt;p&gt;Please check &lt;a href=&quot;&quot;&gt;http://stackoverflow.com/questions/8706017/maven-dependency-plugin-goals-copy-dependencies-unpack-is-not-supported-b&lt;/a&gt; for more details.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 02 Nov 2013 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/programming/2013/11/02/how-to-create-a-manifest-file-with-maven</link>
+        <guid isPermaLink="true">http://localhost:4000/programming/2013/11/02/how-to-create-a-manifest-file-with-maven</guid>
+        
+        <category>programming</category>
+        
+        <category>java</category>
+        
+        <category>maven</category>
+        
+        
+        <category>programming</category>
+        
+      </item>
+    
+      <item>
+        <title>Create 'native' Java applications on OS X and Windows using Maven plugins</title>
+        <description>&lt;p&gt;When building a desktop application, the target audience usually expects an executable to when launching it. If the application is written in Java you have the options to create a batch file to launch it, create an executable jar file, compile the application as a native application or wrap the application using a native ‘launcher’. This post will result in a maven pom for dealing with the last option, it may be used in both Windows and OS X environments.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;The pom is configured to use two different plugins depending on which operating system that is executing it.&lt;/p&gt;
+
+&lt;p&gt;On Windows, a &lt;a href=&quot;http://launch4j.sourceforge.net/&quot;&gt;Launch4j&lt;/a&gt; project &lt;a href=&quot;http://alakai.org/reference/plugins/launch4j-plugin-usage.html&quot;&gt;plugin&lt;/a&gt; will be used. On OS X the &lt;a href=&quot;http://mojo.codehaus.org/osxappbundle-maven-plugin/&quot;&gt;osxappbundle&lt;/a&gt; plugin is used, which creates an OS X application directory structure and uses the &lt;code&gt;JavaApplicationStub&lt;/code&gt; binary for launching the application.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;&amp;lt;profile&amp;gt;&lt;/code&gt; tag is used for deciding which plugin to use depending on operating system.&lt;/p&gt;
+
+&lt;p&gt;The pom also points out different application icons for the binaries, OS X requires the icon to be in the &lt;a href=&quot;http://en.wikipedia.org/wiki/Apple_Icon_Image_format&quot;&gt;icns&lt;/a&gt; and windows in the &lt;a href=&quot;http://en.wikipedia.org/wiki/ICO_(file_format)&quot;&gt;ico&lt;/a&gt; format.&lt;/p&gt;
+
+&lt;p&gt;The wrapped application has a main class in the file &lt;code&gt;com.jayway.wrappedapplication.Launcher&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;the-pomxml&quot;&gt;The pom.xml&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemalocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd&quot;&amp;gt;
+  &amp;lt;modelversion&amp;gt;4.0.0&amp;lt;/modelversion&amp;gt;
+  &amp;lt;groupid&amp;gt;com.jayway.wrappedapplication&amp;lt;/groupid&amp;gt;
+  &amp;lt;artifactid&amp;gt;launcher&amp;lt;/artifactid&amp;gt;
+  &amp;lt;packaging&amp;gt;jar&amp;lt;/packaging&amp;gt;
+  &amp;lt;version&amp;gt;1.0-SNAPSHOT&amp;lt;/version&amp;gt;
+  &amp;lt;name&amp;gt;launcher&amp;lt;/name&amp;gt;
+  &amp;lt;url&amp;gt;http://maven.apache.org&amp;lt;/url&amp;gt;
+  &amp;lt;profiles&amp;gt;
+    &amp;lt;profile&amp;gt;
+      &amp;lt;id&amp;gt;windows-deploy&amp;lt;/id&amp;gt;
+      &amp;lt;activation&amp;gt;
+        &amp;lt;os&amp;gt;
+          &amp;lt;family&amp;gt;Windows&amp;lt;/family&amp;gt;
+        &amp;lt;/os&amp;gt;
+      &amp;lt;/activation&amp;gt;
+      &amp;lt;build&amp;gt;
+        &amp;lt;plugins&amp;gt;
+          &amp;lt;plugin&amp;gt;
+            &amp;lt;groupid&amp;gt;org.bluestemsoftware.open.maven.plugin&amp;lt;/groupid&amp;gt;
+            &amp;lt;artifactid&amp;gt;launch4j-plugin&amp;lt;/artifactid&amp;gt;
+            &amp;lt;version&amp;gt;1.5.0.0&amp;lt;/version&amp;gt;
+            &amp;lt;executions&amp;gt;
+              &amp;lt;execution&amp;gt;
+                &amp;lt;id&amp;gt;launch4j&amp;lt;/id&amp;gt;
+                &amp;lt;phase&amp;gt;verify&amp;lt;/phase&amp;gt;
+                &amp;lt;goals&amp;gt;
+                  &amp;lt;goal&amp;gt;launch4j&amp;lt;/goal&amp;gt;
+                &amp;lt;/goals&amp;gt;
+                &amp;lt;configuration&amp;gt;
+                  &amp;lt;dontwrapjar&amp;gt;false&amp;lt;/dontwrapjar&amp;gt;
+                  &amp;lt;headertype&amp;gt;gui&amp;lt;/headertype&amp;gt;
+                  &amp;lt;outfile&amp;gt;${project.build.directory}/relauncher-${project.version}.exe&amp;lt;/outfile&amp;gt;
+                  &amp;lt;jar&amp;gt;${project.build.directory}/${project.build.finalName}.jar&amp;lt;/jar&amp;gt;
+                  &amp;lt;errtitle&amp;gt;Launcher&amp;lt;/errtitle&amp;gt;
+                  &amp;lt;jre&amp;gt;
+                    &amp;lt;minversion&amp;gt;1.6.0&amp;lt;/minversion&amp;gt;
+                  &amp;lt;/jre&amp;gt;
+                  &amp;lt;classpath&amp;gt;
+                    &amp;lt;mainclass&amp;gt;com.jayway.wrappedapplication.Launcher&amp;lt;/mainclass&amp;gt;
+                    &amp;lt;adddependencies&amp;gt;false&amp;lt;/adddependencies&amp;gt;
+                    &amp;lt;precp&amp;gt;anything&amp;lt;/precp&amp;gt;
+                  &amp;lt;/classpath&amp;gt;
+                  &amp;lt;icon&amp;gt;${basedir}/build-resources/win/icons/application.ico&amp;lt;/icon&amp;gt;
+                &amp;lt;/configuration&amp;gt;
+              &amp;lt;/execution&amp;gt;
+            &amp;lt;/executions&amp;gt;
+          &amp;lt;/plugin&amp;gt;
+        &amp;lt;/plugins&amp;gt;
+      &amp;lt;/build&amp;gt;
+    &amp;lt;/profile&amp;gt;
+    &amp;lt;profile&amp;gt;
+      &amp;lt;activation&amp;gt;
+        &amp;lt;os&amp;gt;
+          &amp;lt;family&amp;gt;mac&amp;lt;/family&amp;gt;
+        &amp;lt;/os&amp;gt;
+      &amp;lt;/activation&amp;gt;
+      &amp;lt;build&amp;gt;
+        &amp;lt;plugins&amp;gt;
+          &amp;lt;plugin&amp;gt;
+            &amp;lt;groupid&amp;gt;org.codehaus.mojo&amp;lt;/groupid&amp;gt;
+            &amp;lt;artifactid&amp;gt;osxappbundle-maven-plugin&amp;lt;/artifactid&amp;gt;
+            &amp;lt;version&amp;gt;1.0-alpha-2&amp;lt;/version&amp;gt;
+            &amp;lt;configuration&amp;gt;
+              &amp;lt;mainclass&amp;gt;com.jayway.wrappedapplication.Launcher&amp;lt;/mainclass&amp;gt;
+              &amp;lt;iconfile&amp;gt;${basedir}/build-resources/osx/icons/application.icns&amp;lt;/iconfile&amp;gt;
+            &amp;lt;/configuration&amp;gt;
+            &amp;lt;executions&amp;gt;
+              &amp;lt;execution&amp;gt;
+                &amp;lt;phase&amp;gt;package&amp;lt;/phase&amp;gt;
+                &amp;lt;goals&amp;gt;
+                  &amp;lt;goal&amp;gt;bundle&amp;lt;/goal&amp;gt;
+                &amp;lt;/goals&amp;gt;
+              &amp;lt;/execution&amp;gt;
+            &amp;lt;/executions&amp;gt;
+          &amp;lt;/plugin&amp;gt;
+        &amp;lt;/plugins&amp;gt;
+      &amp;lt;/build&amp;gt;
+    &amp;lt;/profile&amp;gt;
+  &amp;lt;/profiles&amp;gt;
+&amp;lt;/project&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And that’s it.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 02 Nov 2013 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/programming/2013/11/02/create-native-java-applications-on-os-x-and-windows-using-maven-plugins</link>
+        <guid isPermaLink="true">http://localhost:4000/programming/2013/11/02/create-native-java-applications-on-os-x-and-windows-using-maven-plugins</guid>
+        
+        <category>programming</category>
+        
+        <category>java</category>
+        
+        <category>maven</category>
+        
+        <category>Mac OS X</category>
+        
+        <category>Windows</category>
+        
+        
+        <category>programming</category>
+        
+      </item>
+    
+      <item>
+        <title>Maven Tip: Get sources and Javadocs</title>
+        <description>&lt;p&gt;When you’re using Maven in an IDE you often find the need for your IDE to resolve source code and Javadocs for your library dependencies. There’s an easy way to accomplish that goal.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# mvn dependency:sources
+# mvn dependency:resolve -Dclassifier=javadoc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The first command will attempt to download source code for each of the dependencies in your pom file.&lt;/p&gt;
+
+&lt;p&gt;The second command will attempt to download the Javadocs.&lt;/p&gt;
+
+&lt;p&gt;Maven is at the mercy of the library packagers here. So some of them won’t have source code packaged and many of them won’t have Javadocs.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 31 Oct 2013 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/programming/2013/10/31/maven-tip-get-sources-and-javadocs</link>
+        <guid isPermaLink="true">http://localhost:4000/programming/2013/10/31/maven-tip-get-sources-and-javadocs</guid>
+        
+        <category>programming</category>
+        
+        <category>maven</category>
+        
+        <category>java</category>
+        
+        
+        <category>programming</category>
         
       </item>
     

@@ -1,33 +1,95 @@
-# This is the default format. 
+# This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title 
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+markdown: kramdown
+#markdown: maruku
+markdown_ext: markdown,mkd,mkdn,md
+permalink: /:categories/:year/:month/:day/:title
+exclude:
+    - ".rvmrc"
+    - ".rbenv-version"
+    - "README.md"
+    - "Rakefile"
+    - "changelog.md"
+    - "bower.json"
+
+# set pygments to true in order to support syntax highlight
 highlighter: pygments
 
-# Themes are encouraged to use these universal variables 
+# support the pagination
+paginate: 5
+paginate_path: "archive/page:num"
+
+# The separator for exceprt
+excerpt_separator: <!--more-->
+
+# Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
 title : 蓝海的科学世界
-tagline: 这里有一个问题
+tagline: We shall raise
 author :
   name : Hai Lan
   email : lh_loki@163.com
   github : lhloki
-  twitter : username
-  feedburner : feedname
+#  facebook: starfish.hu
+  wechat: 13127900572
+#  linkedin: haixing
+# twitter : username
+# feedburner : feedname
+
+# The license for the articles of the site
+license:
+  url: http://creativecommons.org/licenses/by-nc-sa/3.0/
+  img:
+    - /img/cc.png
+    - /img/by.png
+    - /img/nc.png
+    - /img/sa.png
+
+# Configurations for the menu items of the navigation bar
+menuitems:
+    - { title:    学投资, 
+        category: investment,
+        url:      /investment.html }
+    - { title:    FOF与MOM, 
+        category: fof,mom,
+        url:      /fof.html }
+    - { title:    数据与R, 
+        category: data,R,Python,
+        url:      /data.html }
+    - { title:    生活, 
+        category: life,hike,food,
+        url:      /life.html }
+    - { title:    Misc, 
+        category: misc,
+        url:      /misc.html }
+    - { title:    笔迹, 
+        url:      /archive.html }
+    - { title:    标签, 
+        url:      /tags.html }
+    - { title:    About,
+        category: about,
+        url:   /who.html } 
+
+sections:
+    - research
+    - programming
+    - computer
+    - life
+    - misc
+    - archive
+    - tags
 
 # The production_url is only used when full-domain names are needed
-# such as sitemap.txt 
+# such as sitemap.txt
 # Most places will/should use BASE_PATH to make the urls
 #
 # If you have set a CNAME (pages.github.com) set your custom domain here.
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.io
-
-gems: ["jekyll-sitemap"]
+production_url : http://haixing-hu.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -39,11 +101,11 @@ JB :
   # however this value will be dynamically changed depending on your deployment situation.
   #
   # CNAME (http://yourcustomdomain.com)
-  #   DO NOT SET BASE_PATH 
+  #   DO NOT SET BASE_PATH
   #   (urls will be prefixed with "/" and work relatively)
   #
   # GitHub Pages (http://username.github.io)
-  #   DO NOT SET BASE_PATH 
+  #   DO NOT SET BASE_PATH
   #   (urls will be prefixed with "/" and work relatively)
   #
   # GitHub Project Pages (http://username.github.io/project-name)
@@ -59,10 +121,10 @@ JB :
   BASE_PATH : false
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
-  # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
+  # ex: [BASE_PATH]/themes/[THEME-NAME]
   #
   # Override this by defining an absolute path to assets here.
-  # ex: 
+  # ex:
   #   http://s3.amazonaws.com/yoursite/themes/watermelon
   #   /assets
   #
@@ -74,72 +136,82 @@ JB :
   archive_path: /archive.html
   categories_path : /categories.html
   tags_path : /tags.html
-  atom_path : /atom.xml
-  rss_path : /rss.xml
+  atom_path : /feed.atom
+  rss_path : /feed.rss
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : youyan 
+    provider : disqus
     disqus :
-      short_name : jekyllbootstrap
-    livefyre :
-      site_id : 123
-    intensedebate :
-      account : 123abc
-    facebook :
-      appid : 123
-      num_posts: 5
-      width: 580
-      colorscheme: light
-    duoshuo :
-      short_name : jekyllbootstrap
-   
+      short_name : haixing
+    # livefyre :
+    #   site_id : 123
+    # intensedebate :
+    #   account : 123abc
+    # facebook :
+    #   appid : 123
+    #   num_posts: 5
+    #   width: 580
+    #   colorscheme: light
+
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
   # Set 'provider' to false to turn analytics off globally.
-  #        
+  #
   analytics :
     provider : google
-    gauges :
-        site_id : 'SITE ID'
-    google : 
-        tracking_id : 'UA-123-12'
-    getclicky :
-      site_id : 
-    mixpanel :
-        token : '_MIXPANEL_TOKEN_'
-    piwik :
-        baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
-        idsite : '1'                   # the id of the site on Piwik
+    google :
+        tracking_id : 'UA-44085641-1'
+    # getclicky :
+    #   site_id :
+    # mixpanel :
+    #     token : '_MIXPANEL_TOKEN_'
+    # piwik :
+    #     baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
+    #     idsite : '1'                   # the id of the site on Piwik
 
-  # Settings for sharing helper. 
-  # Sharing is for things like tweet, plusone, like, reddit buttons etc.
+
+  # Settings for sharing
+  # Sharing is for things like google plus, facebook, twitter, linkedin, etc.
+  # Add a google plus one button 	  => provider : googleplus
+  # Add a facebook like button        => provider : facebook
+  # Add a twitter button              => provider : twitter
+  # Add a linkedin button             => provider : linkedin
   # Set 'provider' to the sharing provider you want to use.
   # Set 'provider' to false to turn sharing off globally.
+  # Set 'provider' to an array of sharing providers if you want to use more than one
+  # Set the post's 'sharing' metadata to 'false' to turn sharing off for the page
+  #
+  # NOTE: in order to make the buttons aligned in the same line, it's better to
+  # put the 'facebook' at the frist and put the 'googleplus' at the last.
   #
   sharing :
-    provider : false
-    
-  # Settings for all other include helpers can be defined by creating 
+     provider : [facebook, googleplus]
+     facebook :
+       layout : button_count
+       faces : false
+       width : 90
+     googleplus :
+       annotation : bubble
+       size : medium
+       width : 20
+     twitter :
+       size :
+       via :
+       count :
+     linkedin :
+       counter : right
+
+  # Settings for all other include helpers can be defined by creating
   # a hash with key named for the given helper. ex:
   #
   #   pages_list :
-  #     provider : "custom"   
+  #     provider : "custom"
   #
   # Setting any helper's provider to 'custom' will bypass the helper code
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-  
-pygments: true
-safe: true
-auto: true
-markdown: kramdown
-#markdown: maruku
-#markdown: redcarpet
-#redcarpet:
-#    extensions: ["no_intra_enphasis"]
-

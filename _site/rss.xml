@@ -3,10 +3,10 @@
 <channel>
         <title>蓝海的科学世界</title>
         <description>蓝海的科学世界 - Hai Lan</description>
-        <link>http://username.github.io</link>
-        <atom:link href="http://username.github.io/rss.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Sun, 04 Jun 2017 20:16:50 +0800</lastBuildDate>
-        <pubDate>Sun, 04 Jun 2017 20:16:50 +0800</pubDate>
+        <link>http://haixing-hu.github.io</link>
+        <atom:link href="http://haixing-hu.github.io/feed.rss" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Sun, 04 Jun 2017 22:43:08 +0800</lastBuildDate>
+        <pubDate>Sun, 04 Jun 2017 22:43:08 +0800</pubDate>
         <ttl>60</ttl>
 
 
@@ -27,8 +27,8 @@
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-                <link>http://username.github.io/jekyll/update/2017/06/04/welcome-to-jekyll</link>
-                <guid>http://username.github.io/jekyll/update/2017/06/04/welcome-to-jekyll</guid>
+                <link>http://haixing-hu.github.io/jekyll/update/2017/06/04/welcome-to-jekyll</link>
+                <guid>http://haixing-hu.github.io/jekyll/update/2017/06/04/welcome-to-jekyll</guid>
                 <pubDate>Sun, 04 Jun 2017 11:25:38 +0800</pubDate>
         </item>
 
@@ -85,8 +85,8 @@ Is it O.K.?&lt;/p&gt;
 \end{align*}
 Is it O.K.?&lt;/p&gt;
 </description>
-                <link>http://username.github.io/%E6%8A%95%E8%B5%84%E5%AD%A6%E8%AF%BE%E7%A8%8B/%E8%B5%84%E4%BA%A7%E9%85%8D%E7%BD%AE/2017/04/26/math</link>
-                <guid>http://username.github.io/%E6%8A%95%E8%B5%84%E5%AD%A6%E8%AF%BE%E7%A8%8B/%E8%B5%84%E4%BA%A7%E9%85%8D%E7%BD%AE/2017/04/26/math</guid>
+                <link>http://haixing-hu.github.io/%E6%8A%95%E8%B5%84%E5%AD%A6%E8%AF%BE%E7%A8%8B/%E8%B5%84%E4%BA%A7%E9%85%8D%E7%BD%AE/2017/04/26/math</link>
+                <guid>http://haixing-hu.github.io/%E6%8A%95%E8%B5%84%E5%AD%A6%E8%AF%BE%E7%A8%8B/%E8%B5%84%E4%BA%A7%E9%85%8D%E7%BD%AE/2017/04/26/math</guid>
                 <pubDate>Wed, 26 Apr 2017 11:25:38 +0800</pubDate>
         </item>
 
@@ -105,19 +105,18 @@ $$
 &lt;/div&gt;
 &lt;p&gt;其中&lt;span&gt;$r_p$&lt;/span&gt;为投资组合的回报率，其与各产品回报率的关系为
 &lt;script type=&quot;math/tex&quot;&gt;r_p=\sum_{i=1}^n w_i r_i&lt;/script&gt;
-其中需要注意的是&lt;code&gt;$w_i$&lt;/code&gt;为资金权重；&lt;code&gt;$r_i$&lt;/code&gt;为产品&lt;code&gt;$i$&lt;/code&gt;的投资回报率。&lt;code&gt;$A$&lt;/code&gt;刻画了投资者对于风险或者说不确定性的厌恶程度，其值越大，投资者越厌恶风险。&lt;/p&gt;
+其中需要注意的是$w_i$为资金权重；$r_i$为产品$i$的投资回报率。$A$刻画了投资者对于风险或者说不确定性的厌恶程度，其值越大，投资者越厌恶风险。&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;投资者对于各产品期望收益有明确的判断。即&lt;code&gt;$E(r_i)$&lt;/code&gt;已给出。&lt;/li&gt;
+  &lt;li&gt;投资者对于各产品期望收益有明确的判断。即$E(r_i)$已给出。&lt;/li&gt;
   &lt;li&gt;投资者对于产品的风险——以方差描述有充分的认识并且能够识别相互之间的相关性。即
-    &lt;pre&gt;&lt;code class=&quot;language-math&quot;&gt;\Sigma = \begin{pmatrix} 
-\sigma^2_1&amp;amp;cov(r_1,r_2)&amp;amp;\cdots&amp;amp;cov(r_1,r_n) \\
-cov(r_2,r_1)&amp;amp;\sigma^2_2&amp;amp;\cdots&amp;amp;cov(r_2,r_n)\\
-\vdots&amp;amp; \vdots&amp;amp; \ddots&amp;amp;\vdots \\
-cov(r_n,r_1)&amp;amp;cov(r_n,r_2)&amp;amp;\cdots&amp;amp;\sigma^2_n
-\end{pmatrix} 
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;p&gt;已给出。&lt;/p&gt;
-  &lt;/li&gt;
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\Sigma = \begin{pmatrix} 
+\sigma^2_1&amp;cov(r_1,r_2)&amp;\cdots&amp;cov(r_1,r_n) \\
+cov(r_2,r_1)&amp;\sigma^2_2&amp;\cdots&amp;cov(r_2,r_n)\\
+\vdots&amp; \vdots&amp; \ddots&amp;\vdots \\
+cov(r_n,r_1)&amp;cov(r_n,r_2)&amp;\cdots&amp;\sigma^2_n
+\end{pmatrix} %]]&gt;&lt;/script&gt;
+已给出。&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;当然我们完全可以对于这些给出的参数是如何估计的，以及它们的估计误差带来的计算结果的不确定进行讨论。实际上这些讨论是必要并且有趣的，在实际应用中也有非常重要的结果。但是目前，我们先接受这些给出的已知，来看看基于此会得到什么样的结果。然后，我们在后续的讨论中再回过头来分析这些参数的估计问题。&lt;/p&gt;
@@ -153,18 +152,20 @@ cov(r_n,r_1)&amp;amp;cov(r_n,r_2)&amp;amp;\cdots&amp;amp;\sigma^2_n
 
 &lt;p&gt;受限于监管，无做空方法。同时为准备流动性，要求不低于10%的资产投资于银行存款等高流动性，基本无风险的产品，其收益率为3%左右。&lt;/p&gt;
 &lt;h2 id=&quot;数学描述&quot;&gt;数学描述&lt;/h2&gt;
-&lt;p&gt;我们预判投资者的风险偏好系数&lt;code&gt;$A=3$&lt;/code&gt;。我们面对的问题是在有约束条件的情况下获得投资者的效用最大化。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-math&quot;&gt;\max E[U(r_p)]=E(r_p)-\frac{3}{2}Var(r_p)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;我们预判投资者的风险偏好系数$A=3$。我们面对的问题是在有约束条件的情况下获得投资者的效用最大化。&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\max E[U(r_p)]=E(r_p)-\frac{3}{2}Var(r_p)&lt;/script&gt;
+
 &lt;p&gt;约束于&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-math&quot;&gt;w_A+w_B \leq 0.9 
-
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+w_A+w_B \leq 0.9 \\\\
 w_A,w_B \geq 0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;其中&lt;code&gt;$w_A,w_B$&lt;/code&gt;分别是投资于基金A和B的资金权重；总投资组合回报&lt;code&gt;$r_p$&lt;/code&gt;满足&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-math&quot;&gt;r_p=(1-w_A-w_B) 3\%+w_A 15\%+w_B 12\%
-&lt;/code&gt;&lt;/pre&gt;
+\end{align*}&lt;/script&gt;
+
+&lt;p&gt;其中$w_A,w_B$分别是投资于基金A和B的资金权重；总投资组合回报$r_p$满足&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;r_p=(1-w_A-w_B) 3\%+w_A 15\%+w_B 12\%&lt;/script&gt;
 
 &lt;h2 id=&quot;r实现&quot;&gt;R实现&lt;/h2&gt;
 &lt;p&gt;R是一个交互式的统计计算交互式环境与编程语言，它是学界的挚爱也是工业界的新宠。在 www.r-project.org 网站可以免费获取。R已经包括了很多的金融计算模块用来解决资产配置的问题。此处我们使用一个相对基础一点模块来解决我们的问题，为的是把更多的细节展现出来。
@@ -174,13 +175,13 @@ w_A,w_B \geq 0
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt;目标&lt;/th&gt;
-      &lt;th&gt;&lt;code&gt;$\min -d^t x + \frac{1}{2}x^t D x$&lt;/code&gt;&lt;/th&gt;
+      &lt;th&gt;$\min -d^t x + \frac{1}{2}x^t D x$&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;td&gt;约束&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;$A^tx\geq x_0$&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;$A^tx\geq x_0$&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -219,432 +220,2035 @@ $iact
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;即：总资产的55.1%投向基金A，34.9%投向基金B，而剩下的10%投向银行存款或类似的货币产品。而同时计算结果也给出了在无约束情况下的资产配置的情况作为对比。在无约束的情况下，最大的投融资活动是借款——投资者偏好使用越1:1.5的杠杆；而最大的资金投向是基金B，这与约束情况下超过50%的资金投向基金A是不一致的。&lt;/p&gt;
 </description>
-                <link>http://username.github.io/%E6%8A%95%E8%B5%84%E5%AD%A6%E8%AF%BE%E7%A8%8B/%E8%B5%84%E4%BA%A7%E9%85%8D%E7%BD%AE/2017/04/25/%E4%BD%BF%E7%94%A8R%E8%A7%A3%E5%86%B3%E8%B5%84%E4%BA%A7%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98</link>
-                <guid>http://username.github.io/%E6%8A%95%E8%B5%84%E5%AD%A6%E8%AF%BE%E7%A8%8B/%E8%B5%84%E4%BA%A7%E9%85%8D%E7%BD%AE/2017/04/25/使用R解决资产配置问题</guid>
+                <link>http://haixing-hu.github.io/investment/2017/04/25/%E4%BD%BF%E7%94%A8R%E8%A7%A3%E5%86%B3%E8%B5%84%E4%BA%A7%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98</link>
+                <guid>http://haixing-hu.github.io/investment/2017/04/25/使用R解决资产配置问题</guid>
                 <pubDate>Tue, 25 Apr 2017 11:25:38 +0800</pubDate>
         </item>
 
         <item>
-                <title>Jekyll Introduction</title>
-                <description>
-&lt;p&gt;This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
-Directly following the intro we’ll learn exactly &lt;em&gt;how&lt;/em&gt; Jekyll does what it does.&lt;/p&gt;
+                <title>How to symbolic link a directory to Tomcat's webapp</title>
+                <description>&lt;p&gt;I found that using the command sudo mount –bind olddir newdir gets me out of
+trouble. If you don’t have root access then this won’t work for you. See
+&lt;code&gt;mount --help&lt;/code&gt; or &lt;code&gt;man mount&lt;/code&gt; for some more info on binding but it basically
+mounts one directory on top of another so it has the same affect as a symlink
+but it gets around tomcat’s limitation with symlinks.&lt;/p&gt;
 
-&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;More precisely, executes the following command:&lt;/p&gt;
 
-&lt;h3 id=&quot;what-is-jekyll&quot;&gt;What is Jekyll?&lt;/h3&gt;
-
-&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
-dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as “a simple, blog aware, static site generator”.&lt;/p&gt;
-
-&lt;h3 id=&quot;examples&quot;&gt;Examples&lt;/h3&gt;
-
-&lt;p&gt;This website is created with Jekyll. &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Sites&quot;&gt;Other Jekyll websites&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-does-jekyll-do&quot;&gt;What does Jekyll Do?&lt;/h3&gt;
-
-&lt;p&gt;Jekyll is a ruby gem you install on your local system.
-Once there you can call &lt;code&gt;jekyll --server&lt;/code&gt; on a directory and provided that directory
-is setup in a way jekyll expects, it will do magic stuff like parse markdown/textile files,
-compute categories, tags, permalinks, and construct your pages from layout templates and partials.&lt;/p&gt;
-
-&lt;p&gt;Once parsed, Jekyll stores the result in a self-contained static &lt;code&gt;_site&lt;/code&gt; folder.
-The intention here is that you can serve all contents in this folder statically from a plain static web-server.&lt;/p&gt;
-
-&lt;p&gt;You can think of Jekyll as a normalish dynamic blog but rather than parsing content, templates, and tags
-on each request, Jekyll does this once &lt;em&gt;beforehand&lt;/em&gt; and caches the &lt;em&gt;entire website&lt;/em&gt; in a folder for serving statically.&lt;/p&gt;
-
-&lt;h3 id=&quot;jekyll-is-not-blogging-software&quot;&gt;Jekyll is Not Blogging Software&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Jekyll is a parsing engine.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Jekyll does not come with any content nor does it have any templates or design elements.
-This is a common source of confusion when getting started.
-Jekyll does not come with anything you actually use or see on your website - you have to make it.&lt;/p&gt;
-
-&lt;h3 id=&quot;why-should-i-care&quot;&gt;Why Should I Care?&lt;/h3&gt;
-
-&lt;p&gt;Jekyll is very minimalistic and very efficient.
-The most important thing to realize about Jekyll is that it creates a static representation of your website requiring only a static web-server.
-Traditional dynamic blogs like Wordpress require a database and server-side code.
-Heavily trafficked dynamic blogs must employ a caching layer that ultimately performs the same job Jekyll sets out to do; serve static content.&lt;/p&gt;
-
-&lt;p&gt;Therefore if you like to keep things simple and you prefer the command-line over an admin panel UI then give Jekyll a try.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Developers like Jekyll because we can write content like we write code:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Ability to write content in markdown or textile in your favorite text-editor.&lt;/li&gt;
-  &lt;li&gt;Ability to write and preview your content via localhost.&lt;/li&gt;
-  &lt;li&gt;No internet connection required.&lt;/li&gt;
-  &lt;li&gt;Ability to publish via git.&lt;/li&gt;
-  &lt;li&gt;Ability to host your blog on a static web-server.&lt;/li&gt;
-  &lt;li&gt;Ability to host freely on GitHub Pages.&lt;/li&gt;
-  &lt;li&gt;No database required.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;how-jekyll-works&quot;&gt;How Jekyll Works&lt;/h1&gt;
-
-&lt;p&gt;The following is a complete but concise outline of exactly how Jekyll works.&lt;/p&gt;
-
-&lt;p&gt;Be aware that core concepts are introduced in rapid succession without code examples.
-This information is not intended to specifically teach you how to do anything, rather it
-is intended to give you the &lt;em&gt;full picture&lt;/em&gt; relative to what is going on in Jekyll-world.&lt;/p&gt;
-
-&lt;p&gt;Learning these core concepts should help you avoid common frustrations and ultimately
-help you better understand the code examples contained throughout Jekyll-Bootstrap.&lt;/p&gt;
-
-&lt;h2 id=&quot;initial-setup&quot;&gt;Initial Setup&lt;/h2&gt;
-
-&lt;p&gt;After &lt;a href=&quot;/index.html#start-now&quot;&gt;installing jekyll&lt;/a&gt; you’ll need to format your website directory in a way jekyll expects.
-Jekyll-bootstrap conveniently provides the base directory format.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-jekyll-application-base-format&quot;&gt;The Jekyll Application Base Format&lt;/h3&gt;
-
-&lt;p&gt;Jekyll expects your website directory to be laid out like so:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;.
-|-- _config.yml
-|-- _includes
-|-- _layouts
-|   |-- default.html
-|   |-- post.html
-|-- _posts
-|   |-- 2011-10-25-open-source-is-good.markdown
-|   |-- 2011-04-26-hello-world.markdown
-|-- _site
-|-- index.html
-|-- assets
-    |-- css
-        |-- style.css
-    |-- javascripts
+&lt;pre&gt;&lt;code&gt;sudo mount --bind /path/to/your/app /var/lib/tomcat7/webapps/myapp
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;_config.yml&lt;/strong&gt;
-  Stores configuration data.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;_includes&lt;/strong&gt;
-  This folder is for partial views.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;_layouts&lt;/strong&gt;
-  This folder is for the main templates your content will be inserted into.
-  You can have different layouts for different pages or page sections.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;_posts&lt;/strong&gt;
-  This folder contains your dynamic content/posts.
-  the naming format is required to be &lt;code&gt;@YEAR-MONTH-DATE-title.MARKUP@&lt;/code&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;_site&lt;/strong&gt;
-  This is where the generated site will be placed once Jekyll is done transforming it.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;assets&lt;/strong&gt;
-  This folder is not part of the standard jekyll structure.
-  The assets folder represents &lt;em&gt;any generic&lt;/em&gt; folder you happen to create in your root directory.
-  Directories and files not properly formatted for jekyll will be left untouched for you to serve normally.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;and then the &lt;code&gt;/var/lib/tomcat7/webapps/myapp&lt;/code&gt; will be linked to &lt;code&gt;/path/to/your/app&lt;/code&gt;.&lt;/p&gt;
+</description>
+                <link>http://haixing-hu.github.io/programming/2015/12/18/how-to-symbolic-link-a-directory-to-tomcats-webapp</link>
+                <guid>http://haixing-hu.github.io/programming/2015/12/18/how-to-symbolic-link-a-directory-to-tomcats-webapp</guid>
+                <pubDate>Fri, 18 Dec 2015 00:00:00 +0800</pubDate>
+        </item>
 
-&lt;p&gt;(read more: &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Usage&quot;&gt;https://github.com/mojombo/jekyll/wiki/Usage&lt;/a&gt;)&lt;/p&gt;
+        <item>
+                <title>How to implements the 'drop user if exists' in MySQL</title>
+                <description>&lt;p&gt;MySQL has no &lt;code&gt;DROP USER IF EXISTS ...&lt;/code&gt; syntax.&lt;/p&gt;
 
-&lt;h3 id=&quot;jekyll-configuration&quot;&gt;Jekyll Configuration&lt;/h3&gt;
+&lt;p&gt;The following code imexplicitly creates the user and then drop the user.&lt;/p&gt;
 
-&lt;p&gt;Jekyll supports various configuration options that are fully outlined here:
-(&lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Configuration&quot;&gt;https://github.com/mojombo/jekyll/wiki/Configuration&lt;/a&gt;)&lt;/p&gt;
-
-&lt;h2 id=&quot;content-in-jekyll&quot;&gt;Content in Jekyll&lt;/h2&gt;
-
-&lt;p&gt;Content in Jekyll is either a post or a page.
-These content “objects” get inserted into one or more templates to build the final output for its respective static-page.&lt;/p&gt;
-
-&lt;h3 id=&quot;posts-and-pages&quot;&gt;Posts and Pages&lt;/h3&gt;
-
-&lt;p&gt;Both posts and pages should be written in markdown, textile, or HTML and may also contain Liquid templating syntax.
-Both posts and pages can have meta-data assigned on a per-page basis such as title, url path, as well as arbitrary custom meta-data.&lt;/p&gt;
-
-&lt;h3 id=&quot;working-with-posts&quot;&gt;Working With Posts&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Creating a Post&lt;/strong&gt;
-Posts are created by properly formatting a file and placing it the &lt;code&gt;_posts&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;
-A post must have a valid filename in the form &lt;code&gt;YEAR-MONTH-DATE-title.MARKUP&lt;/code&gt; and be placed in the &lt;code&gt;_posts&lt;/code&gt; directory.
-If the data format is invalid Jekyll will not recognize the file as a post. The date and title are automatically parsed from the filename of the post file.
-Additionally, each file must have &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter&quot;&gt;YAML Front-Matter&lt;/a&gt; prepended to its content.
-YAML Front-Matter is a valid YAML syntax specifying meta-data for the given file.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Order&lt;/strong&gt;
-Ordering is an important part of Jekyll but it is hard to specify a custom ordering strategy.
-Only reverse chronological and chronological ordering is supported in Jekyll.&lt;/p&gt;
-
-&lt;p&gt;Since the date is hard-coded into the filename format, to change the order, you must change the dates in the filenames.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;
-Posts can have tags associated with them as part of their meta-data.
-Tags may be placed on posts by providing them in the post’s YAML front matter.
-You have access to the post-specific tags in the templates. These tags also get added to the sitewide collection.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Categories&lt;/strong&gt;
-Posts may be categorized by providing one or more categories in the YAML front matter.
-Categories offer more significance over tags in that they can be reflected in the URL path to the given post.
-Note categories in Jekyll work in a specific way.
-If you define more than one category you are defining a category hierarchy “set”.
-Example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-title :  Hello World
-categories : [lessons, beginner]
----
+&lt;pre&gt;&lt;code&gt;GRANT USAGE ON *.* TO 'username'@'localhost' IDENTIFIED BY 'password';
+DROP USER 'username'@'localhost';
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;This defines the category hierarchy “lessons/beginner”. Note this is &lt;em&gt;one category&lt;/em&gt; node in Jekyll.
-You won’t find “lessons” and “beginner” as two separate categories unless you define them elsewhere as singular categories.&lt;/p&gt;
+</description>
+                <link>http://haixing-hu.github.io/programming/2015/12/16/how-to-implements-the-drop-user-if-exists-in-mysql</link>
+                <guid>http://haixing-hu.github.io/programming/2015/12/16/how-to-implements-the-drop-user-if-exists-in-mysql</guid>
+                <pubDate>Wed, 16 Dec 2015 00:00:00 +0800</pubDate>
+        </item>
 
-&lt;h3 id=&quot;working-with-pages&quot;&gt;Working With Pages&lt;/h3&gt;
+        <item>
+                <title>辩证法与放屁</title>
+                <description>&lt;h4 id=&quot;第一堂课&quot;&gt;第一堂课&lt;/h4&gt;
 
-&lt;p&gt;&lt;strong&gt;Creating a Page&lt;/strong&gt;
-Pages are created by properly formatting a file and placing it anywhere in the root directory or subdirectories that do &lt;em&gt;not&lt;/em&gt; start with an underscore.&lt;/p&gt;
+&lt;p&gt;在上课时，我放了一个屁——很普通的屁。既不很臭，当然也绝对不香。&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;
-In order to register as a Jekyll page the file must contain &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter&quot;&gt;YAML Front-Matter&lt;/a&gt;.
-Registering a page means 1) that Jekyll will process the page and 2) that the page object will be available in the &lt;code&gt;site.pages&lt;/code&gt; array for inclusion into your templates.&lt;/p&gt;
+&lt;p&gt;可怕的是，教授正在讲辩证法。&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Categories and Tags&lt;/strong&gt;
-Pages do not compute categories nor tags so defining them will have no effect.&lt;/p&gt;
+&lt;p&gt;“请你自己对这个屁作一下判断，”教授说，“它好还是不好？”&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Sub-Directories&lt;/strong&gt;
-If pages are defined in sub-directories, the path to the page will be reflected in the url.
-Example:&lt;/p&gt;
+&lt;p&gt;我只得说：“不好。”&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;.
-|-- people
-    |-- bob
-        |-- essay.html
+&lt;p&gt;“错了，”教授说，“任何事物都有矛盾组成，有它不好的一面，肯定有它好的一面。”&lt;/p&gt;
+
+&lt;p&gt;“那么说它好也不对了？”我问。&lt;/p&gt;
+
+&lt;p&gt;“当然。”教授说。&lt;/p&gt;
+
+&lt;p&gt;“它既好又不好。”&lt;/p&gt;
+
+&lt;p&gt;“错了。你只看到矛盾双方对立斗争的一面，没有看到他们统一的一面。”&lt;/p&gt;
+
+&lt;p&gt;我只好认真看待这个严肃的问题，仔细想了想说：“这个屁既好又不好，但不好的一面是主要的，处于主导地位。”&lt;/p&gt;
+
+&lt;p&gt;“错了。你是用静止的观点看问题。矛盾的双方会相互转换，今天处于主导地位一面，明天一定处于次要地位。”&lt;/p&gt;
+
+&lt;p&gt;“你是说明天全人类会为了我的这个屁欢呼雀跃吗？”&lt;/p&gt;
+
+&lt;p&gt;“不尽如此，但不能否认这种发展趋势。”&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;我愣了好大一会儿，只得硬着头皮说：“我的屁既好又不好，既不好又好。今天可能不好，明天一定会好。今天可能很好，明天也许会不好.”&lt;/p&gt;
+
+&lt;p&gt;教授听得直摇头，说：“这是彻底的怀疑论，不是辩证法的观点。”&lt;/p&gt;
+
+&lt;p&gt;就这样，仅仅因为放了一个屁，我就成了一个怀疑论者。&lt;/p&gt;
+
+&lt;p&gt;教授接着讲课：“辩证法的威力不仅在于能够轻而易举地驳斥任何观点，而且他能够轻易地为任何观点找到理论根据。”&lt;/p&gt;
+
+&lt;p&gt;“可是我的屁就没有任何根据。”我抗议道。&lt;/p&gt;
+
+&lt;p&gt;“那是因为你没有找到，其实很简单，它是你肚子里矛盾双方对立统一的必然结果。”&lt;/p&gt;
+
+&lt;p&gt;我哑口无言。&lt;/p&gt;
+
+&lt;p&gt;教授说：“下面我们不谈屁，谈一个更复杂的问题：一个西瓜，一粒芝麻，无论你怎样选择，都有理论基础。”&lt;/p&gt;
+
+&lt;p&gt;我赶紧说：“我要捡起西瓜，丢了芝麻。”&lt;/p&gt;
+
+&lt;p&gt;“很好。”教授说，“你抓住了主要矛盾，也就是说，你抓住了解决问题的关键。”&lt;/p&gt;
+
+&lt;p&gt;“那我就捡起芝麻，丢掉西瓜。”&lt;/p&gt;
+
+&lt;p&gt;“先有量变，才能达到质变。你解决问题的顺序十分正确。”&lt;/p&gt;
+
+&lt;p&gt;“我既要西瓜，又要芝麻。”&lt;/p&gt;
+
+&lt;p&gt;“即抓住主要矛盾，又不放过次要矛盾。你是用全面的眼光看问题”&lt;/p&gt;
+
+&lt;p&gt;“我既要砸烂西瓜，又要踩碎芝麻。”&lt;/p&gt;
+
+&lt;p&gt;“很好，你是用发展的眼光看问题。新事物就是对旧事物的否定。一切旧的事物必然灭亡。旧事物的灭亡是新事物产生的前提。”&lt;/p&gt;
+
+&lt;p&gt;“我既要吃掉西瓜，又要砸烂西瓜。既要捡起芝麻，又要踩碎芝麻。可是，只有一个西瓜，一粒芝麻，怎么办？”&lt;/p&gt;
+
+&lt;p&gt;“你这才算对辩证法入了门，重要的是：矛盾的双方不仅对立，而且有它统一的一面。你吃掉西瓜当然有它合理的一面，但你要砸烂西瓜，也并非不合理。只有将二者统一，才能进入更高层次的斗争。”&lt;/p&gt;
+
+&lt;p&gt;我张口结舌，目瞪口呆：“可是，你并没有解决我的问题。”&lt;/p&gt;
+
+&lt;p&gt;教授笑着说：“辩证法不解决任何问题，它的用途在于首先把人变成傻瓜——如果还有人不是傻瓜的话。”&lt;/p&gt;
+
+&lt;p&gt;“你是说‘首先’？”我问。&lt;/p&gt;
+
+&lt;p&gt;“是对，然后再从傻瓜飞跃到学者。”教授开始整理讲义，“关于辩证法为什么不解决问题，如何把人变成傻瓜，以及怎样实现从傻瓜到学者的飞跃，这是下一节课的内容。”&lt;/p&gt;
+
+&lt;p&gt;教授一蹦一跳，走出教室。&lt;/p&gt;
+
+&lt;h4 id=&quot;第二堂课&quot;&gt;第二堂课&lt;/h4&gt;
+
+&lt;p&gt;教授说：“下面我们讲一下辩证法的用途。我们要举一个更加复杂的例子：如何看待中国传统文化？”&lt;/p&gt;
+
+&lt;p&gt;我说：“那一定要用辩证的观点。”&lt;/p&gt;
+
+&lt;p&gt;“对。我们有许多大牌的辩证法学者，他们会充分利用辩证法的三大规律，理论联系实际，旁征博引，纵横捭阖。下笔万言，紧绕主体。最后给你得出一个结论：要取其精华，去其糟粕——你佩服不佩服？”&lt;/p&gt;
+
+&lt;p&gt;“是啊。辩证法不是很有用吗？”&lt;/p&gt;
+
+&lt;p&gt;“以前我也这样认为。直到我见到一只丧家的野狗——它改变了我的看法。”&lt;/p&gt;
+
+&lt;p&gt;“野狗？”我莫名其妙。&lt;/p&gt;
+
+&lt;p&gt;“是的。我家屋后有个垃圾堆，有一天来了一只丧家的野狗。它对其他东西看也不看，‘喀哧’一口，咬住一块骨头。”&lt;/p&gt;
+
+&lt;p&gt;“这毫不奇怪，所有的狗都会这样。”我说。&lt;/p&gt;
+
+&lt;p&gt;“不错。问题是对于狗来说，这块骨头就是‘精华’，垃圾堆里除了骨头以外，还有砖头，铁块，破水桶等等糟粕，他为什么只要骨头这个精华呢？他怎么知道取其精华，去其糟粕？难道它已经充分理解了大牌学者们的论述了吗？”&lt;/p&gt;
+
+&lt;p&gt;“好像不会。”&lt;/p&gt;
+
+&lt;p&gt;“肯定不会，所以说大牌学者们通过精确的论述，得到的精妙结论，其实是连一只丧家的野狗早就知道的东西。既然如此，我们为什么还要为他们喝彩，对他们崇拜呢？”&lt;/p&gt;
+
+&lt;p&gt;“是啊，为什么？”&lt;/p&gt;
+
+&lt;p&gt;“唯一的解释就是：辩证法已经成功地把你变成了一个傻瓜。”&lt;/p&gt;
+
+&lt;p&gt;“我明白了。”&lt;/p&gt;
+
+&lt;p&gt;“你明白以后一定要问：你说的没用。取其精华，去其糟粕谁都知道。问题是什么是精华，什么是糟粕。”&lt;/p&gt;
+
+&lt;p&gt;“对，看他怎么说。”&lt;/p&gt;
+
+&lt;p&gt;“你难不倒他，他又会充分利用辩证法的三大规律，理论联系实际，旁征博引，纵横捭阖。下笔万言，紧绕主体。最后给你得出一个结论：具体问题，具体分析。高明不高明？“&lt;/p&gt;
+
+&lt;p&gt;“是有道理。”&lt;/p&gt;
+
+&lt;p&gt;“可是我认为：这不仅是无聊，无用的问题，已经近于无赖了。”&lt;/p&gt;
+
+&lt;p&gt;“这怎么说？”&lt;/p&gt;
+
+&lt;p&gt;“难道世界上有人会‘具体问题，抽象分析’吗？那只丧家的野狗，来到垃圾堆前，难道会象亚里斯多德一样，先把各种东西分门别类，搞清其内涵和外延，再通过归纳演绎，最后确定它是吃砖头还是吃骨头吗？这可能吗？”&lt;/p&gt;
+
+&lt;p&gt;“不可能。那样的话，他连吃砖头都有可能。”&lt;/p&gt;
+
+&lt;p&gt;“对，孺子可教。没有人会‘具体问题，抽象分析’，‘具体问题，具体分析’这句话，等于没说。不过辩证法学者倒是喜欢用抽象的方法，分析具体问题。因为辩证法是放之四海而皆准的普遍真理。所以如果你看到一只吃砖头的狗，千万不能小视，它可能是一个著名学者。”&lt;/p&gt;
+
+&lt;p&gt;教授又收拾好讲义，说：“辩证法的根本在于使用‘全面的，发展的，联系的’观点看问题。象所有的谎言一样，这话听起来很显真理。下一节课讲辩证法的渊源，以及它和形而上学的关系。”&lt;/p&gt;
+
+&lt;h4 id=&quot;第三堂课&quot;&gt;第三堂课&lt;/h4&gt;
+
+&lt;p&gt;“迄今为止，人类用三种方法研究这个世界。”教授毫不客气，单刀直入，“第一种是‘屠夫式’，大部分科学家都是这种方式。他们把世界割裂成极小的部分进行分析研究。研究生物的并不研究全部生物，有的只研究动物；研究动物的也不研究全部动物，有的只研究哺乳动物；研究哺乳动物的，有的只研究猴子；研究猴子的有的只研究猴子的尾巴。他们眼中只见树木，不见森林，是极其片面的观点。”&lt;/p&gt;
+
+&lt;p&gt;“不是辩证法的观点。”我说。&lt;/p&gt;
+
+&lt;p&gt;“对，”教授接着说，“不仅如此，他们还尽量割裂研究对象与其他事物的联系，在尽量不受干扰的情况下，看看他到底是什么样子。科学家花费大量金钱建造实验室，而不在大街上做实验，主要原因就在于此。现在有些实验还要搞到太空里去做，连空气引力都要隔绝，可见，为了割裂事物之间的关系，这些科学家是不择手段的。”&lt;/p&gt;
+
+&lt;p&gt;我说：“与辩证法的观点相反。”&lt;/p&gt;
+
+&lt;p&gt;“有说对了，但仍然不止于此，他们还不管一只猴子过去怎样，将来如何，只管拿来一刀宰掉，看看它肚子里都是什么东西。他们用的是彻底的静止观点。”&lt;/p&gt;
+
+&lt;p&gt;“非常野蛮，而且十分笨拙。”&lt;/p&gt;
+
+&lt;p&gt;“所以我把它叫做‘屠夫式’。但这是我们一切科学知识的基础和来源。没有这些人，也就没有任何科学。他们应该得到应有的尊重——他们的人格，才智和他们使用的方法，都应该得到尊重。”&lt;/p&gt;
+
+&lt;p&gt;“有谁不尊重他们吗？”&lt;/p&gt;
+
+&lt;p&gt;“有很多，你可能就是一个。”&lt;/p&gt;
+
+&lt;p&gt;“此话怎讲？”&lt;/p&gt;
+
+&lt;p&gt;“他们用的是孤立，静止，片面的方法，这种方法有一个名称，你们中学老师教过你们吗？”&lt;/p&gt;
+
+&lt;p&gt;“叫形而上学，可那是个贬义词呀？”&lt;/p&gt;
+
+&lt;p&gt;“是的，就叫形而上学，这就是过去全部的科学家，现在大部分科学家使用的方法。”&lt;/p&gt;
+
+&lt;p&gt;“那为什么它是一个贬义词呢？”&lt;/p&gt;
+
+&lt;p&gt;“因为它和辩证法不相容，而且针锋相对。有些人不仅自以为是正确的，而且断定其他人都是错的。奇怪的是，辩证法整天讲什么对立统一，形而上学来和辩证法对立，他却不肯同一，而是对形而上学采取一棍子打死的态度。”&lt;/p&gt;
+
+&lt;p&gt;“我明白了。”&lt;/p&gt;
+
+&lt;p&gt;“使用第二种方法的也是科学家，我称之为‘强盗式’，这种科学家更重要。&lt;/p&gt;
+
+&lt;p&gt;他们什么也不干，坐等形而上学的科学家研究出比较确切的成果，在此基础上综合升华。千千万万的科学家研究了万万千千的动物，植物，微生物以后，达尔文拿来一综合，就提出了进化论。“&lt;/p&gt;
+
+&lt;p&gt;“这活倒很轻松。”&lt;/p&gt;
+
+&lt;p&gt;“一点也不轻松，而且需要更高的聪明才智和更加宽阔的视野。爱因斯坦是其中最出色的一位。他的视野非常开阔，甚至研究过辩证法。但是他说辩证法对他的研究没有任何帮助。”&lt;/p&gt;
+
+&lt;p&gt;“辩证法到底是干什么的呢？”&lt;/p&gt;
+
+&lt;p&gt;“研究世界的第三种方法就是辩证法的方法，我称之为‘上帝式’的方法。也就是我们下一节课的内容。“&lt;/p&gt;
+
+&lt;h4 id=&quot;最后一课&quot;&gt;最后一课&lt;/h4&gt;
+
+&lt;p&gt;“我被开除了，”教授说，“今天上最后一课。请先提问。”&lt;/p&gt;
+
+&lt;p&gt;我说：“有的同学说，你的观点有点偏激。”&lt;/p&gt;
+
+&lt;p&gt;“他说对了，我不仅偏激，而且有错误。上一节课我就故意设置了一个常识性的错误，但是你们并没有给我提出来。现在我不得不把最重要的东西教给你们：没有谁是全部正确的，最多只是正确了一部分。如果世界是那只大象，我们就是那一群摸象的瞎子。我们想知道大象的样子，但是我们谁也不可能把这只大象摸完。我所有的瞎子加在一起也不可能，如果你的一生只能摸完大象的尾巴，你一定要认真去摸。如果你确信自己完全了解了这支尾巴，你一定要坚持自己的观点。&lt;/p&gt;
+
+&lt;p&gt;不要听见别人说大象像柱子或者象扇子就轻易改变自己的观点。偏激并不可怕，可怕的是听风就是雨，毫无自己的主见。如果你坚持的错了，没什么大不了，一定有更聪明的瞎子给你指出错误。科学就是这样在成千上万的错误中提取一个真理的学问。但是如果你对了，却没有坚持，世界就失去了一次前进的机会。&lt;/p&gt;
+
+&lt;p&gt;“另外你要随时记住：无论你是对是错，你只是了解大象的一小部分。要听听别的瞎子怎么说。不能轻信，也不能不信。你别无选择，只有使用你的理性，它也许有许多不足，但却是你唯一可以信赖的东西。一个人的理性十分有限，许多人的理性却威力巨大。如果你不知道许多人的理性在那里，那么我告诉你——那就是科学。科学也有不足，以后一定要被突破。不过那需要许许多多比爱因斯坦更聪明的人，肯定不是你我。&lt;/p&gt;
+
+&lt;p&gt;“理性，批判和宽容，就是我所说的最重要的东西。”&lt;/p&gt;
+
+&lt;p&gt;这次我没有提问，也没有其他人提问。&lt;/p&gt;
+
+&lt;p&gt;“言归正传，继续谈辩证法。”教授只好自己接着说，“辩证法也是个瞎子，但是他不摸象。”&lt;/p&gt;
+
+&lt;p&gt;“他不想了解大象吗？”我问。&lt;/p&gt;
+
+&lt;p&gt;“他当然想了解大象，但是他认为摸象没有用，或者说作用不大。他认为大象在到处乱跑，还在不断地从小变大，而且与他周围的森林，地球，甚至太阳系，银河系有无限多的联系，用‘孤立，静止，片面’的形而上学观点徒劳无功，只有使用‘全面，发展，联系’的辩证法观点，才能搞清大象的样子。”&lt;/p&gt;
+
+&lt;p&gt;“可是他连象都不摸，怎么全面，发展，联系呢？”&lt;/p&gt;
+
+&lt;p&gt;“我不知道，鬼也不知道，只有上帝知道。所以我把它称为‘上帝式’的方法。辩证法最初在中国流行，伏羲八卦，阴阳五行，孔子的”过犹不及“，老子的”反者道之动“，《易经》”一阴一阳谓之道“，《黄帝内经》”内外调和，邪不能侵“统统都是辩证法。西方只有亚里斯多德提出过辩证法的雏形，既不全面，也不具体。恩格斯说他阐述了辩证法的基本原理，我不知道从何说起。不过这无关紧要，现代意义上的辩证法是从黑格尔开始的，这一点恩格斯和我，以及其他任何人，都不会有任何意见。”&lt;/p&gt;
+
+&lt;p&gt;“你只说恩格斯，怎么不提马克思？”&lt;/p&gt;
+
+&lt;p&gt;“马克思和辩证法关系不大。”&lt;/p&gt;
+
+&lt;p&gt;“辩证唯物主义不是不是马克思主义的灵魂吗？”&lt;/p&gt;
+
+&lt;p&gt;“我不同意这个观点，马克思早期写过一篇《神圣家族》，痛批黑格尔的”泛逻辑论“，泛逻辑论就包括辩证法。以后也没见他怎样说过辩证法。直到他最晚的哲学著作《资本论第二版跋》中，他才玩笑的说自己卖弄了辩证法。但是辩证法是什么，马克思终其一生，也没有回答过。”&lt;/p&gt;
+
+&lt;p&gt;“那么辩证法怎样进入马克思主义的呢？”&lt;/p&gt;
+
+&lt;p&gt;“完全是恩格斯的原因，从《反杜林论》到恩格斯致死不愿发表的《自然辩证法》，辩证法才成为马克思主义的所谓灵魂。这一点我和顾准的看法一样，马克思是不会同意‘辩证唯物主义’这个说法的。这完全是后人的需要。不过《反杜林论》是经过马克思同意的，这一点倒是事实。”&lt;/p&gt;
+
+&lt;p&gt;“辩证法有哪些内容？”&lt;/p&gt;
+
+&lt;p&gt;“首先是三大规律：第一，质量互变规律，来自黑格尔《逻辑学》第一部”存在论“。第二，矛盾统一规律，来自《逻辑学》第二部”本质论“。第三，否定之否定规律，来自《逻辑学》第三部”理念论“。这都是表面的东西，也就是马克思所说的”神秘外形“。它的根本在于用全面，发展，联系的观点看问题。它的实质是隐藏其后的两大主义：第一，真理一元论。反对真理的多元论和相对主义。这早已成为历史的垃圾。第二，真理不可分，局部事务的真理都是整体世界的一部分，孤立的研究发现不了这些真理。只有在森林中找树木，不能从树木开始研究森林。这不仅极其荒唐，而且毫不现实。”&lt;/p&gt;
+
+&lt;p&gt;“为什么不现实？”&lt;/p&gt;
+
+&lt;p&gt;“有个西方不败教授说得很好：事实充分证明，孤立的，静止的、片面地来研究事物的方法，在人类现有的认识情况下才是最好的方法论，才可能了解事物的本质。因为事物之间的联系千丝万缕，如果把所有的关联都考虑进去，就等于什么也干不成，就象我们老祖宗一样，只能抱着个”太极生两仪，两仪生四象，“这个思维懒怠症混日子。等到对事物的各种性状及规律有了较为详细的把握，再把它放到系统中进行非常谨慎的观察和研究。而中国人的传统思维是总想一口吃成个大胖子，一开始便从总体上提出本质的观点。这种带有原始思维特征的传统正与辩证法不谋而合，或者说辩证法只是中国古代思想方法的一种现代表述，中国人从来不缺少这种思维方式，需要补课的正是孤立的，静止的、片面地来研究事物的笨功夫。”&lt;/p&gt;
+
+&lt;p&gt;“辩证法到底是怎么来的呢？”&lt;/p&gt;
+
+&lt;p&gt;“你们中学教科书上是怎么讲的？”&lt;/p&gt;
+
+&lt;p&gt;“好像是对客观世界，人类社会以及思维规律的全面正确的总结。”&lt;/p&gt;
+
+&lt;p&gt;“这种说法极其荒唐，而且全然不顾任何事实。是彻底的误人子弟。第一，别说黑格尔活着的时候，就是在二十一世纪的今天，人类对客观世界仅仅了解一点，很小的一点。对人类社会只了解半点。对思维规律了解得半点也不到。一只大象我们只是了解了尾巴上的几个关节，腿上的几根毛，加上耳朵上一块皮而已，谈得上什么全面总结，正确总结？纯粹是说梦话。&lt;/p&gt;
+
+&lt;p&gt;“第二，你们可以看一看《马克思恩格斯选集》第三卷469页第十二行到第十四行：”黑格尔的著作中有一个广博的辩证法纲要，虽然它是从一个完全错误的出发点发展起来的。“恩格斯在不止二十个地方说过，这个错误的出发点就是唯心主义。谁都知道，恩格斯所谓的辩证法原版照抄的来自黑格尔的《逻辑学》，如他自己所说，只不过”打碎了黑格尔唯心主义的外壳，“取了他”辩证法的合理内核“。你相信吗？人类从许许多多正确的出发点出发，都要走上弯路。而一个叫黑格尔的帝国教授，却可以从一个错误的出发点出发，”全面地，正确地“总结出客观世界，人类社会以及思维的全部正确规律。这是人说的话吗？&lt;/p&gt;
+
+&lt;p&gt;“我绝不相信。就是再把我绑到新教徒的火刑柱上，把我烧死以前烤上两个小时，我仍然不相信！”&lt;/p&gt;
+
+&lt;p&gt;“我也不相信。”我小声说。&lt;/p&gt;
+
+&lt;p&gt;“可是相信的人相当多。自从打碎了基督教的枷锁，辩证法是科学发展道路上的最大障碍。他把现代科学斥责为不入流的形而上学，机械论。使科学在一些地方停滞不前。二十世纪二十年代，前苏联科学院的一个院长，就因为要搞农作物的杂交改良而丢了脑袋。”&lt;/p&gt;
+
+&lt;p&gt;“那为什么？”&lt;/p&gt;
+
+&lt;p&gt;“因为杂交改良依据的是孟德尔－摩尔根理论，与辩证法格格不入。”&lt;/p&gt;
+
+&lt;p&gt;“你很熟悉前苏联吗？”&lt;/p&gt;
+
+&lt;p&gt;“我最熟悉的是中国，我在这里住了几十年。可是打别人头上的苍蝇更轻松。”&lt;/p&gt;
+
+&lt;p&gt;我问：“对于辩证法的进攻，科学是怎么反击的呢？”&lt;/p&gt;
+
+&lt;p&gt;“西方哲学用实证主义，逻辑经验主义进行了反击。现代科学却默不做声。它只是不断地发展，生产出更多的粮食，钢铁，机器，以及人类除精神需要的一切。当这一切成为不可逆转的潮流的时候，辩证法才忽然发现，虽然它在骂别人，丢人的却是他自己。”&lt;/p&gt;
+
+&lt;p&gt;“辩证法没有任何可取之处吗？”&lt;/p&gt;
+
+&lt;p&gt;“有人说辩证法是一个早产的怪胎，虽然在人类认识的现阶段并不适用，但他整体的观点确实十分诱人。现代科学的整体论，有机论已经初具雏形。不过这不是对辩证法的回归，而是在科学自身的发展中，若隐若现地概括出的一些原则。真理一元论毕竟是难以接受的。科学从不放过任何一个发展的可能性，哪怕最微小的希望，也会有人付出百倍的努力。1984年，一大群名气很大的科学大师在美国成立了圣菲研究所（Santa Fe Institute），他们包括众多的诺贝尔奖获得者，是许多科学领域的顶尖人物，出钱的大老板也是赫赫有名——金融杀手索罗斯。它们的目标就是研究”一元化理论“的可能性。当然，他们谁也不会相信什么辩证法，那就不要研究“一元化”了。它们是用现代科学的方法探讨控制复杂的适应系统（CAS）的一般性原理。虽然我不相信他们会取得任何结果，但这是人类科学史上最大胆的尝试之一。我预祝他们成功——尽管那样会打破我的一切观念。”&lt;/p&gt;
+</description>
+                <link>http://haixing-hu.github.io/misc/2015/02/22/dialectics-and-fart</link>
+                <guid>http://haixing-hu.github.io/misc/2015/02/22/dialectics-and-fart</guid>
+                <pubDate>Sun, 22 Feb 2015 00:00:00 +0800</pubDate>
+        </item>
+
+        <item>
+                <title>Maven over SOCKS proxy</title>
+                <description>&lt;p&gt;Setup a SSH tunnel to as SOCKS proxy:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ssh -D 8085 yourname@your.gateway.com
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;This page will be available at &lt;code&gt;http://yourdomain.com/people/bob/essay.html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Now tell maven to use the proxy we just created:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Recommended Pages&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mvn -U clean install -DsocksProxyHost=127.0.0.1 -DsocksProxyPort=8085
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;index.html&lt;/strong&gt;
-You will always want to define the root index.html page as this will display on your root URL.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;404.html&lt;/strong&gt;
-Create a root 404.html page and GitHub Pages will serve it as your 404 response.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;sitemap.html&lt;/strong&gt;
-Generating a sitemap is good practice for SEO.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;about.html&lt;/strong&gt;
-A nice about page is easy to do and gives the human perspective to your website.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Or export it to env for convenience.&lt;/p&gt;
 
-&lt;h2 id=&quot;templates-in-jekyll&quot;&gt;Templates in Jekyll&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;export MAVEN_OPTS=&quot;-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=8085&quot;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+                <link>http://haixing-hu.github.io/programming/2014/06/20/maven-over-socks-proxy</link>
+                <guid>http://haixing-hu.github.io/programming/2014/06/20/maven-over-socks-proxy</guid>
+                <pubDate>Fri, 20 Jun 2014 00:00:00 +0800</pubDate>
+        </item>
 
-&lt;p&gt;Templates are used to contain a page’s or post’s content.
-All templates have access to a global site object variable: &lt;code&gt;site&lt;/code&gt; as well as a page object variable: &lt;code&gt;page&lt;/code&gt;.
-The site variable holds all accessible content and metadata relative to the site.
-The page variable holds accessible data for the given page or post being rendered at that point.&lt;/p&gt;
+        <item>
+                <title>How to create a manifest file with Maven</title>
+                <description>&lt;p&gt;This tutorial will show you how to use the maven-jar-plugin to create a manifest file, and package / add it into the final jar file. The manifest file is normally used to define following tasks :&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Create a Template&lt;/strong&gt;
-Templates are created by properly formatting a file and placing it in the &lt;code&gt;_layouts&lt;/code&gt; directory.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Define the entry point of the Application, make the Jar executable.&lt;/li&gt;
+  &lt;li&gt;Add project dependency classpath.&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;
-Templates should be coded in HTML and contain YAML Front Matter.
-All templates can contain Liquid code to work with your site’s data.&lt;/p&gt;
+&lt;!--more--&gt;
 
-&lt;p&gt;&lt;strong&gt;Rending Page/Post Content in a Template&lt;/strong&gt;
-There is a special variable in all templates named : &lt;code&gt;content&lt;/code&gt;.
-The &lt;code&gt;content&lt;/code&gt; variable holds the page/post content including any sub-template content previously defined.
-Render the content variable wherever you want your main content to be injected into your template:&lt;/p&gt;
+&lt;p&gt;When you run the command mvn package to package project into a Jar, the following &lt;code&gt;meta-inf/manifest.mf&lt;/code&gt; file will be generated and added into the final Jar file automatically.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;...
-&amp;lt;body&amp;gt;
-  &amp;lt;div id=&quot;sidebar&quot;&amp;gt; ... &amp;lt;/div&amp;gt;
-  &amp;lt;div id=&quot;main&quot;&amp;gt;
-    &amp;#123;{content}&amp;#125;
-  &amp;lt;/div&amp;gt;
-&amp;lt;/body&amp;gt;
-...&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Manifest-Version: 1.0
+Built-By: ${user.name}
+Build-Jdk: ${java.version}
+Created-By: Apache Maven
+Archiver-Version: Plexus Archiver
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&quot;sub-templates&quot;&gt;Sub-Templates&lt;/h3&gt;
+&lt;h2 id=&quot;make-the-jar-executable&quot;&gt;Make the Jar executable&lt;/h2&gt;
 
-&lt;p&gt;Sub-templates are exactly templates with the only difference being they
-define another “root” layout/template within their YAML Front Matter.
-This essentially means a template will render inside of another template.&lt;/p&gt;
+&lt;p&gt;Define &lt;code&gt;maven-jar-plugin&lt;/code&gt; in &lt;code&gt;pom.xml&lt;/code&gt;, and configure the manifest file via configuration tag.&lt;/p&gt;
 
-&lt;h3 id=&quot;includes&quot;&gt;Includes&lt;/h3&gt;
-&lt;p&gt;In Jekyll you can define include files by placing them in the &lt;code&gt;_includes&lt;/code&gt; folder.
-Includes are NOT templates, rather they are just code snippets that get included into templates.
-In this way, you can treat the code inside includes as if it was native to the parent template.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;plugin&amp;gt;
+	&amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
+	&amp;lt;artifactId&amp;gt;maven-jar-plugin&amp;lt;/artifactId&amp;gt;
+	&amp;lt;version&amp;gt;2.4&amp;lt;/version&amp;gt;
+	&amp;lt;configuration&amp;gt;
+		&amp;lt;archive&amp;gt;
+			&amp;lt;manifest&amp;gt;
+				&amp;lt;mainClass&amp;gt;com.mkyong.core.App&amp;lt;/mainClass&amp;gt;
+			&amp;lt;/manifest&amp;gt;
+		&amp;lt;/archive&amp;gt;
+	&amp;lt;/configuration&amp;gt;
+&amp;lt;/plugin&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Any valid template code may be used in includes.&lt;/p&gt;
+&lt;p&gt;Following manifest file will be generated. If you run this Jar, it will execute the &lt;code&gt;com.mkyong.core.App&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;using-liquid-for-templating&quot;&gt;Using Liquid for Templating&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;anifest-Version: 1.0
+Built-By: mkyong
+Build-Jdk: 1.6.0_35
+Created-By: Apache Maven
+Main-Class: com.mkyong.core.App
+Archiver-Version: Plexus Archiver
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Templating is perhaps the most confusing and frustrating part of Jekyll.
-This is mainly due to the fact that Jekyll templates must use the Liquid Templating Language.&lt;/p&gt;
+&lt;h2 id=&quot;add-project-dependency-classpath&quot;&gt;Add project dependency classpath&lt;/h2&gt;
 
-&lt;h3 id=&quot;what-is-liquid&quot;&gt;What is Liquid?&lt;/h3&gt;
+&lt;p&gt;Most Java projects need dependency, and it can define in manifest file easily. Normally, you will use &lt;code&gt;maven-dependency-plugin&lt;/code&gt; to copy project dependencies to somewhere else.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/Shopify/liquid&quot;&gt;Liquid&lt;/a&gt; is a secure templating language developed by &lt;a href=&quot;http://shopify.com&quot;&gt;Shopify&lt;/a&gt;.
-Liquid is designed for end-users to be able to execute logic within template files
-without imposing any security risk on the hosting server.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  &amp;lt;plugin&amp;gt;
+	&amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
+	&amp;lt;artifactId&amp;gt;maven-jar-plugin&amp;lt;/artifactId&amp;gt;
+	&amp;lt;version&amp;gt;2.4&amp;lt;/version&amp;gt;
+	&amp;lt;configuration&amp;gt;
+	  &amp;lt;archive&amp;gt;
+	    &amp;lt;manifest&amp;gt;
+		&amp;lt;addClasspath&amp;gt;true&amp;lt;/addClasspath&amp;gt;
+		&amp;lt;mainClass&amp;gt;com.mkyong.core.App&amp;lt;/mainClass&amp;gt;
+		&amp;lt;classpathPrefix&amp;gt;dependency-jars/&amp;lt;/classpathPrefix&amp;gt;
+	    &amp;lt;/manifest&amp;gt;
+	  &amp;lt;/archive&amp;gt;
+	&amp;lt;/configuration&amp;gt;
+  &amp;lt;/plugin&amp;gt;
+  &amp;lt;plugin&amp;gt;
+	&amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
+	&amp;lt;artifactId&amp;gt;maven-dependency-plugin&amp;lt;/artifactId&amp;gt;
+	&amp;lt;version&amp;gt;2.5.1&amp;lt;/version&amp;gt;
+	&amp;lt;executions&amp;gt;
+	  &amp;lt;execution&amp;gt;
+		&amp;lt;id&amp;gt;copy-dependencies&amp;lt;/id&amp;gt;
+		&amp;lt;phase&amp;gt;package&amp;lt;/phase&amp;gt;
+		&amp;lt;goals&amp;gt;
+		    &amp;lt;goal&amp;gt;copy-dependencies&amp;lt;/goal&amp;gt;
+		&amp;lt;/goals&amp;gt;
+		&amp;lt;configuration&amp;gt;
+		    &amp;lt;outputDirectory&amp;gt;
+               ${project.build.directory}/dependency-jars/
+            &amp;lt;/outputDirectory&amp;gt;
+		&amp;lt;/configuration&amp;gt;
+	    &amp;lt;/execution&amp;gt;
+	&amp;lt;/executions&amp;gt;
+  &amp;lt;/plugin&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Jekyll uses Liquid to generate the post content within the final page layout structure and as the primary interface for working with
-your site and post/page data.&lt;/p&gt;
+&lt;p&gt;Following manifest file will be generated. The project dependencies will be copied to &lt;code&gt;{project}/target/dependency-jars/&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;why-do-we-have-to-use-liquid&quot;&gt;Why Do We Have to Use Liquid?&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;manifest-Version: 1.0
+Built-By: mkyong
+Build-Jdk: 1.6.0_35
+Class-Path: dependency-jars/log4j-1.2.17.jar
+Created-By: Apache Maven
+Main-Class: com.mkyong.core.App
+Archiver-Version: Plexus Archiver
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;GitHub uses Jekyll to power &lt;a href=&quot;http://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;.
-GitHub cannot afford to run arbitrary code on their servers so they lock developers down via Liquid.&lt;/p&gt;
+&lt;h2 id=&quot;additional-notes&quot;&gt;Additional Notes&lt;/h2&gt;
 
-&lt;h3 id=&quot;liquid-is-not-programmer-friendly&quot;&gt;Liquid is Not Programmer-Friendly.&lt;/h3&gt;
+&lt;p&gt;When using the above &lt;code&gt;maven-dependency-plugin&lt;/code&gt;, Eclipse’s m2e plugin will report an error:&lt;/p&gt;
 
-&lt;p&gt;The short story is liquid is not real code and its not intended to execute real code.
-The point being you can’t do jackshit in liquid that hasn’t been allowed explicitly by the implementation.
-What’s more you can only access data-structures that have been explicitly passed to the template.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;maven-dependency-plugin (goals &quot;copy-dependencies&quot;, &quot;unpack&quot;) is not supported by m2e.
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;In Jekyll’s case it is not possible to alter what is passed to Liquid without hacking the gem or running custom plugins.
-Both of which cannot be supported by GitHub Pages.&lt;/p&gt;
+&lt;p&gt;This is a problem of M2E for &lt;a href=&quot;http://wiki.eclipse.org/M2E_plugin_execution_not_covered&quot;&gt;Eclipse M2E plugin execution not covered&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;As a programmer - this is very frustrating.&lt;/p&gt;
+&lt;p&gt;To solve this problem, all you got to do is to map the lifecycle it doesn’t recognize and instruct M2E to execute it.&lt;/p&gt;
 
-&lt;p&gt;But rather than look a gift horse in the mouth we are going to
-suck it up and view it as an opportunity to work around limitations and adopt client-side solutions when possible.&lt;/p&gt;
+&lt;p&gt;You should add this after your &lt;code&gt;plugins&lt;/code&gt;, inside the &lt;code&gt;build&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Aside&lt;/strong&gt;
-My personal stance is to not invest time trying to hack liquid. It’s really unnecessary
-&lt;em&gt;from a programmer’s&lt;/em&gt; perspective. That is to say if you have the ability to run custom plugins (i.e. run arbitrary ruby code)
-you are better off sticking with ruby. Toward that end I’ve built &lt;a href=&quot;http://github.com/plusjade/mustache-with-jekyll&quot;&gt;Mustache-with-Jekyll&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;pluginManagement&amp;gt;
+  &amp;lt;plugins&amp;gt;
+    &amp;lt;plugin&amp;gt;
+      &amp;lt;groupId&amp;gt;org.eclipse.m2e&amp;lt;/groupId&amp;gt;
+      &amp;lt;artifactId&amp;gt;lifecycle-mapping&amp;lt;/artifactId&amp;gt;
+      &amp;lt;version&amp;gt;1.0.0&amp;lt;/version&amp;gt;
+      &amp;lt;configuration&amp;gt;
+        &amp;lt;lifecycleMappingMetadata&amp;gt;
+          &amp;lt;pluginExecutions&amp;gt;
+            &amp;lt;pluginExecution&amp;gt;
+              &amp;lt;pluginExecutionFilter&amp;gt;
+                &amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
+                &amp;lt;artifactId&amp;gt;maven-dependency-plugin&amp;lt;/artifactId&amp;gt;
+                &amp;lt;versionRange&amp;gt;[2.0,)&amp;lt;/versionRange&amp;gt;
+                &amp;lt;goals&amp;gt;
+                  &amp;lt;goal&amp;gt;copy-dependencies&amp;lt;/goal&amp;gt;
+                &amp;lt;/goals&amp;gt;
+              &amp;lt;/pluginExecutionFilter&amp;gt;
+              &amp;lt;action&amp;gt;
+                &amp;lt;execute /&amp;gt;
+              &amp;lt;/action&amp;gt;
+            &amp;lt;/pluginExecution&amp;gt;
+          &amp;lt;/pluginExecutions&amp;gt;
+        &amp;lt;/lifecycleMappingMetadata&amp;gt;
+      &amp;lt;/configuration&amp;gt;
+    &amp;lt;/plugin&amp;gt;
+  &amp;lt;/plugins&amp;gt;
+&amp;lt;/pluginManagement&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&quot;static-assets&quot;&gt;Static Assets&lt;/h2&gt;
+&lt;p&gt;This will remove the error and make M2E recognize the goal &lt;code&gt;copy-depencies&lt;/code&gt; of &lt;code&gt;maven-dependency-plugin&lt;/code&gt; and make the POM work as expected, copying dependencies to folder every time Eclipse build it. If you just want to ignore the error, then you change &lt;code&gt;&amp;lt;execute /&amp;gt;&lt;/code&gt; for &lt;code&gt;&amp;lt;ignore /&amp;gt;&lt;/code&gt;. No need for enclosing your &lt;code&gt;maven-dependency-plugin&lt;/code&gt; into &lt;code&gt;pluginManagement&lt;/code&gt;, as suggested before.&lt;/p&gt;
 
-&lt;p&gt;Static assets are any file in the root or non-underscored subfolders that are not pages.
-That is they have no valid YAML Front Matter and are thus not treated as Jekyll Pages.&lt;/p&gt;
+&lt;p&gt;Please check &lt;a href=&quot;&quot;&gt;http://stackoverflow.com/questions/8706017/maven-dependency-plugin-goals-copy-dependencies-unpack-is-not-supported-b&lt;/a&gt; for more details.&lt;/p&gt;
+</description>
+                <link>http://haixing-hu.github.io/programming/2013/11/02/how-to-create-a-manifest-file-with-maven</link>
+                <guid>http://haixing-hu.github.io/programming/2013/11/02/how-to-create-a-manifest-file-with-maven</guid>
+                <pubDate>Sat, 02 Nov 2013 00:00:00 +0800</pubDate>
+        </item>
 
-&lt;p&gt;Static assets should be used for images, css, and javascript files.&lt;/p&gt;
+        <item>
+                <title>Create 'native' Java applications on OS X and Windows using Maven plugins</title>
+                <description>&lt;p&gt;When building a desktop application, the target audience usually expects an executable to when launching it. If the application is written in Java you have the options to create a batch file to launch it, create an executable jar file, compile the application as a native application or wrap the application using a native ‘launcher’. This post will result in a maven pom for dealing with the last option, it may be used in both Windows and OS X environments.&lt;/p&gt;
 
-&lt;h2 id=&quot;how-jekyll-parses-files&quot;&gt;How Jekyll Parses Files&lt;/h2&gt;
+&lt;!--more--&gt;
 
-&lt;p&gt;Remember Jekyll is a processing engine. There are two main types of parsing in Jekyll.&lt;/p&gt;
+&lt;p&gt;The pom is configured to use two different plugins depending on which operating system that is executing it.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Content parsing.&lt;/strong&gt;
-  This is done with textile or markdown.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Template parsing.&lt;/strong&gt;
-This is done with the liquid templating language.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;On Windows, a &lt;a href=&quot;http://launch4j.sourceforge.net/&quot;&gt;Launch4j&lt;/a&gt; project &lt;a href=&quot;http://alakai.org/reference/plugins/launch4j-plugin-usage.html&quot;&gt;plugin&lt;/a&gt; will be used. On OS X the &lt;a href=&quot;http://mojo.codehaus.org/osxappbundle-maven-plugin/&quot;&gt;osxappbundle&lt;/a&gt; plugin is used, which creates an OS X application directory structure and uses the &lt;code&gt;JavaApplicationStub&lt;/code&gt; binary for launching the application.&lt;/p&gt;
 
-&lt;p&gt;And thus there are two main types of file formats needed for this parsing.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;&amp;lt;profile&amp;gt;&lt;/code&gt; tag is used for deciding which plugin to use depending on operating system.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Post and Page files.&lt;/strong&gt;
-All content in Jekyll is either a post or a page so valid posts and pages are parsed with markdown or textile.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Template files.&lt;/strong&gt;
-  These files go in &lt;code&gt;_layouts&lt;/code&gt; folder and contain your blogs &lt;strong&gt;templates&lt;/strong&gt;. They should be made in HTML with the help of Liquid syntax.
-  Since include files are simply injected into templates they are essentially parsed as if they were native to the template.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;The pom also points out different application icons for the binaries, OS X requires the icon to be in the &lt;a href=&quot;http://en.wikipedia.org/wiki/Apple_Icon_Image_format&quot;&gt;icns&lt;/a&gt; and windows in the &lt;a href=&quot;http://en.wikipedia.org/wiki/ICO_(file_format)&quot;&gt;ico&lt;/a&gt; format.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Arbitrary files and folders.&lt;/strong&gt;
-Files that &lt;em&gt;are not&lt;/em&gt; valid pages are treated as static content and pass through
-Jekyll untouched and reside on your blog in the exact structure and format they originally existed in.&lt;/p&gt;
+&lt;p&gt;The wrapped application has a main class in the file &lt;code&gt;com.jayway.wrappedapplication.Launcher&lt;/code&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;formatting-files-for-parsing&quot;&gt;Formatting Files for Parsing.&lt;/h3&gt;
+&lt;h3 id=&quot;the-pomxml&quot;&gt;The pom.xml&lt;/h3&gt;
 
-&lt;p&gt;We’ve outlined the need for valid formatting using &lt;strong&gt;YAML Front Matter&lt;/strong&gt;.
-Templates, posts, and pages all need to provide valid YAML Front Matter even if the Matter is empty.
-This is the only way Jekyll knows you want the file processed.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemalocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd&quot;&amp;gt;
+  &amp;lt;modelversion&amp;gt;4.0.0&amp;lt;/modelversion&amp;gt;
+  &amp;lt;groupid&amp;gt;com.jayway.wrappedapplication&amp;lt;/groupid&amp;gt;
+  &amp;lt;artifactid&amp;gt;launcher&amp;lt;/artifactid&amp;gt;
+  &amp;lt;packaging&amp;gt;jar&amp;lt;/packaging&amp;gt;
+  &amp;lt;version&amp;gt;1.0-SNAPSHOT&amp;lt;/version&amp;gt;
+  &amp;lt;name&amp;gt;launcher&amp;lt;/name&amp;gt;
+  &amp;lt;url&amp;gt;http://maven.apache.org&amp;lt;/url&amp;gt;
+  &amp;lt;profiles&amp;gt;
+    &amp;lt;profile&amp;gt;
+      &amp;lt;id&amp;gt;windows-deploy&amp;lt;/id&amp;gt;
+      &amp;lt;activation&amp;gt;
+        &amp;lt;os&amp;gt;
+          &amp;lt;family&amp;gt;Windows&amp;lt;/family&amp;gt;
+        &amp;lt;/os&amp;gt;
+      &amp;lt;/activation&amp;gt;
+      &amp;lt;build&amp;gt;
+        &amp;lt;plugins&amp;gt;
+          &amp;lt;plugin&amp;gt;
+            &amp;lt;groupid&amp;gt;org.bluestemsoftware.open.maven.plugin&amp;lt;/groupid&amp;gt;
+            &amp;lt;artifactid&amp;gt;launch4j-plugin&amp;lt;/artifactid&amp;gt;
+            &amp;lt;version&amp;gt;1.5.0.0&amp;lt;/version&amp;gt;
+            &amp;lt;executions&amp;gt;
+              &amp;lt;execution&amp;gt;
+                &amp;lt;id&amp;gt;launch4j&amp;lt;/id&amp;gt;
+                &amp;lt;phase&amp;gt;verify&amp;lt;/phase&amp;gt;
+                &amp;lt;goals&amp;gt;
+                  &amp;lt;goal&amp;gt;launch4j&amp;lt;/goal&amp;gt;
+                &amp;lt;/goals&amp;gt;
+                &amp;lt;configuration&amp;gt;
+                  &amp;lt;dontwrapjar&amp;gt;false&amp;lt;/dontwrapjar&amp;gt;
+                  &amp;lt;headertype&amp;gt;gui&amp;lt;/headertype&amp;gt;
+                  &amp;lt;outfile&amp;gt;${project.build.directory}/relauncher-${project.version}.exe&amp;lt;/outfile&amp;gt;
+                  &amp;lt;jar&amp;gt;${project.build.directory}/${project.build.finalName}.jar&amp;lt;/jar&amp;gt;
+                  &amp;lt;errtitle&amp;gt;Launcher&amp;lt;/errtitle&amp;gt;
+                  &amp;lt;jre&amp;gt;
+                    &amp;lt;minversion&amp;gt;1.6.0&amp;lt;/minversion&amp;gt;
+                  &amp;lt;/jre&amp;gt;
+                  &amp;lt;classpath&amp;gt;
+                    &amp;lt;mainclass&amp;gt;com.jayway.wrappedapplication.Launcher&amp;lt;/mainclass&amp;gt;
+                    &amp;lt;adddependencies&amp;gt;false&amp;lt;/adddependencies&amp;gt;
+                    &amp;lt;precp&amp;gt;anything&amp;lt;/precp&amp;gt;
+                  &amp;lt;/classpath&amp;gt;
+                  &amp;lt;icon&amp;gt;${basedir}/build-resources/win/icons/application.ico&amp;lt;/icon&amp;gt;
+                &amp;lt;/configuration&amp;gt;
+              &amp;lt;/execution&amp;gt;
+            &amp;lt;/executions&amp;gt;
+          &amp;lt;/plugin&amp;gt;
+        &amp;lt;/plugins&amp;gt;
+      &amp;lt;/build&amp;gt;
+    &amp;lt;/profile&amp;gt;
+    &amp;lt;profile&amp;gt;
+      &amp;lt;activation&amp;gt;
+        &amp;lt;os&amp;gt;
+          &amp;lt;family&amp;gt;mac&amp;lt;/family&amp;gt;
+        &amp;lt;/os&amp;gt;
+      &amp;lt;/activation&amp;gt;
+      &amp;lt;build&amp;gt;
+        &amp;lt;plugins&amp;gt;
+          &amp;lt;plugin&amp;gt;
+            &amp;lt;groupid&amp;gt;org.codehaus.mojo&amp;lt;/groupid&amp;gt;
+            &amp;lt;artifactid&amp;gt;osxappbundle-maven-plugin&amp;lt;/artifactid&amp;gt;
+            &amp;lt;version&amp;gt;1.0-alpha-2&amp;lt;/version&amp;gt;
+            &amp;lt;configuration&amp;gt;
+              &amp;lt;mainclass&amp;gt;com.jayway.wrappedapplication.Launcher&amp;lt;/mainclass&amp;gt;
+              &amp;lt;iconfile&amp;gt;${basedir}/build-resources/osx/icons/application.icns&amp;lt;/iconfile&amp;gt;
+            &amp;lt;/configuration&amp;gt;
+            &amp;lt;executions&amp;gt;
+              &amp;lt;execution&amp;gt;
+                &amp;lt;phase&amp;gt;package&amp;lt;/phase&amp;gt;
+                &amp;lt;goals&amp;gt;
+                  &amp;lt;goal&amp;gt;bundle&amp;lt;/goal&amp;gt;
+                &amp;lt;/goals&amp;gt;
+              &amp;lt;/execution&amp;gt;
+            &amp;lt;/executions&amp;gt;
+          &amp;lt;/plugin&amp;gt;
+        &amp;lt;/plugins&amp;gt;
+      &amp;lt;/build&amp;gt;
+    &amp;lt;/profile&amp;gt;
+  &amp;lt;/profiles&amp;gt;
+&amp;lt;/project&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;YAML Front Matter must be prepended to the top of template/post/page files:&lt;/p&gt;
+&lt;p&gt;And that’s it.&lt;/p&gt;
+</description>
+                <link>http://haixing-hu.github.io/programming/2013/11/02/create-native-java-applications-on-os-x-and-windows-using-maven-plugins</link>
+                <guid>http://haixing-hu.github.io/programming/2013/11/02/create-native-java-applications-on-os-x-and-windows-using-maven-plugins</guid>
+                <pubDate>Sat, 02 Nov 2013 00:00:00 +0800</pubDate>
+        </item>
+
+        <item>
+                <title>Maven Tip: Get sources and Javadocs</title>
+                <description>&lt;p&gt;When you’re using Maven in an IDE you often find the need for your IDE to resolve source code and Javadocs for your library dependencies. There’s an easy way to accomplish that goal.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# mvn dependency:sources
+# mvn dependency:resolve -Dclassifier=javadoc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The first command will attempt to download source code for each of the dependencies in your pom file.&lt;/p&gt;
+
+&lt;p&gt;The second command will attempt to download the Javadocs.&lt;/p&gt;
+
+&lt;p&gt;Maven is at the mercy of the library packagers here. So some of them won’t have source code packaged and many of them won’t have Javadocs.&lt;/p&gt;
+</description>
+                <link>http://haixing-hu.github.io/programming/2013/10/31/maven-tip-get-sources-and-javadocs</link>
+                <guid>http://haixing-hu.github.io/programming/2013/10/31/maven-tip-get-sources-and-javadocs</guid>
+                <pubDate>Thu, 31 Oct 2013 00:00:00 +0800</pubDate>
+        </item>
+
+        <item>
+                <title>How to use MathJax in Jekyll generated Github pages</title>
+                <description>&lt;p&gt;There are many solutions to support &lt;a href=&quot;www.mathjax.org&quot;&gt;MathJax&lt;/a&gt; in
+&lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; on the web, but few of them could meet my
+requirement. After spending a whole day to google the solution, at last I solve
+the problem. My solution is not perfect, but it works well for me.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Suppose that you have correctly installed and configured the Jekyll for your
+site. If you don’t know how to do that, goolge it by yourself. The following
+instructions will help you to use MathJax in Jekyll.&lt;/p&gt;
+
+&lt;h3 id=&quot;use-the-correct-markdown-processor&quot;&gt;Use the correct Markdown processor&lt;/h3&gt;
+
+&lt;p&gt;I have tried almost all the markdown processors. For example,
+&lt;a href=&quot;http://kramdown.rubyforge.org/&quot;&gt;kramdown&lt;/a&gt;, which was said to have build-in
+support of math. But actually it has some problems for the inline math formula
+with special characters (say, a pipe character like this &lt;code&gt;$$|\psi\rangle$$&lt;/code&gt;),
+and it have to leave a blank line before and after the display math formula.&lt;/p&gt;
+
+&lt;p&gt;At last I found that the default markdown processor
+&lt;a href=&quot;http://maruku.rubyforge.org/&quot;&gt;maruku&lt;/a&gt; was the only one meet my
+requirement. And most importantly, it is officially supported by the &lt;a href=&quot;http://pages.github.com/&quot;&gt;Github
+Pages&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Change your &lt;code&gt;_config.yml&lt;/code&gt; as follows to use the
+&lt;a href=&quot;http://maruku.rubyforge.org/&quot;&gt;maruku&lt;/a&gt; processor:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;markdown: maruku
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;modify-the-page-template&quot;&gt;Modify the page template&lt;/h3&gt;
+
+&lt;p&gt;Now we have to modify the page template to add the support of MathJax.&lt;/p&gt;
+
+&lt;p&gt;Create a file named with &lt;code&gt;mathjax_support&lt;/code&gt; in your &lt;code&gt;_include&lt;/code&gt; directory as
+follows:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/x-mathjax-config&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;MathJax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Hub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;TeX&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;equationNumbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;autoNumber&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;AMS&amp;quot;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;tex2jax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;inlineMath&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;$&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;$&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;\(&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;\)&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;displayMath&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;$$&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;$$&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;processEscapes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Note that the above configuration enables the support of automatic equation
+numbering (the line around &lt;code&gt;autoNumber: &quot;AMS&quot;&lt;/code&gt;). If you do not need equation
+numbering, remove the corresponding codes.&lt;/p&gt;
+
+&lt;p&gt;Next, modify the layout template of your pages like follows:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+    {% include html_meta %}
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;How to use MathJax in Jekyll generated Github pages -- 蓝海的科学世界&lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/bootstrap/css/bootstrap.2.2.2.min.css&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/css/style.css&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;media&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;all&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+    {% if page.use_math %}
+      {% include mathjax_support %}
+    {% endif %}
+  &lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+    {% include navigation_bar %}
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container-narrow&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;content&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+        {{ content }}
+      &lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;hr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;/&amp;gt;&lt;/span&gt;
+      {% include footer %}
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+    {% include JB/analytics %}
+  &lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Note the lines around &lt;code&gt;include mathjax_support&lt;/code&gt;, those lines include the
+file &lt;code&gt;mathjax_support&lt;/code&gt; you just created in the &lt;code&gt;_include&lt;/code&gt; directory, if the
+post’s front-matter contains a configuration &lt;code&gt;use_math : true&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;typeset-math-formula-in-post&quot;&gt;Typeset math formula in post&lt;/h3&gt;
+
+&lt;p&gt;In order to use the math formula in a post, the front-matter of the post
+must have a variable &lt;code&gt;use_math&lt;/code&gt; and set its value to &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;For example, the following is a post using math:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;---
 layout: post
-category : pages
-tags : [how-to, jekyll]
+title: &quot;Test math&quot;
+author: Haixing Hu
+category: misc
+tags: [test]
+use_math: true
 ---
 
-... contents ...
+Let's test some inline math $x$, $y$, $x_1$, $y_1$.
+
+Now a inline math with special character: $|\psi\rangle$, $x'$, $x^\*$.
+
+Test a display math:
+$$
+   |\psi_1\rangle = a|0\rangle + b|1\rangle
+$$
+Is it O.K.?
+
+Test a display math with equation number:
+\begin{equation}
+   |\psi_1\rangle = a|0\rangle + b|1\rangle
+\end{equation}
+Is it O.K.?
+
+Test a display math with equation number:
+$$
+  \begin{align}
+    |\psi_1\rangle &amp;amp;= a|0\rangle + b|1\rangle \\\\
+    |\psi_2\rangle &amp;amp;= c|0\rangle + d|1\rangle
+  \end{align}
+$$
+Is it O.K.?
+
+And test a display math without equaltion number:
+$$
+  \begin{align\*}
+    |\psi_1\rangle &amp;amp;= a|0\rangle + b|1\rangle \\\\
+    |\psi_2\rangle &amp;amp;= c|0\rangle + d|1\rangle
+  \end{align\*}
+$$
+Is it O.K.?
+
+Test a display math with equation number:
+\begin{align}
+    |\psi_1\rangle &amp;amp;= a|0\rangle + b|1\rangle \\\\
+    |\psi_2\rangle &amp;amp;= c|0\rangle + d|1\rangle
+\end{align}
+Is it O.K.?
+
+And test a display math without equaltion number:
+\begin{align\*}
+    |\psi_1\rangle &amp;amp;= a|0\rangle + b|1\rangle \\\\
+    |\psi_2\rangle &amp;amp;= c|0\rangle + d|1\rangle
+\end{align\*}
+Is it O.K.?
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Three hyphens on a new line start the Front-Matter block and three hyphens on a new line end the block.
-The data inside the block must be valid YAML.&lt;/p&gt;
-
-&lt;p&gt;Configuration parameters for YAML Front-Matter is outlined here:
-&lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter&quot;&gt;A comprehensive explanation of YAML Front Matter&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;defining-layouts-for-posts-and-templates-parsing&quot;&gt;Defining Layouts for Posts and Templates Parsing.&lt;/h4&gt;
-
-&lt;p&gt;The &lt;code&gt;layout&lt;/code&gt; parameter in the YAML Front Matter defines the template file for which the given post or template should be injected into.
-If a template file specifies its own layout, it is effectively being used as a &lt;code&gt;sub-template.&lt;/code&gt;
-That is to say loading a post file into a template file that refers to another template file with work in the way you’d expect; as a nested sub-template.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-jekyll-generates-the-final-static-files&quot;&gt;How Jekyll Generates the Final Static Files.&lt;/h2&gt;
-
-&lt;p&gt;Ultimately, Jekyll’s job is to generate a static representation of your website.
-The following is an outline of how that’s done:&lt;/p&gt;
-
+&lt;p&gt;Here are some notes about the above example:&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Jekyll collects data.&lt;/strong&gt;
-  Jekyll scans the posts directory and collects all posts files as post objects. It then scans the layout assets and collects those and finally scans other directories in search of pages.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Jekyll computes data.&lt;/strong&gt;
-  Jekyll takes these objects, computes metadata (permalinks, tags, categories, titles, dates) from them and constructs one
-  big &lt;code&gt;site&lt;/code&gt; object that holds all the posts, pages, layouts, and respective metadata.
-  At this stage your site is one big computed ruby object.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Jekyll liquifies posts and templates.&lt;/strong&gt;
-  Next jekyll loops through each post file and converts (through markdown or textile) and &lt;strong&gt;liquifies&lt;/strong&gt; the post inside of its respective layout(s).
-  Once the post is parsed and liquified inside the the proper layout structure, the layout itself is “liquified”.
- &lt;strong&gt;Liquification&lt;/strong&gt; is defined as follows: Jekyll initiates a Liquid template, and passes a simpler hash representation of the ruby site object as well as a simpler
-  hash representation of the ruby post object. These simplified data structures are what you have access to in the templates.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Jekyll generates output.&lt;/strong&gt;
- Finally the liquid templates are “rendered”, thereby processing any liquid syntax provided in the templates
- and saving the final, static representation of the file.&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;The inline formula is between &lt;code&gt;$ ... $&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;The display formula is between &lt;code&gt;$$ ... $$&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;You can use the math envrionment directly, for example,
+&lt;code&gt;\begin{equation}...\end{equation}&lt;/code&gt; or &lt;code&gt;\begin{align}...\end{align}&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Whenever in the inline math or display math, the star character &lt;code&gt;'*'&lt;/code&gt; &lt;strong&gt;must&lt;/strong&gt;
+be escaped.&lt;/li&gt;
+  &lt;li&gt;In the multi-lines display math, the line break symbol double-backslash &lt;code&gt;'\\'&lt;/code&gt; should
+be escaped, i.e., use four backslash &lt;code&gt;'\\\\'&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;If you found error while typeseting math formula, try to escape some special
+characters.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;strong&gt;Notes.&lt;/strong&gt;
-Because Jekyll computes the entire site in one fell swoop, each template is given access to
-a global &lt;code&gt;site&lt;/code&gt; hash that contains useful data. It is this data that you’ll iterate through and format
-using the Liquid tags and filters in order to render it onto a given page.&lt;/p&gt;
+&lt;h3 id=&quot;effect-of-example&quot;&gt;Effect of example&lt;/h3&gt;
 
-&lt;p&gt;Remember, in Jekyll you are an end-user. Your API has only two components:&lt;/p&gt;
+&lt;p&gt;Here is the effect of the above example:&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;The manner in which you setup your directory.&lt;/li&gt;
-  &lt;li&gt;The liquid syntax and variables passed into the liquid templates.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;All the data objects available to you in the templates via Liquid are outlined in the &lt;strong&gt;API Section&lt;/strong&gt; of Jekyll-Bootstrap.
-You can also read the original documentation here: &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Template-Data&quot;&gt;https://github.com/mojombo/jekyll/wiki/Template-Data&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Let’s test some inline math $x$, $y$, $x_1$, $y_1$.&lt;/p&gt;
 
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Now a inline math with special character: $&lt;/td&gt;
+      &lt;td&gt;\psi\rangle$, $x’$, $x^*$.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;p&gt;I hope this paints a clearer picture of what Jekyll is doing and why it works the way it does.
-As noted, our main programming constraint is the fact that our API is limited to what is accessible via Liquid and Liquid only.&lt;/p&gt;
+&lt;p&gt;Test a display math:
+&lt;script type=&quot;math/tex&quot;&gt;|\psi_1\rangle = a|0\rangle + b|1\rangle&lt;/script&gt;
+Is it O.K.?&lt;/p&gt;
 
-&lt;p&gt;Jekyll-bootstrap is intended to provide helper methods and strategies aimed at making it more intuitive and easier to work with Jekyll =)&lt;/p&gt;
+&lt;p&gt;Test a display math with equation number:
+\begin{equation}
+   |\psi_1\rangle = a|0\rangle + b|1\rangle
+\end{equation}
+Is it O.K.?&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Thank you&lt;/strong&gt; for reading this far.&lt;/p&gt;
+&lt;p&gt;Test a display math with equation number:
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{align}
+    |\psi_1\rangle &amp;= a|0\rangle + b|1\rangle \\\\
+    |\psi_2\rangle &amp;= c|0\rangle + d|1\rangle
+  \end{align} %]]&gt;&lt;/script&gt;
+Is it O.K.?&lt;/p&gt;
 
-&lt;h2 id=&quot;next-steps&quot;&gt;Next Steps&lt;/h2&gt;
+&lt;p&gt;And test a display math without equaltion number:
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{align\*}
+    |\psi_1\rangle &amp;= a|0\rangle + b|1\rangle \\\\
+    |\psi_2\rangle &amp;= c|0\rangle + d|1\rangle
+  \end{align\*} %]]&gt;&lt;/script&gt;
+Is it O.K.?&lt;/p&gt;
 
-&lt;p&gt;Please take a look at &lt;a href=&quot;&quot;&gt;&lt;/a&gt;
-or jump right into &lt;a href=&quot;&quot;&gt;Usage&lt;/a&gt; if you’d like.&lt;/p&gt;
+&lt;p&gt;Test a display math with equation number:
+\begin{align}
+    |\psi_1\rangle &amp;amp;= a|0\rangle + b|1\rangle \&lt;br /&gt;
+    |\psi_2\rangle &amp;amp;= c|0\rangle + d|1\rangle
+\end{align}
+Is it O.K.?&lt;/p&gt;
+
+&lt;p&gt;And test a display math without equaltion number:
+\begin{align*}
+    |\psi_1\rangle &amp;amp;= a|0\rangle + b|1\rangle \&lt;br /&gt;
+    |\psi_2\rangle &amp;amp;= c|0\rangle + d|1\rangle
+\end{align*}
+Is it O.K.?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;OK, that’s all. Have fun with math!&lt;/p&gt;
 </description>
-                <link>http://username.github.io/lessons/2011/12/29/jekyll-introduction</link>
-                <guid>http://username.github.io/lessons/2011/12/29/jekyll-introduction</guid>
-                <pubDate>Thu, 29 Dec 2011 00:00:00 +0800</pubDate>
+                <link>http://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages</link>
+                <guid>http://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages</guid>
+                <pubDate>Fri, 20 Sep 2013 00:00:00 +0800</pubDate>
+        </item>
+
+        <item>
+                <title>Indentation Settings of Sublime Text 2</title>
+                <description>&lt;p&gt;Indentation Settings determine the size of the tab stops, and control whether
+the tab key should insert tabs or spaces. In addition to the automatic
+detection, they can be customized globally, per-file type, or per-file.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;settings&quot;&gt;Settings&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;variable&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;type&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code&gt;tab_size&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Integer&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;The number of spaces a tab is considered equal to&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code&gt;translate_tabs_to_spaces&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Boolean&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;if true, spaces will be inserted up to the next tab stop when tab is pressed, rather than inserting a tab character&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code&gt;detect_indentation&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Boolean&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;if true (the default), &lt;code&gt;tab_size&lt;/code&gt; and &lt;code&gt;translate_tabs_to_spaces&lt;/code&gt; will be calculated automatically when loading a file&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code&gt;use_tab_stops&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Boolean&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;If &lt;code&gt;translate_tabs_to_spaces&lt;/code&gt; is true, &lt;code&gt;use_tab_stops&lt;/code&gt; will make tab and backspace insert/delete up to the next tab stop Settings Files&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Settings files are consulted in this order:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Packages/Default/Preferences.sublime-settings&lt;/li&gt;
+  &lt;li&gt;Packages/Default/Preferences ({platform}).sublime-settings&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Packages/User/Preferences.sublime-settings&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Packages/{syntax}/{syntax}.sublime-settings&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Packages/User/{syntax}.sublime-settings&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In general, you should place your settings in &lt;code&gt;Packages/User/Preferences.sublime-settings&lt;/code&gt;.
+If you want to specify settings for a certain file type, for example, Python,
+you should place them in &lt;code&gt;Packages/User/Python.sublime-settings&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;example-settings-file&quot;&gt;Example Settings File&lt;/h2&gt;
+
+&lt;p&gt;Try saving this as &lt;code&gt;Packages/User/Preferences.sublime-settings&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+  &quot;tab_size&quot;: 4,
+  &quot;translate_tabs_to_spaces&quot;: false
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;per-syntax-settings&quot;&gt;Per-syntax Settings&lt;/h2&gt;
+
+&lt;p&gt;Settings may be specified on a per-syntax basis. You can edit the settings for
+the current syntax using the &lt;em&gt;Preferences/Settings - More/Syntax Specific -
+User menu&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;indentation-detection&quot;&gt;Indentation Detection&lt;/h2&gt;
+
+&lt;p&gt;When a file is loaded, its contents are examined, and the &lt;code&gt;tab_size&lt;/code&gt; and
+&lt;code&gt;translate_tabs_to_spaces&lt;/code&gt; settings are set for that file. The status area will
+report when this happens. While this generally works well, you may want to
+disable it. You can do that with the &lt;code&gt;detect_indentation&lt;/code&gt; setting.&lt;/p&gt;
+
+&lt;p&gt;Indentation detection can be run manually via the &lt;em&gt;View/Indentation/Guess
+Settings From Buffer&lt;/em&gt; menu, which runs the &lt;code&gt;detect_indentation&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;h2 id=&quot;converting-between-tabs-and-spaces&quot;&gt;Converting Between Tabs and Spaces&lt;/h2&gt;
+
+&lt;p&gt;The &lt;em&gt;View/Indentation&lt;/em&gt; menu has commands to convert leading whitespace in the
+current file between tabs and spaces. These menu items run the &lt;code&gt;expand_tabs&lt;/code&gt;
+and &lt;code&gt;unexpand_tabs&lt;/code&gt; commands.&lt;/p&gt;
+
+&lt;h2 id=&quot;automatic-indentation&quot;&gt;Automatic Indentation&lt;/h2&gt;
+
+&lt;p&gt;Automatic indentation guesses the amount of leading whitespace to insert on
+each line when you press enter. It’s controlled with these settings:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;variable&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;type&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code&gt;auto_indent&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Boolean&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;enabled by default. Enables auto indent&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code&gt;smart_indent&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Boolean&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;enabled by default. Makes auto indent a little smarter, e.g., by indenting the next line after an if statement in C.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code&gt;trim_automatic_white_space&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Boolean&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;enabled by default. Trims white space added by auto_indent when moving the caret off the line.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code&gt;indent_to_bracket&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Boolean&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;disabled by default. Adds whitespace up to the first open bracket when indenting.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+                <link>http://haixing-hu.github.io/computer/2012/12/01/indentation-settings-of-sublime-text-2</link>
+                <guid>http://haixing-hu.github.io/computer/2012/12/01/indentation-settings-of-sublime-text-2</guid>
+                <pubDate>Sat, 01 Dec 2012 00:00:00 +0800</pubDate>
+        </item>
+
+        <item>
+                <title>Display Hidden Files in OS X 10.6 ‘Open’ and ‘Save’ Dialog Boxes</title>
+                <description>&lt;p&gt;Your Mac has a few secrets up its sleeve, hidden files and folders that are
+invisible to you. Apple hides these files and folders to prevent you from
+accidentally changing or deleting important data that your Mac needs. You may
+occasionally need to view or edit one of these hidden files. To do so, you must
+first make it visible again.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Accessing hidden files in Snow Leopard is a lot easier than in previous
+versions of OS X now that the ‘Open’ and ‘Save’ dialog boxes of any application
+can display hidden files and folders. What’s that you say? You don’t see an
+option to display hidden files and folders in the aforementioned dialog boxes?
+I forgot to mention that the option is hidden, too.&lt;/p&gt;
+
+&lt;p&gt;Fortunately, there is now a simple keyboard trick that allows hidden files and
+folders to display in any ‘Open’ or ‘Save’ dialog box.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Launch the application you wish to use to edit or view the hidden file.&lt;/li&gt;
+  &lt;li&gt;Select ‘Open’ from the application’s File menu.&lt;/li&gt;
+  &lt;li&gt;An Open Dialog box will display.&lt;/li&gt;
+  &lt;li&gt;With the dialog box as the front-most window (you can click once in the
+dialog box to make sure it’s in front), press the command, shift, and
+period keys at the same time.&lt;/li&gt;
+  &lt;li&gt;The dialog box now will display any hidden files or folders within its
+list items.&lt;/li&gt;
+  &lt;li&gt;You can toggle between the hidden files and folders being displayed by
+pressing command, shift, period again.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Once the hidden files and folders display in the dialog box, you can navigate
+and open the files just as you would any other file in the Finder.&lt;/p&gt;
+
+&lt;p&gt;This same trick also works for ‘Save’ and ‘Save As Dialog’ boxes.&lt;/p&gt;
+</description>
+                <link>http://haixing-hu.github.io/computer/2012/11/27/display-hidden-files-in-os-x-106-open-and-save-dialog-boxes</link>
+                <guid>http://haixing-hu.github.io/computer/2012/11/27/display-hidden-files-in-os-x-106-open-and-save-dialog-boxes</guid>
+                <pubDate>Tue, 27 Nov 2012 00:00:00 +0800</pubDate>
+        </item>
+
+        <item>
+                <title>Sublime Text 2 Strip Whitespace on Save</title>
+                <description>&lt;p&gt;I’ve become fond of &lt;a href=&quot;http://www.sublimetext.com/&quot;&gt;Sublime Text 2&lt;/a&gt;. Gasp! Wait,
+what? You don’t use &lt;a href=&quot;http://xkcd.com/378/&quot;&gt;emacs/vim/butterflies&lt;/a&gt;? Anyway,
+regardless of the editor, I like to keep my whitespace under control. This
+usually means I add a hook to strip trailing whitespace when saving. The
+Sublime Text 2 Python API reference looks pretty complete, but there’s little
+pragmatic documentation. I tinkered with creating my own, found others that had
+semi decent solutions, but ultimately gave up. After my failed attempts and
+failed googling, my coworker informed me that Sublime Text has this built right
+in as a user setting you can set by adding a simple JSON snippet. Awesome.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;make-it-happen&quot;&gt;Make it Happen&lt;/h2&gt;
+
+&lt;p&gt;Go to &lt;em&gt;SublimeText 2 &amp;gt; Preferences &amp;gt; User Settings&lt;/em&gt; (or just hit the Mac
+Standard &lt;code&gt;cmd + ,&lt;/code&gt;). This should open your User Settings as a JSON file. Add
+the following to your file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&quot;trim_trailing_white_space_on_save&quot;: true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That’s it. You’re good to go.&lt;/p&gt;
+</description>
+                <link>http://haixing-hu.github.io/computer/2012/11/18/sublime-text-2-strip-whitespace-on-save</link>
+                <guid>http://haixing-hu.github.io/computer/2012/11/18/sublime-text-2-strip-whitespace-on-save</guid>
+                <pubDate>Sun, 18 Nov 2012 00:00:00 +0800</pubDate>
+        </item>
+
+        <item>
+                <title>Pervasive Computing: Vision and Challenges</title>
+                <description>&lt;p&gt;This post is the reading notes of the following paper:&lt;/p&gt;
+
+&lt;p&gt;Mahadev Satyanarayanan,
+&lt;em&gt;Pervasive Computing: Vision and Challenges&lt;/em&gt;,
+IEEE Personal Communications, 8, 2001:10-17.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;It then identifies four new research thrusts: effective use of smart spaces,
+invisibility, localized scalability, and masking uneven conditioning.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-introduction&quot;&gt;1. Introduction&lt;/h2&gt;
+
+&lt;p&gt;“The most profound technologies are those that disappear. They weave themselves
+into the fabric of everyday life until they are indistinguishable from it.” So
+began Mark Weiser’s seminal 1991 paper [44] that described his vision of
+ubiquitous computing, now also called pervasive computing.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-related-fields&quot;&gt;2. Related Fields&lt;/h2&gt;
+
+&lt;p&gt;This body of knowledge spans many areas that are foundational to pervasive
+computing and is now well codified in textbooks [8, 19, 20]:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;remote communication, including protocol layering, remote procedure call [3],
+the use of timeouts, and the use of end-to-end arguments in placement of
+functionality [28].&lt;/li&gt;
+  &lt;li&gt;fault tolerance, including atomic transactions, distributed and nested
+transactions, and two-phase commit [13].&lt;/li&gt;
+  &lt;li&gt;high availability, including optimistic and pessimistic replica control [9],
+mirrored execution [4], and optimistic recovery [37].&lt;/li&gt;
+  &lt;li&gt;remote information access, including caching, function shipping, distributed
+file systems, and distributed databases [30].&lt;/li&gt;
+  &lt;li&gt;security, including encryption-based mutual authentication and privacy [23].&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Although many basic principles of distributed system design continued to apply,
+four key constraints of mobility forced the development of specialized
+techniques. These constraints are[31]:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;unpredictable variation in network quality&lt;/li&gt;
+  &lt;li&gt;lowered trust and robustness of mobile elements,&lt;/li&gt;
+  &lt;li&gt;limitations on local resources imposed by weight and size constraints,&lt;/li&gt;
+  &lt;li&gt;and concern for battery power consumption.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Mobile computing has the following borad areas:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;mobile networking&lt;/li&gt;
+  &lt;li&gt;mobile information access&lt;/li&gt;
+  &lt;li&gt;support for adaptative applications&lt;/li&gt;
+  &lt;li&gt;system-level energy saving techniques&lt;/li&gt;
+  &lt;li&gt;location sensitivity&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;We characterized a pervasive computing environment as one saturated with
+computing and communication capability, yet so gracefully integrated with users
+that it becomes a ‘‘technology that disappears.’’&lt;/p&gt;
+
+&lt;h2 id=&quot;3-example-scenarios&quot;&gt;3. Example Scenarios&lt;/h2&gt;
+
+&lt;h2 id=&quot;4-drilling-down&quot;&gt;4. Drilling Down&lt;/h2&gt;
+
+&lt;h2 id=&quot;5-conclusion&quot;&gt;5. Conclusion&lt;/h2&gt;
+
+&lt;h2 id=&quot;bibtex-of-the-paper&quot;&gt;BibTeX of the paper&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;@article{satyanarayanan2001pervasive,
+	author = {Mahadev Satyanarayanan},
+    title = {Pervasive Computing: Vision and Challenges},
+	journal = {IEEE Personal Communications},
+    year = {2001},
+    volume = {8},
+	pages = {10--17},
+    doi = {http://dx.doi.org/10.1109/98.943998}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+                <link>http://haixing-hu.github.io/research/2012/10/08/pervasive-computing-vision-and-challenges</link>
+                <guid>http://haixing-hu.github.io/research/2012/10/08/pervasive-computing-vision-and-challenges</guid>
+                <pubDate>Mon, 08 Oct 2012 00:00:00 +0800</pubDate>
+        </item>
+
+        <item>
+                <title>Pervasive computing: Past, present, and future</title>
+                <description>&lt;p&gt;This post is the reading notes of the following paper:&lt;/p&gt;
+
+&lt;p&gt;Stan Kurkovsky,
+&lt;em&gt;Pervasive computing: Past, present, and future&lt;/em&gt;,
+The 5-th International Conference on Information and Communication
+Technology (ICICT 2007), 2007: 65-71.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;The paradigm of pervasive computing describes ubiquitous computing environments
+that provide anytime and anywhere access to information services while making
+the presence of the system invisible to the user.  Pervasive computing
+envisioned by Mark Weiser emerged at the conjunction of research and
+development in a number of areas which include embedded and devices and
+systems, wireless communications, and distributed, mobile and context-aware
+computing.&lt;/p&gt;
+
+&lt;h2 id=&quot;i-introduction&quot;&gt;I. INTRODUCTION&lt;/h2&gt;
+
+&lt;p&gt;The fundamental properties of a system comprised of tabs, pads and boards
+described by Weiser include wireless communications, embedded and mobile
+devices, distributed computing, and context awareness.&lt;/p&gt;
+
+&lt;p&gt;As in any emerging research area, there are many challenging problems in
+pervasive computing. One of the most important and open questions is how to
+ensure that a computing system is seamlessly and invisibly embedded in the
+environment and how to minimize the possible impact of its intrusiveness on a
+user’s perception.&lt;/p&gt;
+
+&lt;p&gt;Generally, there are two mutually complementing approaches to solving the
+problem of unobtrusiveness of a pervasive system: by miniaturization of devices
+and embedding of the system’s logic into wearable, handheld, and mobile
+devices, as well as into the environment, and by achieving a level of
+intelligence of the system that will be able to anticipate the actions of the
+user in the context of the factors in the environment.&lt;/p&gt;
+
+&lt;p&gt;As a result, such a pervasive system will “fade into the background” and the
+users will only need to interact with such a system at their leisure without
+giving it much thought [14,23,28,30,32].&lt;/p&gt;
+
+&lt;h2 id=&quot;ii-components-of-pervasive-computing-systems&quot;&gt;II. COMPONENTS OF PERVASIVE COMPUTING SYSTEMS&lt;/h2&gt;
+
+&lt;p&gt;In addition to making the system physically invisible, the concept of pervasive
+computing provides for making systems logically invisible.&lt;/p&gt;
+
+&lt;p&gt;Such a logical invisibility can be achieved if the system can adjust itself to
+the behavioral patterns exhibited by its user and to the factors of the
+surrounding environment, which include time, location, other users, objects and
+systems. Such capabilities can be achieved through context-awareness, which is
+a necessary component in providing the system’s logical invisibility to
+complement its physical invisibility ensured by device embedding [28].&lt;/p&gt;
+
+&lt;p&gt;Pervasive computing systems comprise of a large number of sensors, devices and
+mobile systems; Software architectures that may be better suited to such an
+environment requires that the application logic be decomposed into atomic
+functions, which are distributed across ubiquitous processing, storage and
+input/output resources and that it be capable of reassembling in varying
+combinations as may be needed by a particular task.&lt;/p&gt;
+
+&lt;p&gt;Distributed systems generally include components playing one of three possible
+roles: resources, resource managers, and clients [3].&lt;/p&gt;
+
+&lt;p&gt;Every resource within the distributed system has a unique identity, independent
+of the resource location.&lt;/p&gt;
+
+&lt;p&gt;A distributed system is said to provide transparency of migration if it
+supports mobility of its resources.&lt;/p&gt;
+
+&lt;p&gt;Context-awareness is a vital factor enabling the invisibility of pervasive
+computing systems [3,10,28,31]. Context-aware systems can adjust their
+properties and behavior according to the information about the current state of
+the user, such as physiological state, behavioral patterns, orientation and
+position, geographical location, or properties of the surrounding environment,
+such as time of day, nearby users, objects and other systems [6,15,26,28]&lt;/p&gt;
+
+&lt;p&gt;For example, based on locality and availability, a context-aware service with
+limited resources may be able to off-load processor intensive operations or
+storage onto other systems located nearby that have more substantial resources.
+A vehicle navigation system that is aware of the remaining level of gasoline in
+the tank and the brand and type of fuel preferred by the user, may alert the
+driver when he or she is within certain proximity of a gas station selling that
+type of fuel at an acceptable price.&lt;/p&gt;
+
+&lt;p&gt;Invisibility in a pervasive computing system depends on how successfully it
+implements a certain level of intelligence that would enable it to allow the
+user to focus on a particular task at hand rather on interacting with the
+system itself [12]. Context-aware systems utilizing this type of intelligence
+often calculate the intent of the user based on a number of contexts. As a
+result, context-awareness helps eliminate the bottleneck of the human attention
+by anticipating the user’s reactions to relevant events [9].&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Pervasive computing systems need to anticipate the actions of the user and
+adjust themselves while maintaining a careful a balance between their
+proactivity and invisibility of the system.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The ability of the system to adapt to changing factors in its environment is
+another important consideration of preserving the system’s invisibility.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Finally, pervasive computing infrastructure could dynamically notify the
+user about the changes in resource availability and offer a choice of
+corrective actions.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For example, suppose a user is viewing a video stream on a mobile wireless
+device [20].&lt;/p&gt;
+
+&lt;h2 id=&quot;iii-mobile-phones-and-pervasive-computing&quot;&gt;III. MOBILE PHONES AND PERVASIVE COMPUTING&lt;/h2&gt;
+
+&lt;p&gt;Personalization is typically achieved by implementing different levels of
+context-awareness, which vary from rudimentary setting of user preferences [27]
+to intelligent profile matching [34].&lt;/p&gt;
+
+&lt;h2 id=&quot;iv-summary&quot;&gt;IV. SUMMARY&lt;/h2&gt;
+
+&lt;p&gt;As Weiser wrote [32], “tabs, pads, and boards are just the beginning [of
+pervasive computing systems]. The real power of the concept comes not from any
+one of these devices; it emerges from the interaction of all of them.”&lt;/p&gt;
+
+&lt;h2 id=&quot;bibtex-of-the-paper&quot;&gt;BibTeX of the Paper&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;@inproceedings{kurkovsky2007pervasive,
+	title = {Pervasive computing: Past, present, and future},
+ 	author = {Stan Kurkovsky},
+ 	year = {2007},
+ 	month = {December},
+ 	booktitle = {The 5-th International Conference on Information and Communication Technology (ICICT 2007)},
+ 	pages = {65--71},
+ 	address = {Cairo, Egypt},
+ 	doi = {http://dx.doi.org/10.1109/ITICT.2007.4475619},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+                <link>http://haixing-hu.github.io/research/2012/10/08/pervasive-computing-past-present-and-future</link>
+                <guid>http://haixing-hu.github.io/research/2012/10/08/pervasive-computing-past-present-and-future</guid>
+                <pubDate>Mon, 08 Oct 2012 00:00:00 +0800</pubDate>
+        </item>
+
+        <item>
+                <title>OS X: How to reset the DNS cache</title>
+                <description>&lt;p&gt;For OS X Mountain Lion or Lion, use the following Terminal command to reset the
+DNS cache:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo killall -HUP mDNSResponder
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;For Mac OS X v10.6, use the following Terminal command to reset the DNS cache:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo dscacheutil -flushcache
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+                <link>http://haixing-hu.github.io/computer/2012/08/17/os-x-how-to-reset-the-dns-cache</link>
+                <guid>http://haixing-hu.github.io/computer/2012/08/17/os-x-how-to-reset-the-dns-cache</guid>
+                <pubDate>Fri, 17 Aug 2012 00:00:00 +0800</pubDate>
+        </item>
+
+        <item>
+                <title>Sublime Text 2 Plugin to Convert Tabs to Spaces on Save</title>
+                <description>&lt;p&gt;Here is a simple &lt;a href=&quot;http://www.sublimetext.com/&quot;&gt;Sublime Text 2&lt;/a&gt; plug-in to
+convert tabs (only at the beginning of lines) to spaces in the current file
+whenever you save it.&lt;/p&gt;
+
+&lt;p&gt;In Sublime, go to the &lt;em&gt;Preferences&lt;/em&gt; menu and choose &lt;em&gt;Browse Packages…&lt;/em&gt; This
+will open the Sublime Text 2 Packages folder. Create a new folder here with
+your last name, then open your new folder (you just created your own Package!)&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Next, create an empty file in the folder called &lt;code&gt;tabs_to_spaces.py&lt;/code&gt;. Paste this
+code into the file:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sublime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sublime_plugin&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# class ExampleCommand(sublime_plugin.TextCommand):&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#   def run(self, edit):&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#       self.view.insert(edit, 0, &amp;quot;Hello, World!&amp;quot;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ConvertTabsToSpaces&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sublime_plugin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EventListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;on_pre_save&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;edit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;begin_edit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run_command&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;expand_tabs&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;set_translate_tabs&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end_edit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;edit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;#sublime.message_dialog(&amp;quot;Converted endings.&amp;quot;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This creates a hook and runs whenever you save the file, but right before the
+save actually occurs, allowing you to modify the document text. In this case
+all we did was run the menu command &lt;code&gt;expand_tabs&lt;/code&gt;. You could also run other
+commands or perform custom text replacements.&lt;/p&gt;
+</description>
+                <link>http://haixing-hu.github.io/computer/2012/07/30/sublime-text-2-plugin-to-convert-tabs-to-spaces-on-save</link>
+                <guid>http://haixing-hu.github.io/computer/2012/07/30/sublime-text-2-plugin-to-convert-tabs-to-spaces-on-save</guid>
+                <pubDate>Mon, 30 Jul 2012 00:00:00 +0800</pubDate>
+        </item>
+
+        <item>
+                <title>Represents the state of a qubit as a point on the Bloch sphere</title>
+                <description>&lt;p&gt;In the chapter 1.2 of Michael Nielsen’s book &lt;em&gt;Quantum Comutation and Quantum
+Information&lt;/em&gt;, it is said that the state of a qubit could be rewritten as
+\begin{equation}\label{eq_bloch}
+  |\psi\rangle = \cos\frac{\theta}{2}|0\rangle + e^{i\varphi}\sin\frac{\theta}{2}|1\rangle,
+\end{equation}
+but the inference procedure was not given. Here we try to infer it.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://plato.stanford.edu/entries/qt-quantcomp/Blochsphere.png&quot; alt=&quot;The Bloch Sphere&quot; title=&quot;The Bloch Sphere&quot; class=&quot;pull-right&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let $z=x+iy$ be a complex number, where $x$ and $y$ are real numbers, and
+$i$ is the imaginary unit. Let
+&lt;script type=&quot;math/tex&quot;&gt;r=\\|z\\|^2 = x^2 + y^2&lt;/script&gt;
+be the norm of $z$. Then the complex number $z$ could be considered as a
+point $Z$ on the circle with the origin $O$ as its center and $r$ as its
+radius.&lt;/p&gt;
+
+&lt;p&gt;Let $\theta$ be the angle between the vector $\vec{OZ}$ and the positive
+direction of the $x$ axis. The complex $z$ could be represented as
+&lt;script type=&quot;math/tex&quot;&gt;z=r(\cos\theta + i\sin\theta).&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;According to the Euler’s formula $e^{i\theta}=\cos\theta + i\sin\theta$, we have
+\begin{equation}\label{eq_complex}
+  z=re^{i\theta}$.
+\end{equation}&lt;/p&gt;
+
+&lt;p&gt;Suppose the state of a qubit is represented as
+$|\psi\rangle=\alpha|0\rangle + \beta|1\rangle$,
+where $\alpha$ and $\beta$ are both complex numbers. According to
+\eqref{eq_complex}, $\alpha$ and $\beta$ could be rewritten as
+\begin{align*}
+    \alpha &amp;amp;= r_{\alpha}e^{i\theta_{\alpha}} \&lt;br /&gt;
+    \beta  &amp;amp;= r_{\beta}e^{i\theta_{\beta}},
+\end{align*}
+and therefore $|\psi\rangle$ could be rewritten as
+\begin{equation}\label{eq_psi}
+  |\psi\rangle=r_{\alpha}e^{i\theta_{\alpha}}|0\rangle + r_{\beta}e^{i\theta_{\beta}}|1\rangle.
+\end{equation}&lt;/p&gt;
+
+&lt;p&gt;Multiply $e^{-i\theta_{\alpha}}$ to the both side of the equation \eqref{eq_psi},
+we have
+\begin{align*}
+    |\psi’\rangle &amp;amp;= e^{-i\theta_{\alpha}} |\psi\rangle \&lt;br /&gt;
+                  &amp;amp;= r_{\alpha}|0\rangle + r_{\beta}e^{i(\theta_{\beta}-\theta_{\alpha})}|1\rangle \&lt;br /&gt;
+                  &amp;amp;= r_{\alpha}|0\rangle + r_{\beta}e^{i\theta}|1\rangle,
+\end{align*}
+where $\theta = \theta_{\beta}-\theta_{\alpha}$.&lt;/p&gt;
+
+&lt;p&gt;Note that $\|e^{-i\theta_{\alpha}}\|^2 = 1$, it’s easy to see that
+\begin{align*}
+    |\psi’\rangle &amp;amp;= e^{-i\theta_{\alpha}} |\psi\rangle \&lt;br /&gt;
+                  &amp;amp;= e^{-i\theta_{\alpha}}\alpha |0\rangle + e^{-i\theta_{\alpha}}\beta |1\rangle
+\end{align*}
+has the same measurement effect as $|\psi\rangle$, since
+$|e^{-i\theta_{\alpha}}\alpha|^2 = |\alpha|^2$ and
+$|e^{-i\theta_{\alpha}}\beta|^2 = |\beta|^2$. Therefore, we could substitute
+$|\psi\rangle$ with $|\psi’\rangle$.&lt;/p&gt;
+
+&lt;p&gt;Finally, since
+&lt;script type=&quot;math/tex&quot;&gt;|\psi'\rangle = r_{\alpha}|0\rangle + r_{\beta}e^{i\theta}|1\rangle,&lt;/script&gt;
+and let $r_{\beta}e^{i\theta}=x+iy$, where $x$ and $y$ are both real
+numbers, then
+\begin{equation}\label{eq_psi_prim}
+  |\psi’\rangle = r_{\alpha}|0\rangle + (x+iy)|1\rangle.
+\end{equation}&lt;/p&gt;
+
+&lt;p&gt;According to the normalization condition, we have $|r_{\alpha}|^2+|(x+iy)|^2=1$,
+that is,
+\begin{align*}
+    |r_{\alpha}|^2 + |(x+iy)|^2 &amp;amp;= r_{\alpha}^2 + (x+iy)(x-iy) \&lt;br /&gt;
+                                &amp;amp;= r_{\alpha}^2 + x^2 + y^2    \&lt;br /&gt;
+                                &amp;amp;= 1,
+\end{align*}
+i.e.,
+\begin{equation}\label{eq_coordinate}
+  r_{\alpha}^2 + x^2 + y^2 = 1,
+\end{equation}
+&lt;img src=&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/3D_Spherical.svg/240px-3D_Spherical.svg.png&quot; alt=&quot;Spherical Coordinates&quot; title=&quot;Spherical Coordinates&quot; class=&quot;pull-right&quot; /&gt;
+where $r_{\alpha}$, $x$ and $y$ are both real numbers. The equation
+\eqref{eq_coordinate} shows that $(x,y,r_{\alpha})$ is the coordinate of a
+point on the unit sphere of the three dimension space.&lt;/p&gt;
+
+&lt;p&gt;In the polar coordinate system, the point $(x,y,r_{\alpha})$ on the unit
+sphere could be represented as
+\begin{align*}
+     x          &amp;amp;= r \sin\theta\cos\varphi \&lt;br /&gt;
+     y          &amp;amp;= r \sin\theta\sin\varphi \&lt;br /&gt;
+     r_{\alpha} &amp;amp;= r\cos\theta
+\end{align*}
+where $r=1$ is the radius of the unit sphere.&lt;/p&gt;
+
+&lt;p&gt;Therefore, according to \eqref{eq_psi_prim}, the state of a qubit could be
+rewritten as
+\begin{align}
+    |\psi’\rangle &amp;amp;= \cos\theta|0\rangle + (\sin\theta\cos\varphi + i\sin\theta\sin\varphi)|1\rangle \notag \&lt;br /&gt;
+                  &amp;amp;= \cos\theta|0\rangle + (\cos\varphi + i\sin\varphi)\sin\theta|1\rangle \notag \&lt;br /&gt;
+                  &amp;amp;= \cos\theta|0\rangle + e^{i\varphi}\sin\theta|1\rangle.\label{eq_psi_polar}
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;But wait, the formula \eqref{eq_psi_polar} slightly differs from the formula
+\eqref{eq_bloch}. We have to transform the $\theta$ to $\frac{\theta}{2}$.&lt;/p&gt;
+
+&lt;p&gt;Suppose
+\begin{equation}\label{eq_psi_sphere}
+  |\psi\rangle = \cos\theta’|0\rangle + e^{i\varphi}\sin\theta’|1\rangle.
+\end{equation}
+Note that if $\theta’=0$ then $|\psi\rangle= |0\rangle$, and if
+$\theta’=\frac{\pi}{2}$ then $|\psi\rangle=e^{i\phi}|1\rangle$, which shows
+that if $0\leq\theta’\leq\frac{\pi}{2}$, \eqref{eq_psi_sphere} could represents
+any point on a Bloch sphere.&lt;/p&gt;
+
+&lt;p&gt;Suppose the point corresponding to a qubit state $|\psi’\rangle$ is
+symmetrical to the point corresponding to a qubit state $|\psi\rangle$,
+relative to the center of the Bloch sphere. Obviously the polar coordinate of
+$|\psi’\rangle$ is $(1, \pi-\theta’, \varphi+\pi)$, i.e.,
+\begin{align*}
+  |\psi’\rangle &amp;amp;= \cos(\pi-\theta’)|0\rangle + e^{i(\varphi+\pi)}\sin(\pi-\theta’)|1\rangle\&lt;br /&gt;
+                &amp;amp;= -\cos\theta’|0\rangle + e^{i\varphi}e^{i\pi}\sin\theta’|1\rangle\&lt;br /&gt;
+                &amp;amp;= -\cos\theta’|0\rangle - e^{i\varphi}\sin\theta’|1\rangle\&lt;br /&gt;
+                &amp;amp;= - |\psi\rangle,
+\end{align*}
+which means the point corresponding to $|\psi’\rangle$ on the lower half sphere
+differs from its symmetry point corresponding to $|\psi\rangle$ on the upper
+half sphere with a phase of $-1$. Therefore we could consider only the points
+on the upper half sphere correponding to a $\theta’$ satisfying
+$0\leq\theta’\leq\frac{\pi}{2}$.&lt;/p&gt;
+
+&lt;p&gt;Finally we will map the points on the upper half sphere to the points on the whole
+sphere. Let $\theta=2\theta’$, i.e., $\theta’=\frac{\theta}{2}$, then we
+have
+\begin{equation}\label{eq_finally}
+  |\psi\rangle = \cos\frac{\theta}{2}|0\rangle + e^{i\varphi}\sin\frac{\theta}{2}|1\rangle,
+\end{equation}
+where $0\leq\theta\leq\pi$ and $0\leq\varphi\leq 2\pi$ is the polar coordinate
+of the corresponding point on the Bloch sphere. Note that the equation
+\eqref{eq_finally} is exactly the same as the equation \eqref{eq_bloch}.&lt;/p&gt;
+</description>
+                <link>http://haixing-hu.github.io/research/2012/07/23/represents-the-state-of-a-qubit-as-a-point-on-the-bloch-sphere</link>
+                <guid>http://haixing-hu.github.io/research/2012/07/23/represents-the-state-of-a-qubit-as-a-point-on-the-bloch-sphere</guid>
+                <pubDate>Mon, 23 Jul 2012 00:00:00 +0800</pubDate>
+        </item>
+
+        <item>
+                <title>面对面的办公室——纪念艾伦•图灵百年诞辰</title>
+                <description>&lt;p&gt;&lt;em&gt;载于《上海文化》2012年第5期&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;一左边的办公室&quot;&gt;一、左边的办公室&lt;/h3&gt;
+
+&lt;p&gt;冯•诺伊曼教授每年换一部新凯迪拉克。早上十点，他把爱车停在帕尔玛物理实验室门口，
+神采奕奕地走进隔壁数学系的办公室。那时候普林斯顿高等研究院才刚成立，和数学系挤在
+一幢叫作Fine Hall的楼—— “还不错的楼”。冯•诺伊曼教授总是穿一身笔挺的西装，以免别
+人把他错当成学生。他太年轻，三十出头，却已经到达了学术顶峰，和五十多岁的物理学家
+爱因斯坦、数学家维布伦（Oswald Veblen）、数学家亚历山大（James Alexander）一起成
+了高等研究院最初任命的四位教授。&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p class=&quot;align-center&quot;&gt;&lt;img src=&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/JohnvonNeumann-LosAlamos.gif/220px-JohnvonNeumann-LosAlamos.gif&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;
+John von Neumann, 1903-1957&lt;/p&gt;
+
+&lt;p&gt;十八岁那年，他犹太裔的父母试图把长子拉出对数学的执迷学些更实际的东西，于是他们达
+成了妥协，冯•诺伊曼同时在三所大学注册：在苏黎士联邦理工学院（ETH）学习化学工程，
+每晚完成柏林大学数学专业的作业，在每个学期末回布达佩斯大学参加他从没上过课的数学
+考试。二十二岁那年他不但从苏黎士联邦理工拿到化学工程学位，还通过了大卫•希尔伯特
+坐镇的数学博士答辩。整场答辩希尔伯特只问了一个问题：“我从来没见过这么漂亮的晚礼
+服，你的裁缝是谁？”于是，大家都知道了，希尔伯特钦点的年轻人，不但写了完美的博士
+论文，还是个翩翩佳公子。&lt;/p&gt;
+
+&lt;p&gt;博士毕业后的三年，高产的三年！他在柏林大学和汉堡大学的三年一共发表了二十五篇论文！
+包括一本八十年后仍然重印的量子力学教科书，可是……对于这个高速前行的天才这些光荣也
+已经是陈年往事。二十七岁上，纳粹刚刚抬头而美国也恰好走出了大萧条，维布伦代表普林
+斯顿去欧洲招兵买马，工资开价是冯•诺伊曼在德国挣的八倍还多。踏进美利坚第一天，他
+打趣地对同行的匈牙利老乡维格纳（Eugene Wigner, 1963年诺贝尔物理学奖）说：“我们该
+让自己更像美国人。”当即，维格纳改名叫“尤金”（Eugene），冯•诺伊曼改名叫“约
+翰”（John），和稍微熟一点的人就勾肩搭背地说“你们叫我强尼（Johnny）吧。”&lt;/p&gt;
+
+&lt;p&gt;强尼，强尼。强尼•冯•诺伊曼就不着痕迹地混进了满大街都是强尼的美利坚大熔炉，还有谁
+知道他刚出生时那个卑微的匈牙利名“亚诺斯”（Janos） ？还有谁知道他在德国那几年日耳
+曼化的“约汉纳”（Johann）？ 不过他改了名字，却死活不肯把姓氏里的“冯”去掉。二十几
+年前他有钱的犹太老爸向行将就木的老皇帝弗朗茨•约瑟夫买了这个贵族称号，于是带着暴
+发户气息的诺依曼家族就转眼变成了代代相传的贵族冯•诺伊曼，多亏奥匈帝国国库空虚等
+钱用，否则十足的犹太血统怎么能捐上这个高贵的名头？一到周末冯•诺伊曼肯定请教授们
+上他宽敞奢侈的大宅喝酒跳舞，宾客盈门杯觥交错， “冯•诺伊曼请客谁不去！”讲出这话，
+就好象请客做东的是奥匈帝国的某个最尊贵的日耳曼裔公爵。&lt;/p&gt;
+
+&lt;h3 id=&quot;二右边的办公室&quot;&gt;二、右边的办公室&lt;/h3&gt;
+
+&lt;p&gt;冯•诺伊曼教授对面的办公室坐着博士生艾伦•图灵。开朗外向的冯•诺伊曼教授和孤僻紧张
+的图灵没什么闲话好聊，只知道这个总穿一身乱糟糟运动衫的年轻人前几天差点把自己的那
+部二手福特车倒车进了卡耐基湖。冯•诺伊曼教授横穿大西洋必买头等舱，常年西装革履，
+每年换一部崭新的凯迪拉克，略略发福，讨厌运动，有一次妻子想让他学滑雪他恼羞成怒甚
+至以离婚威胁。与他恰恰相反，博士生图灵则在几个月前坐着末等甲板舱从英国漂到美国。
+他常年一件套头衫，开一部状况堪忧的二手福特，身材瘦削，热爱运动，是跑赢过奥运会选
+手的马拉松健将。一到周末，他和同学打垒球比赛，分成两个队，“大英帝国队”对决“叛变
+殖民地队”。&lt;/p&gt;
+
+&lt;p class=&quot;align-center&quot;&gt;&lt;img src=&quot;http://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Alan_Turing_photo.jpg/200px-Alan_Turing_photo.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;
+Alan Turing, 1912-1954&lt;/p&gt;
+
+&lt;p&gt;刚来普林斯顿那会儿他不是没试过去交朋友，拥抱新生活，可是上个月当一名卡车司机理所
+当然地把自己油腻腻的手搭在他肩上直呼其名和他侃大山时，堂堂剑桥大学国王学院的毕业
+生着实为这种粗鲁的风气吓了一跳。别误会了，他不像冯•诺伊曼教授那样公子派头，他爸
+爸不过是大英帝国驻印度的一个小公务员，可是英伦岛国的教养让他觉得一个陌生人把脏手
+搭在你他肩上实在有点亲昵过分。他也讨厌陌生人叫他“艾伦”，还是“图灵先生”更妥当些。
+除了难以适应美国的新环境，图灵先生还有更糟的问题，在那个年代的体面社会里止于手势
+和眼神的问题：喏，你知道的，他有点那个……就是那个……那个啊……你晓得我在讲什么啊。&lt;/p&gt;
+
+&lt;p&gt;数学天才艾伦•图灵先生是个无可救药的同性恋。&lt;/p&gt;
+
+&lt;p&gt;这个无可救药的问题是这样开始的：当图灵还在谢伯恩男校 （Sherborne School ）读高中，
+他认识了比自己高一级的克里斯托弗•马尔孔 （Christopher Morcom）。瘦弱的、过于瘦弱
+的马尔孔，每个学年都因病长期缺课，可他聪明的头脑竟然使他在偶尔上学的几天能补上所
+有功课，门门考试成绩第一。是这样毫不费力的聪慧吸引了图灵，而当他更接近马尔孔，惊
+喜地发现他和自己一样，对科学有着自发而浓厚的兴趣。在马尔孔偶尔上学的日子里，他们
+坐在相邻的座位听课，又一起去图书馆写作业，以便能不断讨论科学问题：马尔孔说如何在
+家里搭化学实验室研究碘，图灵说如何手算圆周率到小数点后36位，马尔孔说你知不知道薛
+定谔的量子力学有趣极了，图灵说你知不知道爱因斯坦的相对论也有趣极了。他们谈梦想，
+应该做数学家还是物理学家，如何为科学做出真正的贡献……晚钟响了，他们回各自的宿舍睡
+觉，又在凌晨爬起来站到阳台上用天文望远镜看星星，并写信把观测结果告诉对方：“我从
+没见过更好的木星。今夜我看到了五个环，甚至能看清中间那个环上的斑。”“我今夜看到了
+仙女座，但一会儿就消失了。”那个冬天，毕业班的马尔孔已顺利拿到了剑桥三一学院的奖
+学金。图灵还有一年毕业，马尔孔鼓励他来年报考剑桥，“因为那里的科学最好，而且我能
+经常看见你。”这句嘉勉说出口不到一个月，一个晴朗的凌晨，图灵起床看见月亮刚巧经过
+对楼马尔孔的窗户落下。“今晚的月亮格外美。”他写在记事本上预备第二天告诉马尔孔，他
+还不知道永远不会有那一天了。那个凌晨，克里斯托弗•马尔孔暴病夭折。&lt;/p&gt;
+
+&lt;p&gt;落葬日，时年十七岁的图灵怀着巨大的悲痛写信给马尔孔的母亲：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;1930年2月15日&lt;/p&gt;
+
+  &lt;p&gt; &lt;/p&gt;
+
+  &lt;p&gt;亲爱的马尔孔太太，&lt;/p&gt;
+
+  &lt;p&gt; &lt;/p&gt;
+
+  &lt;p&gt;我因为克里斯而很难过。一年来我们一起学习，我从来没交过像他那么聪明、迷人、又谦卑
+的朋友。我和他分享了研究的乐趣还有对天文的热爱（这是他引发的），我想他也是这么觉
+得的。现在，尽管有一部分乐趣因为他的死而消逝了，即使这一切不再因为他而那么有趣，
+我也要投入尽可能多的精力到研究上，就象他仍然活着。他会希望我这么做的。我深知你此
+刻的悲痛。&lt;/p&gt;
+
+  &lt;p&gt; &lt;/p&gt;
+
+  &lt;p&gt;你忠诚的，&lt;/p&gt;
+
+  &lt;p&gt;艾伦•图灵&lt;/p&gt;
+
+  &lt;p&gt; &lt;/p&gt;
+
+  &lt;p&gt;又及：如果你能给我一张克里斯的小照片我将十分感激。我愿以此来缅怀他的榜样和成就，
+督促我更仔细更优秀。我会思念他的面容，他走在我身边时微笑的模样。幸好我保存着他所
+有的信。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;马尔孔死后一年，图灵的未来决定了，他要去剑桥国王学院学数学，就像给马尔孔太太的信
+里所承诺的，“以此缅怀他的榜样和成就。”这一年中，无数次对马尔孔的哀思恐怕也让他渐
+渐明白了比友谊更深的感情。是爱情吗？图灵无法回答，也不屑回答。落葬日那封痛切的信，
+还有这一年来（以及他的余生）为了纪念马尔孔而突飞猛进的学业都说明了这份感情比爱情
+更高：他在竭尽所能挽留死者。又有谁会为那么美好的感情而惊慌呢？于是图灵坦然接受了，
+并在余生从未试图遮掩自己的性取向。&lt;/p&gt;
+
+&lt;p class=&quot;align-center&quot;&gt;&lt;img src=&quot;http://big5.ifeng.com/gate/big5/blogfile.ifeng.com/uploadfiles/blog_attachment/1207/62/3572362_c7e7dd99111e317619f655fade9adbba.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;
+图灵和克里斯托夫，左边为图灵&lt;/p&gt;
+
+&lt;h3 id=&quot;三希尔伯特的落日&quot;&gt;三、希尔伯特的落日&lt;/h3&gt;
+
+&lt;p&gt;每个清晨和黄昏，图灵习惯一个人沿着河边长跑思考问题。去年夏天，当他还在剑桥国王学
+院读本科，某次长跑到精疲力竭地躺倒在草地上，斜阳西照，运动让他神思凝聚，他脑中经
+历了一场风暴，忽然意识到了回答希尔伯特判定问题（Entscheidungsproblem）的办法。他
+兴奋地一跃而起跑回寝室写下自己的思绪。他的身后，照耀世界数学界三十余年之久的希尔
+伯特的太阳，终于落山了。&lt;/p&gt;
+
+&lt;p&gt;大卫•希尔伯特，那个时代最受尊敬的数学家，凭一己之力使数学走上了更严谨系统的现代
+之路。1900年，38岁的希尔伯特如一位新任的武林盟主，振臂一呼，四方响应。他在国际数
+学大会上提出了著名的“二十三个问题”，立即成为了数学界集体奋斗的目标，其中的第八个
+问题黎曼猜想/哥德巴赫猜想更是成了数学的桂冠。二十八年后，暮年的希尔伯特又提出了
+三个数理逻辑上的大问题，简单说来这三个问题分别是：1）数学是完备的吗？2）数学是相
+容的吗？3）数学是可判定的吗？其中的第三问题，即被称作希尔伯特的判定问题。如果说
+1900年的二十三个难题洋溢着壮年人的踌躇满志，那么1928年的三个问题已经是一个老人对
+秩序和条理的向往。希尔伯特十分希望，这三个问题的答案都是肯定的，因为这将使数学建
+立在完美严谨的逻辑的基石上，作为亘古不变的真理存在。&lt;/p&gt;
+
+&lt;p&gt;可惜，这个井井有条的逻辑美梦只做了三年，年轻的奥地利人哥德尔就发表了震惊数学界的
+哥德尔不完备定理：数学不可能既是完备的又是相容的。这个定理以十分有趣的形式否定了
+希尔伯特1928年的第一和第二个问题。到1935年夏天，躺在草地上休息的图灵经历了一场头
+脑风暴，他想到了否定希尔伯特第三个问题的办法：用机器。他想象着一种虚构的“图灵机”，
+可以从一条无限长的纸带子上的读取命令进行操作，从而模拟人类所可能进行的任何计算过
+程。图灵证明，我们不能用一个算法来判定一台给定的图灵机是否会停机，所以停机问题是
+一个无法判定的数学问题，即希尔伯特的第三个命题答案为否。&lt;/p&gt;
+
+&lt;p&gt;巧合的是，第二年春天，正当图灵把关于判定问题的论文初稿交给导师纽曼（Max Newman）过
+目时，大洋彼岸，普林斯顿大学的阿隆佐•邱奇（Alonzo Church）教授——逻辑界数一数二的学
+者——抢先一步发表了新论文，利用自创的λ演算（lambda calculus）否定了希尔伯特判定问题。
+看到邱奇如此巧合的论文，导师纽曼顺水推舟写信推荐图灵去做博士生。1936年夏，邱奇的
+新博士生图灵来到了普林斯顿。&lt;/p&gt;
+
+&lt;p class=&quot;align-center&quot;&gt;&lt;img src=&quot;http://big5.ifeng.com/gate/big5/blogfile.ifeng.com/uploadfiles/blog_attachment/1207/62/3572362_9fd58cb8f7523fbaf11e36f32d43fe87.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;
+图灵在普林斯顿大学的档案 Firestone Library, Princeton University, June 2012&lt;/p&gt;
+
+&lt;p&gt;11月，图灵关于判定问题的论文，即多年后将声名大噪的 On Computable Numbers, with
+an Application to the Entscheidungsproblem 终于发表，学界反应极其冷淡。12月图灵
+在普林斯顿数学俱乐部做了关于这篇论文的演讲，听众不足十人。这篇解决了希尔伯特第三
+个问题的论文为何遭到如此冷遇？有几个原因：其一，哥德尔不完备定理如此有趣奥妙，已
+经吸引走了学界关于希尔伯特三问题的大部分兴趣；其二，邱奇当年春天的论文已经率先解
+决了希尔伯特判定问题，虽然图灵的解法天差地别，也比邱奇的解法简洁得多；其三，用
+“机器”解决数理逻辑问题，实则是此篇论文最闪光的部分，可是过于新颖，不容易被主流学
+界接受；其四，恐怕也是最重要的原因：和著名教授邱奇比起来，图灵才初出茅庐。他在家
+书中愤愤说：“只有名人才会吸引听众。（One should have a reputation if one hopes
+to be listened to.）”&lt;/p&gt;
+
+&lt;p&gt;不，不完全如此。至少还有一个人会认真阅读无名小卒的论文。对门办公室的冯•诺伊曼教
+授——图灵默默仰慕又羞于开口的偶像——不但认真读过这篇论文，还读过所有期刊上的所有论
+文。他是一本雄心勃勃的百科全书，任何人的任何知识都逃不出他的法眼。图灵的论文一发
+表，敏锐的冯•诺伊曼已经嗅到了图灵机广阔的远景，他对朋友说，你该去找我对门的图灵，
+他那篇论文正好可以做这样那样的事。他慷慨地给朋友建议，自己却没亲自找图灵聊聊。他
+的注意力在有趣的图灵机上停留了一下，又跳到另一个截然不同却同样有趣的问题上：量子
+力学、流体力学、博弈论……世上千千万的问题都吸引着冯•诺伊曼，他脑中有千千万要实行
+的计划——图灵机不过是其中一个。&lt;/p&gt;
+
+&lt;p&gt;可是，博士生图灵仍然因为这篇论文而给冯•诺伊曼教授留下了印象，两年后图灵从普林斯
+顿博士毕业，是冯•诺伊曼教授唯一提出了挽留：年薪一千五百美元聘图灵做自己的助手。
+对于一个年轻的数学家，能师从传奇般的冯•诺伊曼教授是梦寐以求的机遇， 一千五百美元
+的薪水也比图灵在英国能找到的教职待遇好得多。图灵拿着冯•诺伊曼的聘书在普林斯顿校
+园里晃荡，理性使他不得不好好考虑这个千载难逢的肥缺，可是啊——英国人图灵吸吸鼻子，
+鼻子里呼到的空气有点太粗鄙，清清耳朵，耳朵里听到的英语有点太懒散。他走过哥特式的
+普林斯顿校礼拜堂，那只是更加宏伟古老的剑桥国王学院礼拜堂蹩脚的复制品。礼拜堂的尖
+顶插入新泽西州的蓝天白云，英国人图灵却没法欣赏这儿的晴空万里，他的目光越到了大西
+洋彼岸，那里，纳粹的阴云密布欧洲。&lt;/p&gt;
+
+&lt;p&gt;1938年夏，博士毕业的图灵忧心忡忡回到英国剑桥，在数学系做一学期才给十英镑的临时教
+员，教一门听者寥寥的“数学基础”。他将慢慢攀爬学术的梯子，成为教员、讲师、副教授、
+教授，如果不出意外的话。九个月后，意外降临：纳粹的阴云终于骤降成狂风暴雨，德国入
+侵波兰，第二次世界大战开始。&lt;/p&gt;
+
+&lt;h3 id=&quot;四station-x-site-y&quot;&gt;四、Station X. Site Y.&lt;/h3&gt;
+
+&lt;p&gt;二战的爆发给白金汉郡的布莱切利镇带来了点可喜的新鲜，一万多人连夜从大城市挤火车逃
+难到这个平庸乏味的小镇，可是不久大部分又挤火车回去了：宁愿被炸弹炸死，也不要在这
+小地方无聊死。艾伦•图灵却逆着人潮，搬到了这无聊小镇最无聊郊区的一家最最无聊的小
+旅馆里，每天骑车三英里去镇中心的布莱切利园（Bletchley Park）上一个谁都不知道在瞎搞
+什么的班，下班回来还自愿给冷冷清清的旅馆酒吧打杂。旅馆老板娘看着这个闲得发慌的小
+伙直摇头：健健康康的大男人，怎么不去打仗呢？&lt;/p&gt;
+
+&lt;p&gt;可是，图灵正在打仗。他的敌人：哑谜。看似死水一潭的布莱切利园，此时已有了军事代号：
+Station X，保密等级：绝密。这里是英国政府密码学校的驻地，海陆空和军情六处的情报
+组织各占一隅。几百名工作人员日夜兼程破解德国人的无线电报，为了最大程度保密，大部
+分职员根本不知道工作的真正目的，除了几个核心解密成员：象棋冠军、填字游戏高手、数
+学家。二十七岁的图灵很快在这个核心团队里有了绰号：教授（Prof.）。&lt;/p&gt;
+
+&lt;p&gt;此时的欧洲上空，无数来自德军的电波正以莫尔斯码的形式穿梭来回。这些莫尔斯码发出前
+由一种称作“哑谜机”（the Enigma Machine）的加密器加密，在接受方又由同样的“哑谜机”解
+密。直到二战结束，德军从未怀疑过哑谜机的坚不可摧，所有军种所有级别电报，一律用哑
+谜机加密，加密电报中放心大胆地沟通了所有军事信息：潜艇位置、军队人数、攻击路线、
+伤亡报告……&lt;/p&gt;
+
+&lt;p class=&quot;align-center&quot;&gt;&lt;img src=&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/EnigmaMachineLabeled.jpg/220px-EnigmaMachineLabeled.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;
+哑谜机&lt;/p&gt;
+
+&lt;p&gt;德军的信心源于哑谜机复杂的加密方法。虽然每个军种对商用的哑谜机都略有改进，不过所
+有哑谜机基本构造相同：键盘、接线板、多个转子、指示灯。当密码操作员在键盘上按下一
+个字母（比如字母A），电流会通过一个可自行改接的接线板，启动一个或者多个转子转动，
+同时点亮某个字母指示灯（比如字母L），于是字母A被加密成字母L。哑谜机精巧的设计使
+得，在下一次按下字母A时，它将被加密成另一个不同的字母（比如字母P）。更巧妙的是，
+当且仅当发送端和接收端的哑谜机拥有同样的初始设定（同样的接线板、同样的转子排列、
+同样的转子初始位置），密码L才可以使用接收端的哑谜机还原成A。而对于不知道初始设定
+的敌方，他们面对的可能情况多达10^114种！&lt;/p&gt;
+
+&lt;p&gt;雪上加霜的是，德军每个军种所用的哑谜机略有不同，相对于三个转子的陆军哑谜机，海军
+五转子的哑谜机要复杂得多。在布莱切利园只有两个人相信这层层加密状如天书的密码可以
+被破解：一个是布莱切利园的老大，因为“海军电报必须被破解”，否则被德军潜艇战封锁的
+英国将坐以待毙；另一个是“教授”图灵，因为“如果海军电报能破解，那实在太好玩了”。&lt;/p&gt;
+
+&lt;p&gt;“教授”发现，在加密文件中找规律的本质是重复搜索，而搜索是一种机器可以代替人脑的工
+作。当时，布莱切利园从曾经研究过哑谜机的波兰数学家那里继承了一种叫“炸弹”（Bombe）
+的原始解密仪器，每一个“炸弹”模仿一个哑谜机的转子，许多“炸弹”相链接来模拟一种哑谜
+机的初始设定生成可能的电报。简而言之，这是一种穷举搜寻答案的算法，需要遍历所有可
+能排列，费时费力。图灵洞察到，只要运用几个简单的事实——比如，一个字母的密码不可能
+是其本身、原始文本中一些字母（比如s）的出现频率一定高于另一些字母（比如x），一些
+固定词语（比如“元首”）将高频出现——就能大大改进波兰人的笨法子，来快速寻找最有可能
+的转子设定。用现在的算法语言来说，他将穷举法改良成了贪心算法。贪心算法改进后的
+“炸弹”对抗五转子的海军哑谜机大获成功。每次一方发出电报后，接受方过几分钟将发一封
+短电报表示“收讫”。许多回，电波中还未监测到“收讫”电报，图灵的“炸弹”机已经将密码还
+原成了原文， 可见“炸弹”的解密速度甚至比预知原始设定的接受方都快！布莱切利园自豪
+地说，德国人真该问“教授”他们的电报到底讲了什么。&lt;/p&gt;
+
+&lt;p&gt;可是，随着战争深入，转子更多的哑谜机不断投入运用，最后竟出现了十二转子的密码机。
+面对十二转子，即使图灵的“炸弹”都需要十几天时间。战场瞬息万变，布莱切利园亟需更快
+速的机器。很显然，提高速度的关键在于把机械的“炸弹”机改成更快速的电路装置。1943年，
+在图灵的鼓励下，布莱切利园工程师Tommy Flowers设计了一台叫作Colossus的巨型机器，
+在战时充裕的经费支持下很快获准建造。&lt;/p&gt;
+
+&lt;p&gt;这就是世界上第一台计算机，电子化、数字化、程序化。它由光学在长条纸带上读取电报原
+文，经过一千五百个真空管的电路计算，将解密结果输出到电传打字机上。1944年6月1日，
+经过完善的Colossus二号机抵达布莱切利园。离诺曼底登陆只有五天。&lt;/p&gt;
+
+&lt;p&gt;诺曼底登陆，在欧洲开辟第二战场的唯一方法，毋宁是一场豪赌。盟军三百万主力兵力要从
+海上和空中登陆易守难攻的诺曼底，很可能伤亡惨重。为了保护兵力，盟军的情报网精心编
+造了一则假情报透露给敌方，希望德军以为在诺曼底将有一次只是“小规模”的军事转移。而
+德军能不能上当则唯有通过由Colossus解密的德军电报检验。幸亏快速的电子计算机，解密
+很顺利，德军的电报显示只有一小支部队被派往诺曼底。更幸运的是，电报还详细说明了军
+事安排、物资转移、军种调遣，德军手中的牌一览无余。&lt;/p&gt;
+
+&lt;p&gt;6月6日凌晨三点，Colossus破解了一条德军自诺曼底刚发出的绝望的电报。天啊，天上怎么
+来了那么多伞兵。&lt;/p&gt;
+
+&lt;p&gt;随着这些伞兵安然降落，二战的转折点到来了。&lt;/p&gt;
+
+&lt;p&gt;大西洋的另一边，1943年秋。&lt;/p&gt;
+
+&lt;p&gt;威斯康辛大学麦迪逊分校数学教授乌拉姆（Stan Ulam）的办公室里闯进了一个女学生。学期
+只过了一半，她却要求提前完成期末考试，以便“为战争服务”。她坐在办公室的地板上，答
+完了教授在信封背面临时写下的几道题，然后消失到谁都不知道哪儿去了。&lt;/p&gt;
+
+&lt;p&gt;这几天，乌拉姆身边有许多朋友消失了。在食堂认识的同事、物理教授、自己带的研究生，
+他们打了个 “为战争服务”的假条，就神秘莫测地走了。乌拉姆心里痒痒，写信给自己朋友
+中人脉最广的冯•诺伊曼，询问有否能为战争服务的工作，他回信了，说自己忙得很，不如
+在芝加哥火车站见面——他在那里正好有两个小时的转车时间。乌拉姆在站台见到了风风火火
+的冯•诺伊曼，以及——他身后的两位保镖，这才意识到他朋友正在忙活的事对大战意义重大。
+冯•诺伊曼神秘地表示：有一件很重要的项目也许能让乌拉姆帮忙，不过他还不能说是什么
+事，在哪里，有谁。&lt;/p&gt;
+
+&lt;p&gt;几周后，乌拉姆收到了一封政府委派信，要求他去新墨西哥州一个小镇。他从来没听说过这
+荒僻之地，就去图书馆借新墨西哥州地图册。于是他惊喜地发现，在地图册的借书卡上，整
+齐地排列着之前消失的所有熟人的名字。他们都消失到了这个闻所未闻之地。&lt;/p&gt;
+
+&lt;p&gt;火车在一个荒凉的车站停下，黄沙遍野，峭壁陡崖，像时间尽头一样死寂。这里就是Site
+Y，刚刚起步的研究项目叫Project Y，保密等级：绝密。战争结束后，前者将称为洛斯阿拉
+莫斯国家实验室（Los Alamos National Laboratory），后者便是鼎鼎大名的曼哈顿计划。在
+这片萧索瑰丽的沙漠中，聚集了一群活力旺盛的年轻人，平均年龄25岁，第一年，80个新生
+命诞生。他们的领袖奥本海默38岁，他们的信使冯•诺伊曼39岁。他们的任务：制造摧毁一
+切活力和生命的超级武器，原子弹。&lt;/p&gt;
+
+&lt;p class=&quot;align-center&quot;&gt;&lt;img src=&quot;http://media.morristechnology.com/mediafilesvr/upload/smithville_review/article/2013/03/12/Oak_Ridge_w_sm.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;
+洛斯阿拉莫斯国家实验室边界的标志&lt;/p&gt;
+
+&lt;p&gt;四年前，爱因斯坦和西拉德（Leo Szilard）上书美国总统罗斯福：物理学的推进已经使得
+通过核裂变获得巨大能量指日可待，只要德国人愿意，他们有知识和能力发明这种武器，美
+国必须赶在纳粹德国之前掌握核技术。随着美国正式参战，核技术的研究越来越紧迫。一个
+名字被提出来：罗伯特•奥本海默，聪明果敢，当机立断。另一个名字被提出来：约翰•冯•
+诺伊曼，因为他已经坐镇另外十几个军事项目上，正好能耳听八路，眼观四方。&lt;/p&gt;
+
+&lt;p&gt;冯•诺伊曼教授是军方最喜爱的合作人。作为犹太人他对纳粹嫉恶如仇，为了替关在集中营
+的朋友报仇他渴望和手段强硬的人合作，醉心各种新式武器。作为数学家，他认为只有当数
+学有应用价值时，数学才能最快速度发展。少时父亲逼迫之下学习的化学工程意外派上了用
+场，他很容易明白物理学家和化学家的讨论，再用数学的语言解释给数学家听。他最擅长把
+一项看似庞大无解的任务庖丁解牛，分拆成小零件委派他人，让底下每个人觉得自己拿到的
+那部分恰好是最擅长的本职。他是天生的领袖和传令官，坐镇导弹研究实验室、美国数学学
+会战争委员会、国家防御研究委员会……不像大多数被强制定居在洛斯阿拉莫斯的科研者，他
+进出自由。日理万机的冯•诺伊曼教授哟，他在普林斯顿、波士顿、费城、华盛顿、芝加哥、
+洛斯阿拉莫斯实验室、阿伯丁兵器试验中心……全美的战时科研进展他一清二楚，人家刚跟他
+讲了两句，他就能接上来，“某某在芝加哥也做这事。”“哈佛的某某已经搞出来了。”&lt;/p&gt;
+
+&lt;p&gt;曼哈顿计划最大的困难不是制造出核裂变反应，而是控制原子弹的威力。爆炸的冲击波将反
+复震荡叠加，最终的力量难以预测。曼哈顿计划的高度机密性和核试验的昂贵成本使得大规
+模试验不可能，而人力又难以计算如此多的非线性方程。如何提高计算能力成了当务之急。&lt;/p&gt;
+
+&lt;p&gt;事实上，计算能力这个瓶颈也困扰着其他军方科研项目。于是，1943年，当听说宾夕法尼亚
+大学的一群工程师为了计算导弹轨道（另一种典型的非线性方程）而开始建造一台名为
+ENIAC的巨型机器时，冯•诺伊曼立即敏锐地想到：也可以用这机器去计算原子弹冲击波的能
+量。在他的牵头下，ENIAC建完后第一项测试任务居然不是导弹轨道而成了核弹方程，整个
+测试将原本几个月的 人力计算缩短到了几天。完成测试他脸色苍白地回到普林斯顿家里倒
+头睡了十小时，醒来后不吃不喝，久久向妻子吐出一句话：“我们造了一头怪兽。”&lt;/p&gt;
+
+&lt;p&gt;怪兽，他指的不是核弹，而是计算机。&lt;/p&gt;
+
+&lt;p&gt;看到了ENIAC的广阔前景后，冯•诺伊曼毛遂自荐要做ENIAC的数学顾问，让发明者Presper
+Eckert和John Mauchly受宠若惊。他们亲自领冯•诺伊曼参观机器，一间两百平米的大房间
+里，两个工程师指给他看：这里是一万八千根真空管、这里是电源、这里是读卡器、这里是
+维修站……可是，人家的设计冯•诺伊曼却看得比设计者还清楚，他一回去就写了个105页的报
+告：“一台计算机的基础组成是：存储器、控制器、运算器、输入输出设备。”至今，世界上
+的大部分电脑仍在沿用这著名的“冯•诺伊曼结构”。&lt;/p&gt;
+
+&lt;p&gt;1945年5月，德国投降，证据显示德国当时的科研进展还未能制造出原子弹。7月，洛斯阿拉
+莫斯第一颗原子弹试射成功。8月，在新上任的杜鲁门总统的授意下，两颗本为抵御德国人
+的原子弹投向日本广岛和长崎。9月，日本投降。第二次世界大战结束。&lt;/p&gt;
+
+&lt;p class=&quot;align-center&quot;&gt;&lt;img src=&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Trinity_Test_Fireball_16ms.jpg/640px-Trinity_Test_Fireball_16ms.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;
+1945年7月16日凌晨，第一颗原子弹Trinity在新墨西哥州试射成功&lt;/p&gt;
+
+&lt;h3 id=&quot;五maniac&quot;&gt;五、MANIAC&lt;/h3&gt;
+
+&lt;p&gt;在二战的巨大压力下，英美两国独立制造出了最原始的计算机，Colossus和ENIAC。它们惊
+人的相似：都利用打孔卡输入，都运用真空管计算，都体积庞大，都对二战胜利功勋卓著。
+二战史学家普遍认为，布莱切利园的工作使欧洲战场缩短了一年半到两年的时间，并直接切
+断了“沙漠之狐”隆美尔在北非的补给线；而曼哈顿计划则终结了太平洋战场。现在，在这个
+戏剧性的擂台上，两个核心人物图灵和冯•诺伊曼都决心改进这两台原始机器相似的缺陷：
+只为专门目的设计，不能储存程序。改进的方向很明显，一如图灵1936年论文所预言的那样，
+造一台能完成任何目的的图灵通用机。&lt;/p&gt;
+
+&lt;p&gt;二战结束了，而冷战的阴影旋即逼近。核威慑成了一扇关不上的门，在间隔重重的美苏关系
+中，美国很快发现为求自保只能继续扩大核优势。氢弹的研究成为了攻坚关键，而如何提高
+计算能力又成了重中之重。要造一台好机器！冯•诺伊曼教授对此深信不疑。&lt;/p&gt;
+
+&lt;p&gt;在哪里造？就在普林斯顿高等研究院！高等研究院院长面有难色：“我们这儿一直搞纯科学，
+造这么台大机器有点不像话吧？”“钱哪来？一年十万美金的预算，你得让数学系经费翻三
+番！”“造了放哪？三间两百平米的大房子，二十四小时引擎折腾，我们这儿可没这样的兵工
+厂。”鬼精明的冯•诺伊曼笑着对院长说既然这样那就算了，谢谢院长费心，一回头却给哈佛
+大学、芝加哥大学、IBM轮番写信：“我有兴趣到你那儿工作。”三所机构喜笑颜开，发出了
+热烈的聘书。好个冯•诺伊曼，姜太公钓鱼，把哈佛的聘书给芝加哥看，把芝加哥的给IBM看，
+每个机构衬着别人的价码轮番加价，要是能把鼎鼎大名的冯•诺伊曼请到，送个金屋银屋都
+值！他胜券在握，把哈佛的天价聘书呈给普林斯顿的同事看，伤感地说自己要辞职，教授们
+联名写信给院长：“失掉冯•诺伊曼将是普林斯顿的悲剧！”那院长也只能咬咬牙：去造你那
+台要命的机器吧。&lt;/p&gt;
+
+&lt;p&gt;1947年在普林斯顿高等研究院开始建造的MANIAC计算机在任何意义上都超过了前任ENIAC。
+ENIAC用了两万个真空管，MANIAC只用了两千个。ENIAC重达三十吨，MANIAC只有一吨。最关
+键的是，ENIAC不能贮存程序，每个 不同的任务都需要重新排布电线，而MANIAC可以读取由
+打孔卡上二进制编码的程序，贮存在存储器中。它是世界上第一台真正的全能自动电子计算
+机，是后世所有计算机的母型。它完成的诸多军方任务中，最惹眼的是一次耗时60昼夜的计
+算，其结果证明了氢弹制造的可行性。&lt;/p&gt;
+
+&lt;p class=&quot;align-center&quot;&gt;&lt;img src=&quot;http://paw.princeton.edu/issues/2012/04/04/pages/5444/Turing_group.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;
+1952年科学家们在MANIAC前合影。左五为奥本海默，右一为冯•诺伊曼&lt;/p&gt;
+
+&lt;p&gt;1957届校友Joshua Dranoff，日后成为西北大学化工系教授，在五十年代利用MANIAC完成了
+他化工博士论文，其中设计了一个用计算机模拟实验结果的步骤。他告诉我，每一天机器运
+行之前有漫长的检修，技术工拿着一箱电线和真空管爬进MANIAC内部逐一更换坏损零件。各
+个专业的学生等在实验室外叽叽喳喳地排队签到，他们都想尝尝MANIAC的鲜，在论文里时髦
+地用计算机做个小项目。1958届校友Jerry Porter，日后成为宾夕法尼亚大学数学系教授，
+是第一个运用MANIAC完成本科毕业论文的学生。他大三大四时还带领一帮同学负责MANIAC的
+夜班值勤，他们得盯着示波器屏幕，时刻监测MANIAC宝贵的1024比特随机存储器不被烧坏。
+这个夜班工作激发了他对计算机的兴趣，日后的学术生涯他专注于计算数学领域。&lt;/p&gt;
+
+&lt;p&gt;于是乎，在未受战争破坏的美国，由ENIAC掀起的计算机和电子工程科学搞得风生水起，并
+很快由IBM公司实现了商业运作。到1960年MANIAC光荣退休被捐赠给史密森尼国家博物馆
+（Smithsonian）时，全美已经拥有了6000台计算机。&lt;/p&gt;
+
+&lt;p&gt;在废墟上的英国，博士生图灵的运气远没那么好。二战后，为保护英国情报网，布莱切利园
+大部分文件资料被焚烧销毁，其余被归为机密档案。胜利的光荣属于海陆空三军，而布莱切
+利园的工作人员必须对战时工作保持沉默。头号功臣图灵被授予大英帝国官佐勋章（OBE），
+可即便他的母亲也只是知道，“他做了点了不起的事情。”&lt;/p&gt;
+
+&lt;p&gt;图灵被分配到国家物理实验室工作，迫不及待地想要改进Colossus。 他向实验室提交了一
+份项目申请，详尽地阐明自己将如何建造一台能贮存程序的计算机，事无巨细地列出所有图
+纸和经费计划。可是，战时布莱切利园的高效和无节制的战争经费已经让位于战后拖拉的官
+僚作风和经济危机。过目这份申请的负责人没有一个看出这庞然大物的用处，大部分人甚至
+不相信计算机可以造出来——可笑可叹，与ENIAC的风光截然不同，为情报服务的Colossus对
+外界是“不存在”的。图灵甚至不能告诉别人，这台他们认为不可能造的机器已经造出来了。&lt;/p&gt;
+
+&lt;p&gt;1948年，受够了国家实验室的官僚作风，图灵跳槽到曼彻斯特大学计算实验室 （Computing
+Labatory），这里受到美国ENIAC的激励正在建造英国第一台贮存程序式电脑Manchester
+Mark I。图灵本该大有作为，可是制造这么大一个机器需要和很多人协调，他孤僻的性格很
+快让同事与之疏远，大部分建议被当作书呆子的意气而姑妄听之。不久，他聊以自慰地发现，
+造计算机的难点主要是硬件而非数学模型，那还是把琐碎的工程问题留给工程师吧。他呢，
+他只要能够“想”就行了。想——他开始为一个根本不存在的计算机想一种下象棋的程序。四年
+后，他会扮演这台虚构的计算机，严格执行自己的程序，和朋友下了一场真正的象棋比赛，
+每一步耗时半小时。他和朋友下输了，却赢了朋友的妻子一局。对于数学家图灵，即使永远
+没有计算机的实体，这件事也已经做完了。“想出来”就是“做出来”。&lt;/p&gt;
+
+&lt;h3 id=&quot;六咬了一口的苹果&quot;&gt;六、咬了一口的苹果&lt;/h3&gt;
+
+&lt;p&gt;在曼彻斯特大学，图灵的主要工作仍然是在计算学理论上。1950年，他提出了至今仍广泛使
+用的“图灵试验”（Turing Test），即让测试者向两个对象——一个为机器一个为自然人——提出
+一系列问题，如果根据双方的回答，测试者不能辨别孰为机器，则这个机器应被视为有智能
+的。别有意味的是，图灵在提出这个试验时用了一个精巧的隐喻：假设两个回答者是一男一
+女，提问方在问出一系列问题后不能判断哪个是女人，则可以认为那个男人也是一个成功的
+“女人”。&lt;/p&gt;
+
+&lt;p&gt;他是在这里影射自己性取向上的差异吗？我们不得而知。可完成论文后没多久，他就在一次
+散步时结识了十九岁的阿诺德•莫里（Arnold Murray）：水泥匠的儿子、惯偷、小混混。这让
+人不禁想起当年中产富裕的魏尔伦一见钟情地爱上了十六岁的兰波：一个乡下来的野孩子，
+境遇的极端不同招至强烈的爱欲。如同魏尔伦和兰波一样，图灵的故事也有一个甜蜜的开头
+和一个毁灭性的结尾：有一天图灵发现自己家中失窃了，他报了案，窃贼是莫里的朋友。于
+是经过简单的询问，图灵向警方承认了和莫里之间的关系。&lt;/p&gt;
+
+&lt;p&gt;在当时的英国，同性恋被列为“不体面罪”（gross indecency）。他的入室盗窃案非但因此不
+得到法律保护，他反而被送上法庭受审。法官给出了两种惩罚任他选择：坐牢或者化学阉割。
+当时一些科学研究认为，同性恋源自过剩的雄性欲望，可以通过注射雌激素来抑制。两害相
+权，图灵选择了后者，因为这样至少能呆在家里继续做数学。他被持续注射雌激素长达一年，
+导致胸部发育，变声，阳痿。&lt;/p&gt;
+
+&lt;p&gt;1954年6月7日，他在家中咬了一口沾有氰化物的毒苹果自杀。&lt;/p&gt;
+
+&lt;p&gt;让图灵生命最后两年处境悲惨并最后导致他服毒自杀的“不体面罪”，他当时是极其天真地就
+在警方面前承认了。他不但口头承认了，还兴冲冲手写了五页花体字的供述。读过这五页纸
+的警察认为 “像散文一样流畅”（a flowing style, almost like prose）、“虽然有些措词太
+难读不懂”（beyond them in some of its phraseology）、“他真以为他在做正确的事”（he
+really believed he was doing the right thing） 。图灵事后告诉朋友，他之所以这么坦
+白是因为他以为同性恋很快就要合法了，一切都可以摊在台面上谈。&lt;/p&gt;
+
+&lt;p&gt;图灵惨死后六十年过去了，这一切还远不能摊在台面上谈，同性恋行为在大部分国家仍受到
+广泛争议，虽然尊重和合法的呼声在青年一代中越来越高。2009年，英国首相布朗在一份几
+千人签名请愿书下向这位计算机之父和二战英雄做了官方道歉：“我们很抱歉。你本该被更
+好对待。（We are sorry. You deserved so much better.）”&lt;/p&gt;
+
+&lt;p class=&quot;align-center&quot;&gt;&lt;img src=&quot;http://www.bco.ie/wp-content/uploads/2013/08/turing2.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;
+为纪念图灵百年诞辰，今年英国发行了一张图灵邮票&lt;/p&gt;
+
+&lt;p&gt;1957年，五十三岁的冯•诺伊曼因骨癌病逝，癌变原因很有可能源自曼哈顿计划的核辐射。
+军方代表守在他的病床前，以防他在药物作用下泄漏军事机密。生命最后的日子，这个数学
+天才连简单的加减法都不能做了，却还逐字背诵幼年读过的《浮士德》 给探望的亲友解闷。
+浮士德，与魔鬼订约而遍历人间百态的大学者，这不正是冯•诺伊曼的一生？&lt;/p&gt;
+
+&lt;p&gt;冯•诺伊曼去世后，一切都不同了。曾经那么容易实现的事情，现在却困难重重。继任者们
+不明白，他到底是怎么搞来那么多钱？怎么招到那么聪明的人？“而且，说到底，我们为什
+么非得造一台机器呢？”冯•诺伊曼手下忠心耿耿的工程师们还梦想着造一台更好的MANIAC，
+用晶体管造，稳定性比真空管好得多……可是，这一台机器永远没造。源泉死了，源源不断的
+活力和创造便停歇了。普林斯顿高等研究院退出了计算机科学最令人激动的发迹史。接下来，
+将是IBM和MIT的天下。&lt;/p&gt;
+
+&lt;h3 id=&quot;七告诉他们我度过了极好的一生&quot;&gt;七、“告诉他们，我度过了极好的一生。”&lt;/h3&gt;
+
+&lt;p&gt;回到1939年，大战之前的最后一个学期。&lt;/p&gt;
+
+&lt;p&gt;1939年2月13日，剑桥哲学系教授维特根斯坦走进“数学基础”课教室，失望地发现他的学生
+图灵今天缺席了，于是对班上宣布，因为图灵缺席，“今天的课只是参考性的”——要知道这门
+课的要旨就是听维特根斯坦和图灵吵架！这位27岁的年轻人刚从普林斯顿大学博士毕业，正
+在剑桥数学系以临时教员的身份教授一门同样叫作“数学基础”同样听者寥寥的课，不过维特
+根斯坦的课是关于“数学本质是什么”这个哲学问题，而图灵的课是关于“奠定数学基础的公
+理是哪些”这个数学问题。在维特根斯坦的课上，他喜欢把所有对数学基础的攻击倾数射向
+图灵，而图灵也很喜欢针锋相对地反击。两人激烈地争吵，而后发现自己对彼此领域的理解
+前进了一点。在这个常年一身运动衫、又紧张又内向的年轻人身上，维特根斯坦看到了三十
+年前的自己：除了思考最基本的问题，这世上没有其他事要做。三十年前，出生于欧洲最富
+有家族的维特根斯坦也是同样不修边幅地站在逻辑学家罗素面前，他急于从罗素口中知道自
+己有没有严肃思考最基本问题的才能：如果没有，他就预备去自杀。&lt;/p&gt;
+
+&lt;p&gt;而今天，这个与自己惊人相似的年轻人图灵没有来上课 。图灵正骑着掉链子的自行车去“钟
+屋”（Clock House）——他心爱的克里斯托弗•马尔孔生前最常去的教区教堂。今天是马尔孔去
+世九年的祭日，马尔孔的父母决定以儿子的名义为教堂捐赠一个小礼拜堂。图灵坐在礼拜堂
+里参加捐赠仪式，对面的彩色玻璃窗上绘有圣徒克里斯托弗的事迹。亡友死后，彻底的无神
+论者图灵已经几十次来到这座教堂缅怀十七岁的夜晚，他和他从图书馆回宿舍一路上所谈论
+的雄心壮志：如何为科学做出真正的贡献。现在，完成了剑桥和普林斯顿的学业，这个雄心
+已经变得更加具体。他的脑中已经看到了一部精巧的机器，一部能完成所有“可能完成的”任
+务的机器。这不再仅仅是一台机器，也是对马尔孔的交代。&lt;/p&gt;
+
+&lt;p&gt;多年之后，冯•诺伊曼教授会向美国政府保证，世上只需要十五台这样的机器，全部由像自
+己一样聪明的科学家操作，用以计算最重要的问题：弹道曲线、核反应方程、天文观测。而
+图灵的愿景在更深的地方：钻研过希尔伯特1928年三个问题的博士生图灵伤感地意识到，数
+学是不完美的，逻辑是不完美的，哲学是不完美的。即使在最抽象最笼统的意义上，我们仍
+然永远活在一个不完美的世界里，在这摇晃的地基上我们永远造不出任何完美的事物。我们
+必须不断修葺改造，在每一次稳固地基的同时试图变得更好。&lt;/p&gt;
+
+&lt;p&gt;如果一台完美的机器是不可能的，那么能否造出一台不完美但是像孩童一样不断成长的机器
+呢？于是，图灵梦想着他的图灵机，那是一种可以不断读取自身修改自身的机器，在许多次
+失败的尝试后能学习到成功的诀窍。图灵梦想着许多图灵机连接在一起，一台提出问题，许
+多台都可以回答。可以是任何问题：从弹道曲线到老奶奶的购物清单到家庭旅行的地图路线。
+可以由任何人操作：从最聪明的科学家到小学肄业生，因为每台图灵机提供答案将经过更多
+的图灵机甄选。&lt;/p&gt;
+
+&lt;p&gt;我们知道，冯•诺伊曼关于世界只需要十五台计算机的断言错了。世界沿着图灵的梦想延展
+下去，一个扁平的千姿百态的世界。我们知道，图灵的梦想已经那么熟稔地被今天的人类挂
+在嘴边：互联网、人工智能。&lt;/p&gt;
+
+&lt;p&gt;回到1937年，文章一开头描绘的那个早晨。&lt;/p&gt;
+
+&lt;p&gt;34岁的犹太裔教授冯•诺伊曼是家财万贯的公子哥，不过他一定是公子哥中最勤奋的一个。
+他每天五点起床，昨夜他派对宴请的朋友还一个个倒在沙发上打呼噜，他已经在书房里沙沙
+写了几页论文。九点开早饭，他停止工作走出书房，和留宿的朋友谈笑风生邀请他们下次再
+来。十点，他的凯迪拉克已经稳稳当当地停在帕尔玛物理实验室前面，他一身标志性的西装
+地走向相邻的数学楼，继续写论文。&lt;/p&gt;
+
+&lt;p&gt;此时25岁的同性恋博士生图灵也已经穿着标志性的破运动衣沿着学校树林跑完了半程马拉松。
+他在树林里看到了几只英国见不着的颜色鲜艳的青蛙，几朵庞大的蘑菇，暗自好笑了一会儿。
+他到帕尔玛物理实验室捣鼓了一下自己的业余爱好——制造一台能做乘法的机器——然后穿过天
+桥走进数学楼，向办公室对门的冯•诺伊曼尴尬地打个照面，继续研究λ演算和图灵机。&lt;/p&gt;
+
+&lt;p&gt;那时候，普林斯顿大学的数学楼和物理楼有一座天桥相连。爱因斯坦教授精神很好，每天穿
+梭天桥许多次在数学和物理之间来回奔跑。那是一个离我们遥远的伟大的科学年代，基础学
+科之间有许多天桥和地道相通，科学家从一个学科开始挖凿，最后挖到另一个学科的金矿。
+希尔伯特在世纪之初的著名演讲为几十年内的数学突飞猛进提供了指路牌，爱因斯坦1915年
+的广义相对论带来了一个崭新的宇宙观，一个个新化学元素接踵而至犹如上天的惊喜。集合
+论不过半个世纪，拓扑学才三十几年，量子力学二十年……在这个幸福的基础科学的时代，犹
+太人冯•诺伊曼和同性恋图灵坐在面对面的办公室里，这两种备受歧视的身份将困扰他们一
+生，可是此时，他们心无旁骛只有一个愿望：做一个数学家、数学家、数学家。&lt;/p&gt;
+
+&lt;p&gt;幸福的数学家。&lt;/p&gt;
+
+&lt;h3 id=&quot;扩展活动&quot;&gt;扩展活动&lt;/h3&gt;
+
+&lt;p&gt;我的一位学数学的朋友制作的图灵机网站在这里。为之所写的浪漫的使用说明书在这里。&lt;/p&gt;
+
+&lt;p&gt;向对图灵的一生感兴趣的读者推荐这本科学传记的典范：Alan Turing: The Enigma .&lt;/p&gt;
+
+&lt;p&gt;向对哑谜机和布莱切利园感兴趣的读者推荐纪录片World War II Mind of a Code Breaker，
+在Youtube上有。&lt;/p&gt;
+
+&lt;p&gt;本文的写作除参考以下书目，还从1957届校友Joshua Dranoff教授、 1958届校友Jerry
+Porter教授处得到了宝贵的原始资料。1988届校友W. Barksdale Maynard先生、普林斯顿档
+案馆的Daniel Linke先生在史料核对上提供了有益的线索。&lt;/p&gt;
+
+&lt;p&gt;本文的配图除图灵在普林斯顿的档案那一张系自己拍摄，其余都来自网络。&lt;/p&gt;
+
+&lt;h3 id=&quot;参考书目&quot;&gt;参考书目：&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Dyson, George. &lt;em&gt;Turing’s Cathedral: The Origins of the Digital Universe&lt;/em&gt;.
+New York: Pantheon Books, 2012.&lt;/li&gt;
+  &lt;li&gt;Hargittai, Istvan. &lt;em&gt;The Martians of Science: Five Physicists Who Changed the
+Twentieth Century&lt;/em&gt;. Oxford: Oxford University Press, 2006.&lt;/li&gt;
+  &lt;li&gt;Hodges, Andrew. &lt;em&gt;Alan Turing: the Enigma&lt;/em&gt;. New York: Walker &amp;amp; Company, 2000.&lt;/li&gt;
+  &lt;li&gt;Macrae, Norman. &lt;em&gt;John von Neumann: The Scientific Genius Who Pioneered the
+Modern Computer, Game Theory, Nuclear Deterrence, and Much More&lt;/em&gt;.
+Providence, RI: American Mathematical Society, 1999.&lt;/li&gt;
+  &lt;li&gt;Monk, Ray. &lt;em&gt;Ludwig Wittgenstein: The Duty of Genius&lt;/em&gt;.
+New York: Penguin Books, 1991.&lt;/li&gt;
+  &lt;li&gt;Ulam, S.M.. &lt;em&gt;Adventures of a Mathematician&lt;/em&gt;.
+New York: Charles Scribner’s Sons, 1976.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+                <link>http://haixing-hu.github.io/misc/2012/06/22/alan-turing-centenary-commemoration</link>
+                <guid>http://haixing-hu.github.io/misc/2012/06/22/alan-turing-centenary-commemoration</guid>
+                <pubDate>Fri, 22 Jun 2012 00:00:00 +0800</pubDate>
         </item>
 
 
