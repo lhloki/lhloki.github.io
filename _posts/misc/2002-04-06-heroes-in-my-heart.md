@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Heroes in My Heart"
+title: Heroes in My Heart
 author: ukim@PKU
 category: misc
 tags: [legend, mathematician]
 use_math: true
+comments: true
 lang: zh
 style: "blockquote {text-align: right;} h3, h4 {text-align: center;}"
 ---
