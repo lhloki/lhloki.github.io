@@ -2,6 +2,9 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 
 markdown: kramdown
+kramdown:
+    input: GFM
+    syntax_highlighter: rouge
 #markdown: maruku
 markdown_ext: markdown,mkd,mkdn,md
 permalink: /:categories/:year/:month/:day/:title
@@ -14,7 +17,7 @@ exclude:
     - "bower.json"
 
 # set pygments to true in order to support syntax highlight
-highlighter: pygments
+#highlighter: pygments
 
 # support the pagination
 paginate: 5
@@ -49,6 +52,9 @@ license:
 
 # Configurations for the menu items of the navigation bar
 menuitems:
+    - { title:    金融工程,
+	category: fe,math,
+	url:      /fe.html}
     - { title:    学投资, 
         category: investment,
         url:      /investment.html }
@@ -144,13 +150,13 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : disqus
-    disqus :
-      short_name : haixing
+    provider : intensedebate 
+    #disqus :
+    #  short_name : haixing
     # livefyre :
     #   site_id : 123
-    # intensedebate :
-    #   account : 123abc
+    intensedebate :
+       account : b989a35d62b94aaf2180dc75b55a7d0a
     # facebook :
     #   appid : 123
     #   num_posts: 5
