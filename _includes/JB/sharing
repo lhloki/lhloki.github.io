@@ -10,6 +10,8 @@
         {% include JB/sharing-providers/twitter %}
       {% when 'linkedin' %}
         {% include JB/sharing-providers/linkedin %}
+      {% when 'jiathis' %}
+        {% include JB/sharing-providers/jiathis %}
     {% endcase %}
   {% endfor %}
 
