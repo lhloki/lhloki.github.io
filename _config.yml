@@ -52,6 +52,23 @@ license:
 
 # Configurations for the menu items of the navigation bar
 menuitems:
+    - { title:    课程,
+        dropdown: true,
+        subitems: [ { title: 离散金工,
+                      category: discrete-model,
+                      url: fe-discrete.html},
+                    { title: 连续金工,
+                      category: continuous-model,
+                      url: fe-continuous.html},
+                    { title: 随机过程,
+                      category: stochastic,
+                      url: stochastic.html},
+                    { title: 投资学,
+                      category: investment-science,
+                      url: investment-class.html},
+                    { title: 仿真,
+                      category: simulation,
+                      url: simulation.html} ] }         
     - { title:    金融工程,
 	category: fe,math,
 	url:      /fe.html}
