@@ -70,19 +70,19 @@ menuitems:
                       category: simulation,
                       url: simulation.html} ] }         
     - { title:    金融工程,
-	category: fe,math,
+	category: fe,
 	url:      /fe.html}
     - { title:    学投资, 
         category: investment,
         url:      /investment.html }
     - { title:    FOF与MOM, 
-        category: fof,mom,
+        category: fof,
         url:      /fof.html }
     - { title:    数据与R, 
-        category: data,R,Python,
+        category: data,
         url:      /data.html }
     - { title:    生活, 
-        category: life,hike,food,
+        category: life,
         url:      /life.html }
     - { title:    Misc, 
         category: misc,
