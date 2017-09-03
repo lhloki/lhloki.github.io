@@ -1,23 +1,53 @@
----
-layout: post
+`---
 title: "Kernel Density Estimation in R"
-author: Hai Lan
-date: 2017-06-11
-categories: data
-tags: [投资,R]
-use_math: true
-comments: true
+output:
+  md_document:
+    variant: markdown_github
+ 
 ---
 
 
 # What is Kernel Density Estimation?
 
 ## Tranditional Histograms
-It is very natural to check the density distribution function (PDF) of a random variable through its histogram. But histogram is a very crude density estimator which highly depends on the choice of number and locations of its bars. In the following example, the historical daily returns of hs300 index since Jan. 17, 2011 is studied. By simply varing the number bars of a histogram,
+It is very natural to check the density distribution function (PDF) of a random variable through its histogram. But histogram is a very crude density estimator which highly depends on the choice of number and locations of its bars. In the following example, the historical daily returns of hs300 index since Jan. 17, 2011 is studied. By simply varing the number bars of a histogram, 
 
 
 ```r
 library(PerformanceAnalytics)
+```
+
+```
+## Loading required package: xts
+```
+
+```
+## Loading required package: zoo
+```
+
+```
+## 
+## Attaching package: 'zoo'
+```
+
+```
+## The following objects are masked from 'package:base':
+## 
+##     as.Date, as.Date.numeric
+```
+
+```
+## 
+## Attaching package: 'PerformanceAnalytics'
+```
+
+```
+## The following object is masked from 'package:graphics':
+## 
+##     legend
+```
+
+```r
 library(CAsset)
 data(stock_index_daily)
 hs300 = stock_index_daily[,'hs300']
@@ -28,7 +58,7 @@ hist(hs300,breaks=25,main='hs300(25 bars)')
 hist(hs300,breaks=35,main='hs300(35 bars)')
 ```
 
-![plot of chunk unnamed-chunk-1](/figure/posts/dataR/kde/unnamed-chunk-1-1.png)
+![plot of chunk unnamed-chunk-1](/figure/posts/data/kde/unnamed-chunk-1-1.png)
 
 It seems that histogram with larger number of bars may reveal or exhibit better PDF. But it is never so simple. The following are the histograms of the same dataset but with 500 and 1500 bars each.
 
@@ -38,7 +68,7 @@ hist(hs300,breaks=500,main='hs300(500 bars)')
 hist(hs300,breaks=1500,main='hs300(1500 bars)')
 ```
 
-![plot of chunk unnamed-chunk-2](/figure/posts/dataR/kde/unnamed-chunk-2-1.png)
+![plot of chunk unnamed-chunk-2](/figure/posts/data/kde/unnamed-chunk-2-1.png)
 
 Having more bars just can't help us to see better pattern on the probability density function.
 
@@ -67,9 +97,9 @@ rug(x,lwd=2)
 out<-apply(bumps,2,function(b)lines(xgrid,b,col='blue'))
 ```
 
-![plot of chunk unnamed-chunk-3](/figure/posts/dataR/kde/unnamed-chunk-3-1.png)
+![plot of chunk unnamed-chunk-3](/figure/posts/data/kde/unnamed-chunk-3-1.png)
 
-Each “bump” is centred at the datum, and it spreads out symmetrically to cover the datum’s neighbouring values.  Each kernel has a bandwidth, and it determines the width of the “bump” (the width of the neighbourhood of values to which probability is assigned, in the above example, $h=0.4$ is the bandwidth). The following example shows  that a bigger bandwidth results in a shorter and wider “bump” that spreads out farther from the centre and assigns more probability to the neighbouring values.
+Each “bump” is centred at the datum, and it spreads out symmetrically to cover the datum’s neighbouring values.  Each kernel has a bandwidth, and it determines the width of the “bump” (the width of the neighbourhood of values to which probability is assigned, in the above example, $h=0.4$ is the bandwidth). The following example shows  that a bigger bandwidth results in a shorter and wider “bump” that spreads out farther from the centre and assigns more probability to the neighbouring values. 
 
 
 ```r
@@ -84,7 +114,7 @@ for(h in c(0.1,1))
 }
 ```
 
-![plot of chunk unnamed-chunk-4](/figure/posts/dataR/kde/unnamed-chunk-4-1.png)
+![plot of chunk unnamed-chunk-4](/figure/posts/data/kde/unnamed-chunk-4-1.png)
 
 
 
@@ -117,7 +147,7 @@ for( k in c('gaussian','rectangular','triangular'))
 }
 ```
 
-![plot of chunk unnamed-chunk-5](/figure/posts/dataR/kde/unnamed-chunk-5-1.png)
+![plot of chunk unnamed-chunk-5](/figure/posts/data/kde/unnamed-chunk-5-1.png)
 
 For dataset with thousands of observations, the choice of kernel function is not so cretical. As you may guess from the impression of histogram method, the choice of bandwith $h$ is always a tricky problem.
 
@@ -130,7 +160,7 @@ for(bw in c(0.00001,0.0001,0.001,0.01))
 }
 ```
 
-![plot of chunk unnamed-chunk-6](/figure/posts/dataR/kde/unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-6](/figure/posts/data/kde/unnamed-chunk-6-1.png)
 
 Luckily, there are recommended method to adaptively determine the bandwith, see document for density.
 
@@ -147,7 +177,7 @@ x<-c(mean(hs300)-sd(hs300),mean(hs300),mean(hs300)+sd(hs300))
 rug(x,lwd=3)
 ```
 
-![plot of chunk unnamed-chunk-7](/figure/posts/dataR/kde/unnamed-chunk-7-1.png)
+![plot of chunk unnamed-chunk-7](/figure/posts/data/kde/unnamed-chunk-7-1.png)
 
 
 ```r
@@ -155,7 +185,7 @@ plot(dt,main='left tail',xlim=c(-0.1,-0.04),ylim=c(0,2))
 lines(xgrid,dnorm(xgrid,mean=mean(hs300),sd=sd(hs300)),col='red')
 ```
 
-![plot of chunk unnamed-chunk-8](/figure/posts/dataR/kde/unnamed-chunk-8-1.png)
+![plot of chunk unnamed-chunk-8](/figure/posts/data/kde/unnamed-chunk-8-1.png)
 
 
 ```r
@@ -163,7 +193,7 @@ plot(dt,main='right tail',xlim=c(0.04,0.1),ylim=c(0,2))
 lines(xgrid,dnorm(xgrid,mean=mean(hs300),sd=sd(hs300)),col='red')
 ```
 
-![plot of chunk unnamed-chunk-9](/figure/posts/dataR/kde/unnamed-chunk-9-1.png)
+![plot of chunk unnamed-chunk-9](/figure/posts/data/kde/unnamed-chunk-9-1.png)
 
 This naturally leads us to look at its kurtosis which is 4.9 far greater than 3 (kurtosis of Normal distribution). As kurtosis can be interpreted as the desgree of dispersion of $x$ around the two values $\mu \pm \sigma$, where $\mu$ is the expectation and $\sigma$ is the standard deviation of $X$.
 
@@ -172,7 +202,7 @@ mean(hs300)
 ```
 
 ```
-## [1] 0.0002214247
+## [1] 0.0002485069
 ```
 
 ```r
@@ -180,7 +210,7 @@ sd(hs300)
 ```
 
 ```
-## [1] 0.01529462
+## [1] 0.01517779
 ```
 
 ```r
@@ -188,7 +218,7 @@ skewness(hs300)
 ```
 
 ```
-## [1] -0.595013
+## [1] -0.601912
 ```
 
 ```r
@@ -196,12 +226,12 @@ kurtosis(hs300)
 ```
 
 ```
-## [1] 4.910758
+## [1] 5.008052
 ```
-So about the daily return of HS300,
+So about the daily return of HS300, 
 * slightly positive growth 0.02%
 * highly volatile with sd 1.5%
-* negative skewed, i.e. more chance to see large negative return
+* negative skewed, i.e. more chance to see large negative return 
 * fatter tails than Normal distribution
 
 Thus, t distribution, instead of Normal distribution is a better fitted distribution model for the daily returns of China's stock index: HS300.
@@ -219,7 +249,7 @@ x<-c(mean(treasure)-sd(treasure),mean(treasure),mean(treasure)+sd(treasure))
 rug(x,lwd=3)
 ```
 
-![plot of chunk unnamed-chunk-11](/figure/posts/dataR/kde/unnamed-chunk-11-1.png)
+![plot of chunk unnamed-chunk-11](/figure/posts/data/kde/unnamed-chunk-11-1.png)
 
 
 ```r
@@ -227,7 +257,7 @@ plot(dt,main='left tail',xlim=c(-0.004,-0.001),ylim=c(0,20))
 lines(xgrid,dnorm(xgrid,mean=mean(treasure),sd=sd(treasure)),col='red')
 ```
 
-![plot of chunk unnamed-chunk-12](/figure/posts/dataR/kde/unnamed-chunk-12-1.png)
+![plot of chunk unnamed-chunk-12](/figure/posts/data/kde/unnamed-chunk-12-1.png)
 
 
 ```r
@@ -235,7 +265,7 @@ plot(dt,main='right tail',xlim=c(0.001,0.004),ylim=c(0,20))
 lines(xgrid,dnorm(xgrid,mean=mean(treasure),sd=sd(treasure)),col='red')
 ```
 
-![plot of chunk unnamed-chunk-13](/figure/posts/dataR/kde/unnamed-chunk-13-1.png)
+![plot of chunk unnamed-chunk-13](/figure/posts/data/kde/unnamed-chunk-13-1.png)
 
 
 ```r
@@ -270,11 +300,11 @@ kurtosis(treasure)
 ## [1] 27.08514
 ```
 
-So about the daily return of treasure index,
+So about the daily return of treasure index, 
 
 * slightly positive growth 0.01%
 * highly volatile with sd 0.05%
-* negative skewed, i.e. more chance to see large negative return
+* negative skewed, i.e. more chance to see large negative return 
 * fatter tails than Normal distribution
 
 Compared with stock index, the treasure index has
@@ -282,4 +312,4 @@ Compared with stock index, the treasure index has
 * better information ratio (say, better gain with same level of risk)
 * even fatter tails (kurtosis is as high as 27, compared with 4.7 of HS300's daily return)
 
-which means the treasure bonds are safer than stocks as we expected, but may suffer relatively extreme loss more often. This may be due to the tight restriction on interest rates in China.
+which means the treasure bonds are safer than stocks as we expected, but may suffer relatively extreme loss more often. This may be due to the tight restriction on interest rates in China. 
