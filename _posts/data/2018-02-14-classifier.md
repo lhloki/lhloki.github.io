@@ -2,7 +2,7 @@
 layout: post
 title:  "classifier"
 author: Hai Lan
-date:   2018-02-014
+date:   2018-02-14
 categories: data
 tags: [AI,R]
 use_math: true
